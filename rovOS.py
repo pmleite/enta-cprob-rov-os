@@ -8,7 +8,6 @@ ACTUATE_SERIAL_PORT = '/dev/ttyACM1'
 SENSOR_COMM_SPEED   = 19200
 ACTUATE_COMM_SPEED  = 19200
 
-
 def main():
     
     try:
@@ -22,8 +21,7 @@ def main():
     sensboard.reset_input_buffer()
     actuateboard.reset_input_buffer()
     
-    while True:
-        
+    while True:    
         # Send data to actuateboard
         actuateboard.write(b"LETS TALK!\n")
         # Read data from sensboard

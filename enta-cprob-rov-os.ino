@@ -1,10 +1,19 @@
 #include "sense.h"
 #include "actuate.h"
 
-char BOARD_FUNCTION = 'A';  //S - Sensing Board, A - Actuating Board
+/**
+ * @brief Define the board function
+ *        S - Sensing Board
+ *        A - Actuating Board 
+ * 
+ *        This is used to determine the board 
+ *        function, to upload to the sensing board
+ *        make sure to change the BOARD_FUNCTION to 
+ *        'S' and to 'A' for the actuating board
+ */
+char BOARD_FUNCTION = 'A';  
 
 void setup() {
-  //Initialize the board
   Serial.begin(19200);
 }
 
@@ -20,5 +29,3 @@ void loop() {
     Serial.println("Error: Invalid Board Function");
   }
 }
-
-
