@@ -5,7 +5,7 @@ echo updating...
 git pull
 
 echo running rovOS
-lxterminal -e pyhton3 rovOS.py
+lxterminal -e pyhton3 /hom/pi/enta-cprob-rov-os/rovOS.py
 
 # echo runnig videoStreaming
 # lxterminal -e pyhton3 videoStream.py 
