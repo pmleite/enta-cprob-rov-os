@@ -1,13 +1,24 @@
-#define BOARD_FUNCTION SENSE  //SENSE or ACTUATE
+#include "sense.h"
+#include "actuate.h"
 
+char BOARD_FUNCTION = 'S';  //S - Sensing Board, A - Actuating Board
 
 void setup() {
-  Serial.begin(9600);
+  //Initialize the board
+  Serial.begin(19200);
 }
+
 void loop() {
-  if (Serial.available() > 0) {
-    String data = Serial.readStringUntil('\n');
-    Serial.print("You sent me: ");
-    Serial.println(data);
+
+  if(BOARD_FUNCTION == 'S'){
+    sense();
+  }
+  else if(BOARD_FUNCTION == 'A'){
+    actuate();
+  }
+  else{
+    Serial.println("Error: Invalid Board Function");
   }
 }
+
+
