@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import serial
 import time
-import pyshine as ps 
-import cv2
 
 def main():
     
