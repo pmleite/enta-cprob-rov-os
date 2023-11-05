@@ -25,3 +25,9 @@ raspivid -o - -t 0 -hf -w 800 -h 400 -fps 24 |cvlc -vvv stream:///dev/stdin --so
 
 # dependencias
 pip3 install pyshine==0.0.9
+
+Local PC
+pip3 install opencv-python
+
+RaspberiPi4
+sudo apt-get install libopencv-dev python3-opencv
