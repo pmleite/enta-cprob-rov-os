@@ -3,12 +3,15 @@
 from picamera import PiCamera
 from time import sleep
 
-camera = PiCamera()
+def main():
+    camera = PiCamera()
 
-camera.start_preview()
-sleep(10)
-camera.stop_preview()
+    camera.start_preview()
+    sleep(10)
+    camera.stop_preview()
 
+if __name__ == '__main__':
+    main()
 
 # import serial
 # import time
