@@ -7,10 +7,10 @@ git pull
 echo running rovOS
 lxterminal -e pyhton3 rovOS.py
 
-echo runnig videoStreaming
-lxterminal -e pyhton3 videoStream.py 
+# echo runnig videoStreaming
+# lxterminal -e pyhton3 videoStream.py 
 
-exit 0
+exit
 
 
 
