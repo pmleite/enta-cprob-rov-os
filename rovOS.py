@@ -2,11 +2,18 @@
 import serial
 import time
 
+SENSOR_SERIAL_PORT  = '/dev/ttyACM0'
+ACTUATE_SERIAL_PORT = '/dev/ttyACM1'
+
+SENSOR_COMM_SPEED   = 19200
+ACTUATE_COMM_SPEED  = 19200
+
+
 def main():
     
     try:
-        sensboard = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
-        actuateboard = serial.Serial('/dev/ttyUSB1', 9600, timeout=1)
+        sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
+        actuateboard = serial.Serial(ACTUATE_SERIAL_PORT, ACTUATE_COMM_SPEED, timeout=1)
     except:
         print("One or more arduino boards are not connected.")
         print("Please check you connections and try again.")
