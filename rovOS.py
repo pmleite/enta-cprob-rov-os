@@ -12,7 +12,7 @@ if __name__ == '__main__':
     while True:
         
         # Send data to actuateboard
-        sensboard.write(b"LETS TALK!\n")
+        actuateboard.write(b"LETS TALK!\n")
         # Read data from sensboard
         line = sensboard.readline().decode('utf-8').rstrip()
         print(line)

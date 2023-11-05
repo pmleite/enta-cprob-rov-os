@@ -4,5 +4,5 @@
  */
 void sense(){
     Serial.println("TMP: 25.0");
-    delay(500);
+    delay(1000);
 }

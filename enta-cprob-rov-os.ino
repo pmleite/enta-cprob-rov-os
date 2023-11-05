@@ -1,7 +1,7 @@
 #include "sense.h"
 #include "actuate.h"
 
-char BOARD_FUNCTION = 'S';  //S - Sensing Board, A - Actuating Board
+char BOARD_FUNCTION = 'A';  //S - Sensing Board, A - Actuating Board
 
 void setup() {
   //Initialize the board
