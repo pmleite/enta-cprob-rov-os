@@ -2,13 +2,15 @@
 import serial
 import time
 import subprocess
-import os
+
 
 SENSOR_SERIAL_PORT  = '/dev/ttyACM0'
 ACTUATE_SERIAL_PORT = '/dev/ttyACM1'
 
-SENSOR_COMM_SPEED   = 115200
-ACTUATE_COMM_SPEED  = 115200
+SENSOR_COMM_SPEED   = 115200 # Must be the same as the Arduino Serial BAUD_RATE
+ACTUATE_COMM_SPEED  = 115200 # Must be the same as the Arduino Serial BAUD_RATE
+
+READ_SERIAL_DELAY   = 0.2 #The same as the Arduino Serial SEND_SERIAL_DELAY
 
 def main():
     
@@ -41,8 +43,8 @@ def main():
         # Read data from sensboard
         #line = sensboard.readline().decode('utf-8').rstrip()
         line = sensboard.readline().decode('utf-8')
-        print(line)
-        time.sleep(0.1)
+        print(line, end='')
+        time.sleep(READ_SERIAL_DELAY)
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,7 @@
 // GENERIC CONFIGURATIONS
-#define BAUD_RATE                  115200
-#define BOARD_FUNCTION             'S' // 'S' (sensing board) or 'A' (actuator board) 
+#define BAUD_RATE                  115200 // Must be the same that rovOS.py
+#define SEND_SERIAL_DELAY          200    // Must be the same that rovOS.py
+#define BOARD_FUNCTION             'S'    // 'S' (sensing board) or 'A' (actuator board) 
 #define DEBUG_MODE                 true
 
 // SENSOR PINS

@@ -24,6 +24,7 @@ void sendSensorValues(){
   String phString = String(valuePH) + "," + String(waterTemp) + "," + String(voltagePH);
   Serial.print("SENSE_PH:");
   Serial.println(phString);
+  delay(SEND_SERIAL_DELAY);
 }
 
 /**
