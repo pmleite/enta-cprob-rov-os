@@ -42,7 +42,7 @@ def main():
         #line = sensboard.readline().decode('utf-8').rstrip()
         line = sensboard.readline().decode('utf-8')
         print(line)
-        #time.sleep(1)
+        time.sleep(0.1)
 
 if __name__ == '__main__':
     main()
