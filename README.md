@@ -50,3 +50,19 @@ tcp/h264://192.168.1.31:8888
 ```
 
 ![Alt text](./imgs/media_source.png)
+
+O serviço de streaming é conseguido pelo aplicativo libcamera-vid, para mais informações consultar a literatura do produto em:
+
+<https://www.raspberrypi.com/documentation/computers/camera_software.html#libcamera-vid>
+
+O comando é lançado no rovOS.py com a seguinte linha de código:
+
+```python
+import subprocess
+
+.
+.
+.
+
+subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888"])
+```
