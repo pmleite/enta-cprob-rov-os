@@ -1,13 +1,95 @@
 # enta-cpro-rov-os #
-
 Firmware do ROV
 
+# Prerequisitos
+
+
+sudo nano /boot/config.txt
+
+#start_x=1
+camera_auto_detect=1
+
+[all]
+gpu_mem=256
+dtoverlay=w1-gpio
+enable_uart=1
+
+
+RaspberyPi Version:
+Linux raspberrypi 6.1.61-v8+ #1696 SMP PREEMPT Thu Nov  2 16:44:46 GMT 2023 aarch64 GNU/Linux
+
+sudo /etc/vnc/vncservice start vncserver-x11-serviced
+
+
+Docker (into raspberyPI)
+```
+sudo apt-get update
+sudo apt-get upgrade
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
+
+# Stream server
+
+```
+docker run -d --restart=always --name restreamer \
+   -v /opt/restreamer/config:/core/config -v /opt/restreamer/data:/core/data \
+   --privileged \
+   -p 8080:8080 -p 8181:8181 \
+   -p 1935:1935 -p 1936:1936 \
+   -p 6000:6000/udp \
+   datarhei/restreamer:rpi-latest
+```
+
+
+docker run -d --name restreamer \
+   -v /opt/restreamer/config:/core/config -v /opt/restreamer/data:/core/data \
+   --privileged \
+   -p 8080:8080 -p 8181:8181 \
+   -p 1935:1935 -p 1936:1936 \
+   -p 6000:6000/udp \
+   datarhei/restreamer:rpi-latest
+
+Se obtiver um erro de acesso ao docker.sock, execute:
+
+```
+sudo chmod 666 /var/run/docker.sock
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Configuring and test RaspberyPy CAM #
+
+Atenção falta barra via VNC
+https://raspberrypi.stackexchange.com/questions/122579/after-fresh-install-of-raspberry-os-the-menu-bar-is-missing-in-tightvnc-session
+
+
 
 run:
 
 ```
-sudo rasp-config
+sudo raspi-config
 ```
 
 Go to interface options and activate camera interface
