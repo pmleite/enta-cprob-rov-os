@@ -48,3 +48,5 @@ Para aceder ao stream de video deve utilizar o VLC, criar uma configuração de 
 ```config
 tcp/h264://192.168.1.31:8888
 ```
+
+![Alt text](./imgs/media_source.png)
