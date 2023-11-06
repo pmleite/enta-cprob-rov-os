@@ -55,7 +55,7 @@ O serviço de streaming é conseguido pelo aplicativo libcamera-vid, para mais i
 
 <https://www.raspberrypi.com/documentation/computers/camera_software.html#libcamera-vid>
 
-O comando é lançado no rovOS.py com a seguinte linha de código:
+O comando é lançado no rovOS.py com recurso à biblioteca subprocess e à classe Popen: 
 
 ```python
 import subprocess
@@ -66,3 +66,6 @@ import subprocess
 
 subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888"])
 ```
+
+Mais informação em:
+<https://docs.python.org/3/library/subprocess.html>
