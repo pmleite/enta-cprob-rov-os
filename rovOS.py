@@ -20,24 +20,21 @@ def main():
         print("Verifique o compoenente libcamera-vid e tente novamente")
 
     try:
-        try:
-            subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
-            sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
-            print("Placa de sensores inicializada com sucesso!")
-        except:
-            print("Erro ao inicializar a comunicação com a placa de sensores.")
-            print("Verifique e tente novamente.")
-    
-        try:
-            subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM1"])
-            actuateboard = serial.Serial(ACTUATE_SERIAL_PORT, ACTUATE_COMM_SPEED, timeout=1)
-            print("Placa de atuadores inicializada com sucesso!")
-        except:
-            print("Erro ao inicializar a comunicação com a placa de atuadores.")
-            print("Verifique e tente novamente.")
+        subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
+        sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
+        print("Placa de sensores inicializada com sucesso!")
     except:
-        print("Erro de inicialização de comunicação com os periféricos!")
-        exit()
+        print("Erro ao inicializar a comunicação com a placa de sensores.")
+        print("Verifique e tente novamente.")
+
+    try:
+        subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM1"])
+        actuateboard = serial.Serial(ACTUATE_SERIAL_PORT, ACTUATE_COMM_SPEED, timeout=1)
+        print("Placa de atuadores inicializada com sucesso!")
+    except:
+        print("Erro ao inicializar a comunicação com a placa de atuadores.")
+        print("Verifique e tente novamente.")
+    
     
     sensboard.reset_input_buffer()
     actuateboard.reset_input_buffer()
