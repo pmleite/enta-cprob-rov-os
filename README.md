@@ -83,4 +83,6 @@ Em python é conseguido com recurso às seguintes bibliotecas:
 - <https://docs.python.org/3/library/subprocess.html> (Multitask)
 
 Mais informação em:
-<https://forums.raspberrypi.com/viewtopic.php?t=257859>
+
+- <https://forums.raspberrypi.com/viewtopic.php?t=257859>
+- <https://www.scaler.com/topics/multithreading-in-python/>
