@@ -12,7 +12,7 @@ ACTUATE_COMM_SPEED  = 19200
 def main():
     
     #Start video stream sub-process
-    subprocess.Popen(["libcamera-vid", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888]"])
+    subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888]"])
     
     try:
         sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
