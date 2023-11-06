@@ -69,3 +69,12 @@ subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-
 
 Mais informação em:
 <https://docs.python.org/3/library/subprocess.html>
+
+## Multi-Tarefa em Python
+
+A aplicação rovOS recorre à multitarefa asyncrona para rodar alguns processos
+
+![Alt Text](./imgs/parallel-processing.png)
+
+Em python conseguese este efeito com:
+<https://linuxhint.com/run-multiple-python-programs-simultaneously-raspberry-pi/>
