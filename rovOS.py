@@ -12,6 +12,7 @@ ACTUATE_COMM_SPEED  = 19200
 def main():
     
     #Start video stream sub-process
+    subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
     subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888"])
       
     
