@@ -14,20 +14,31 @@ def main():
     #Start video stream sub-process
     try:
         subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888"])
+        print("Video Stream iniciado com sucesso!")
     except:
         print("Erro ao iniciar o video stream.")
         print("Verifique o compoenente libcamera-vid e tente novamente")
 
-    # Start serial communication with arduino boards
     try:
-        subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
-        sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
-        actuateboard = serial.Serial(ACTUATE_SERIAL_PORT, ACTUATE_COMM_SPEED, timeout=1)
+        try:
+            subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
+            sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
+            print("Placa de sensores inicializada com sucesso!")
+        except:
+            print("Erro ao inicializar a comunicação com a placa de sensores.")
+            print("Verifique e tente novamente.")
+    
+        try:
+            subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM1"])
+            actuateboard = serial.Serial(ACTUATE_SERIAL_PORT, ACTUATE_COMM_SPEED, timeout=1)
+            print("Placa de atuadores inicializada com sucesso!")
+        except:
+            print("Erro ao inicializar a comunicação com a placa de atuadores.")
+            print("Verifique e tente novamente.")
     except:
-        print("One or more arduino boards are not connected.")
-        print("Please check you connections and try again.")
+        print("Erro de inicialização de comunicação com os periféricos!")
         exit()
-        
+    
     sensboard.reset_input_buffer()
     actuateboard.reset_input_buffer()
     
