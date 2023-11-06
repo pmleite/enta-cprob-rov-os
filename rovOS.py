@@ -41,7 +41,7 @@ def main():
         # Read data from sensboard
         line = sensboard.readline().decode('utf-8').rstrip()
         print(line)
-        time.sleep(1)
+        #time.sleep(1)
 
 if __name__ == '__main__':
     main()
