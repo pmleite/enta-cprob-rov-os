@@ -12,11 +12,11 @@ ACTUATE_COMM_SPEED  = 19200
 def main():
     
     #Start video stream sub-process
-    subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
     subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888"])
       
     
     try:
+        subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
         sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
         actuateboard = serial.Serial(ACTUATE_SERIAL_PORT, ACTUATE_COMM_SPEED, timeout=1)
     except:
