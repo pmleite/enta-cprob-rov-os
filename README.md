@@ -76,5 +76,11 @@ A aplicação rovOS recorre à multitarefa asyncrona para rodar alguns processos
 
 ![Alt Text](./imgs/parallel-processing.png)
 
-Em python conseguese este efeito com:
-<https://linuxhint.com/run-multiple-python-programs-simultaneously-raspberry-pi/>
+Em python é conseguido com recurso às seguintes bibliotecas:
+
+- <https://docs.python.org/3/library/time.html> (redução de carga do processador)
+- <https://docs.python.org/3/library/threading.html>  (Multitask)
+- <https://docs.python.org/3/library/subprocess.html> (Multitask)
+
+Mais informação em:
+<https://forums.raspberrypi.com/viewtopic.php?t=257859>
