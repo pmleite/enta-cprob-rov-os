@@ -20,6 +20,7 @@ def main():
         print("Erro ao iniciar o video stream.")
         print("Verifique o compoenente libcamera-vid e tente novamente")
 
+    #Start sensor and actuator boards comm
     try:
         subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
         subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM1"])

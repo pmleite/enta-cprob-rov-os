@@ -1,4 +1,15 @@
 /**
+ * @brief Funtion that initialize sensors
+ * 
+ */
+void init_sensors(){
+    
+    
+}
+
+
+
+/**
  * @brief Send sensing data to RaspberyPi 
  * 
  */

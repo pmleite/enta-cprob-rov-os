@@ -46,7 +46,13 @@ runrov
 Para aceder ao stream de video deve utilizar o VLC, criar uma configuração de "Network Stream" com as seguintes propriedades.
 
 ```config
-tcp/h264://192.168.1.31:8888
+tcp/h264://<raspberyPi IP Addrress>:8888
+```
+
+Exemplo:
+
+```config
+tcp/h264://192.168.68.119:8888
 ```
 
 ![Alt text](./imgs/media_source.png)

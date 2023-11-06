@@ -1,20 +1,9 @@
 #include "./arduino_sense/sense.h"
 #include "./arduino_actuate/actuate.h"
-
-/**
- * @brief Define the board function
- *        S - Sensing Board
- *        A - Actuating Board 
- * 
- *        This is used to determine the board 
- *        function, to upload to the sensing board
- *        make sure to change the BOARD_FUNCTION to 
- *        'S' and to 'A' for the actuating board
- */
-char BOARD_FUNCTION = 'A';  
+#include "./arduino_cfg/config.h"
 
 void setup() {
-  Serial.begin(19200);
+  Serial.begin(BAUD_RATE);
 }
 
 void loop() {
@@ -26,6 +15,6 @@ void loop() {
     actuate();
   }
   else{
-    Serial.println("Error: Invalid Board Function");
+    Serial.println("ERROR: BOARD_FUNCTION not defined");
   }
 }
