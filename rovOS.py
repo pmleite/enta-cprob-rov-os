@@ -39,7 +39,8 @@ def main():
         # # Send data to actuateboard
         # actuateboard.write(b"LETS TALK!\n")
         # Read data from sensboard
-        line = sensboard.readline().decode('utf-8').rstrip()
+        #line = sensboard.readline().decode('utf-8').rstrip()
+        line = sensboard.readline().decode('utf-8')
         print(line)
         #time.sleep(1)
 
