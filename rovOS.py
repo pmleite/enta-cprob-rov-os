@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import serial
 import time
+import subprocess
 
 SENSOR_SERIAL_PORT  = '/dev/ttyACM0'
 ACTUATE_SERIAL_PORT = '/dev/ttyACM1'
@@ -9,6 +10,9 @@ SENSOR_COMM_SPEED   = 19200
 ACTUATE_COMM_SPEED  = 19200
 
 def main():
+    
+    #Start video stream sub-process
+    subprocess.Popen(["libcamera-vid",  "-t",  "0", "--inline ", "--listen",  "-o", "tcp://0.0.0.0:8888]"])
     
     try:
         sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)

@@ -1,5 +1,5 @@
-#include "sense.h"
-#include "actuate.h"
+#include "./arduino_sense/sense.h"
+#include "./arduino_actuate/actuate.h"
 
 /**
  * @brief Define the board function
