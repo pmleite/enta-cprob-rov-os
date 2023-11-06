@@ -12,9 +12,13 @@ ACTUATE_COMM_SPEED  = 19200
 def main():
     
     #Start video stream sub-process
-    subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888"])
-      
-    
+    try:
+        subprocess.Popen(["libcamera-vid", "-n", "-t",  "0", "--inline", "--listen",  "-o", "tcp://0.0.0.0:8888"])
+    except:
+        print("Erro ao iniciar o video stream.")
+        print("Verifique o compoenente libcamera-vid e tente novamente")
+
+    # Start serial communication with arduino boards
     try:
         subprocess.Popen(["sudo", "chmod", "777", "/dev/ttyACM0"])
         sensboard = serial.Serial(SENSOR_SERIAL_PORT, SENSOR_COMM_SPEED, timeout=1)
