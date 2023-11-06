@@ -93,3 +93,35 @@ Mais informação em:
 - <https://forums.raspberrypi.com/viewtopic.php?t=257859>
 - <https://www.scaler.com/topics/multithreading-in-python/>
 - <https://docs.python.org/3/library/asyncio-dev.html>
+
+## Sensores
+
+Sensores instalados
+
+### ECSensor (Sensor de Condutividade da Água) - PINO A1
+
+<https://wiki.dfrobot.com/Gravity__Analog_Electrical_Conductivity_Sensor___Meter_V2__K=1__SKU_DFR0300>
+<https://github.com/DFRobot/DFRobot_EC10>
+
+Para calibrar o sensor digite no terminal um dos seguintes comandos:
+
+- enterec\nenterec -> enter the calibration mode
+- calec\ncalec     -> calibrate with the standard buffer solution, one buffer solutions(12.88ms/cm) will be automaticlly recognized
+- exitec\nexiet -> save the calibrated parameters and exit from calibration mode
+
+Se por algum motivo não entrar no modo de calibração acrescente mais um \n{comando}, exemplo:
+
+```Serial
+enterec\nenterec\nenterec
+```
+
+### PHSensor (Sensor de PH da Água) - PINO A2
+
+<https://github.com/DFRobot/DFRobot_PH/tree/master>
+<https://github.com/DFRobot/DFRobot_PH/blob/master/example/DFRobot_PH_EC/DFRobot_PH_EC.ino>
+
+Para calibrar o sensor digite no terminal um dos seguintes comandos:
+
+- enterph\nenterph -> enter the calibration mode
+- calph\ncalph  -> calibrate with the standard buffer solution, two buffer solutions(4.0 and 7.0) will be automaticlly recognized
+- exitph\nexitph  -> save the calibrated parameters and exit from calibration mode

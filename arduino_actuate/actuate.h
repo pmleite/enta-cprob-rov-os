@@ -1,7 +1,7 @@
 /**
  * @brief Receive data from the raspberyPi and actuate devices 
  */
-void actuate(){
+void actuate_devices(){
   //Read data from the serial port
   if (Serial.available() > 0) {
     String data = Serial.readStringUntil('\n');
