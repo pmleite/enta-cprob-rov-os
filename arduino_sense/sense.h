@@ -38,32 +38,34 @@ int updateWaterTempVal(){
  * @brief Update ec value
  * 
  */
+//TODO: Melhorar entrada em modo de clibração (Ver demo github DF_PH Library)
 void updateECVal(){
     static unsigned long ECtimepoint = millis();
     if(millis()-ECtimepoint>1000U)  //time interval: 1s
     {
       ECtimepoint = millis();
-      waterTemp = updateWaterTempVal();                    // read your temperature sensor to execute temperature compensation
-      voltageEC = analogRead(EC_SENSOR_PIN)/1024.0*5000;   // read the voltage
-      valueEC   =  ec.readEC(voltageEC, waterTemp);          // convert voltage to EC with temperature compensation
+      waterTemp   = updateWaterTempVal();                    
+      voltageEC   = analogRead(EC_SENSOR_PIN)/1024.0*5000;   
+      valueEC     = ec.readEC(voltageEC, waterTemp);        
     }
-    ec.calibration(voltageEC,waterTemp);                   // calibration process by Serail CMD
+    ec.calibration(voltageEC,waterTemp);                   
 }
 
 /**
  * @brief Update ph value
  * 
  */
+//TODO: Melhorar entrada em modo de clibração (Ver demo github DF_PH Library)
 void updatePHVal(){
     static unsigned long PHtimepoint = millis();
     if(millis()-PHtimepoint>1000U)  //time interval: 1s
     {
       PHtimepoint = millis();
-      waterTemp = updateWaterTempVal();                   // read your temperature sensor to execute temperature compensation
-      voltagePH = analogRead(PH_SENSOR_PIN)/1024.0*5000;  // read the voltage
-      valuePH   = ph.readPH(voltagePH, waterTemp);        // convert voltage to EC with temperature compensation
+      waterTemp   = updateWaterTempVal();                   
+      voltagePH   = analogRead(PH_SENSOR_PIN)/1024.0*5000;  
+      valuePH     = ph.readPH(voltagePH, waterTemp);        
     }
-    ph.calibration(voltagePH,waterTemp);                  // calibration process by Serail CMD
+    ph.calibration(voltagePH,waterTemp);                  
 }
 
 /**
