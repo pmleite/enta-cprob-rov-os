@@ -3,7 +3,6 @@ import serial
 import time
 import subprocess
 
-
 SENSOR_SERIAL_PORT  = '/dev/ttyACM0'
 ACTUATE_SERIAL_PORT = '/dev/ttyACM1'
 
