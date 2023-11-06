@@ -86,3 +86,4 @@ Mais informação em:
 
 - <https://forums.raspberrypi.com/viewtopic.php?t=257859>
 - <https://www.scaler.com/topics/multithreading-in-python/>
+- <https://docs.python.org/3/library/asyncio-dev.html>
