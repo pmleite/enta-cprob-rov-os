@@ -11,6 +11,8 @@
 float waterTemp = 25.0;
 float voltageEC, valueEC;
 float voltagePH, valuePH;
+float internalTMP, internelHUM; 
+float gyroX, gyroY, GyroZ;
 
 
 /**
@@ -18,12 +20,24 @@ float voltagePH, valuePH;
  * 
  */
 void sendSensorValues(){
+  /*Condutividade*/
   String ecString = String(valueEC) + "," + String(waterTemp) + "," + String(voltageEC);
   Serial.print("SENSE_EC:");
   Serial.println(ecString);
+
+  /*PH*/
   String phString = String(valuePH) + "," + String(waterTemp) + "," + String(voltagePH);
   Serial.print("SENSE_PH:");
   Serial.println(phString);
+
+  /*TEMP*/
+  String tmpString = String(internalTMP);
+  Serial.print("SENSE_TMP:");
+  Serial.println(tmpString);
+
+  /*Hum*/
+
+  
   delay(SEND_SERIAL_DELAY);
 }
 
@@ -69,6 +83,16 @@ void updatePHVal(){
     ph.calibration(voltagePH,waterTemp);                  
 }
 
+void updateTemp(){
+  /*
+   Código para ler a temperatura e humidade e guardar nas variaveis
+  */
+  internalTMP = 122;
+  internalHUM = 123;
+}
+
+
+
 /**
  * @brief Read all sensors and update values into variables
  * 
@@ -76,6 +100,7 @@ void updatePHVal(){
 void read_sensors(){
   updateECVal();
   updatePHVal();
+  updateTemp();
   sendSensorValues();
 }
 
