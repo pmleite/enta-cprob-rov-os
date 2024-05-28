@@ -1,74 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle ROV</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>ROV Control</title>
 </head>
 <body>
-    <h1>Controle ROV</h1>
-    <div id="video">
-        <h2>Vídeo</h2>
-        <img src="http://192.168.68.134:5000/?action=stream" width="640" height="480" alt="Camera Stream">
+    <h1>ROV Control</h1>
+    <div>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
     </div>
-    <div id="sensors">
-        <h2>Sensores</h2>
-        <p>Temperatura: <span id="temperature"></span> °C</p>
-        <p>pH: <span id="ph"></span></p>
-        <p>Condutividade: <span id="conductivity"></span> µS/cm</p>
-        <p>Giroscópio: <span id="gyroscope"></span></p>
-        <p>Sonar: <span id="sonar"></span> m</p>
+    <div>
+        <input type="range" min="-100" max="100" value="0" id="motor1">
+        <button onclick="sendMotorSpeed(1)">Set Motor 1</button>
     </div>
-
     <script>
-        const ws = new WebSocket('ws://192.168.68.134:8765');
-
-        ws.onopen = () => {
-            console.log('WebSocket connection established');
-        };
-
-        ws.onmessage = (event) => {
-            console.log('Message from server ', event.data);
-        };
-
-        function updateSensors() {
-            fetch('/sensors')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('temperature').textContent = data.temperature.toFixed(2);
-                    document.getElementById('ph').textContent = data.ph.toFixed(2);
-                    document.getElementById('conductivity').textContent = data.conductivity.toFixed(2);
-                    document.getElementById('gyroscope').textContent = `X: ${data.gyroscope.x.toFixed(2)}, Y: ${data.gyroscope.y.toFixed(2)}, Z: ${data.gyroscope.z.toFixed(2)}`;
-                    document.getElementById('sonar').textContent = data.sonar.toFixed(2);
-                });
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            setInterval(updateSensors, 1000);
-        });
-
-        // Joystick handling
-        window.addEventListener("gamepadconnected", (event) => {
-            console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.",
-                event.gamepad.index, event.gamepad.id,
-                event.gamepad.buttons.length, event.gamepad.axes.length);
-            updateJoystick();
-        });
-
-        function updateJoystick() {
-            const gamepads = navigator.getGamepads();
-            const gp = gamepads[0];
-            if (gp) {
-                const data = {
-                    horizontal: gp.axes[0],
-                    vertical: gp.axes[1],
-                    secondary_horizontal: gp.axes[2],
-                    secondary_vertical: gp.axes[3]
-                };
-                ws.send(JSON.stringify(data));
-            }
-            requestAnimationFrame(updateJoystick);
+        function sendMotorSpeed(motor) {
+            var speed = document.getElementById('motor' + motor).value;
+            fetch('/control', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'motor=' + motor + '&speed=' + speed
+            });
         }
     </script>
 </body>
