@@ -26,7 +26,6 @@ def gen():
 def video_feed():
     return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-
 # Motor control function
 def set_motor_speed(motor, speed):
     pwm_value = int((speed + 100) * 2.55)
@@ -38,12 +37,10 @@ def control():
     speed = int(request.form['speed'])
     set_motor_speed(motor, speed)
     return '', 204
-
-    
+  
 @app.route('/')
 def index():
     return render_template('index.html')
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=tcp_port)
