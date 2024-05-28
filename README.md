@@ -1,19 +1,103 @@
 # enta-cpro-rov-os
 
-Firmware do ROV
+Firmware do projeto ENTA-CPROB ROV
 
-RaspberyPi Version:
-Linux raspberrypi 6.1.61-v8+ #1696 SMP PREEMPT Thu Nov  2 16:44:46 GMT 2023 aarch64 GNU/Linux
+## Pré Requisitos
 
-## Prerequisitos
+- Para a preparação do cartão com o PI OS.
+    - Computador com acesso à internet e leitor de microSD
+    - Cartão microSD com pelo menos 4GB
 
-Algumas operações devem ser executadas no RaspberyPI antes de arrancar com os componentes de software.
+- Para a instalação do PI OS.
+    - Raspbery PI 4
+    - Monitor
+    - Cabo miniHDMI -> HDMI
+    - Teclado
+    - Rato
+    - Cartão préviamente preparado no passo anterior
+
+## Preparação do cartão com o PI OS.
+
+Fazer o download da aplicação PI-Imager em:
+https://www.raspberrypi.com/software/
+
+Instalar com o gestor de pacotes do debian:
+
+```
+sudo dpkm -i imager_1.8.5_amd64.deb
+```
+
+Abrir a aplicação imager e escolher o modelo do RaspberyPI, o sistema operativo e apontar para o cartão de memória que já deve estar inserido no leitor. Em seguida clicar no botão NEXT. 
+
+![alt text](./imgs/piimager1.png)
+
+No ecrão que irá surgir, clicar no botão EDIT SETTING
+
+![alt text](./imgs/piimager2.png)
+
+Configurar de acordo com a imagem seguinte, sendo que o hostname, user e pass pode ser uma qualquer. Não esquecer do user e pass, é muito importante!
+
+As definições do WiFi vão depender do seu AP
+
+user: entacprob
+pass: entacprob
+
+![alt text](./imgs/piimager3.png)
+
+Depois de verificar que as configurações estão de acordo com o desejado, clicar no botão YES para as aceitar.
+
+![alt text](./imgs/piimager4.png)
+
+Surge uma janela a avisar que vai perder todos os dados que existem no cartão. 
+Clique no botão YES para prosseguir.
+
+![alt text](./imgs/piimager5.png)
+
+O Ubuntu irá pedir credênciais de SUDO para avançar com o processo, Insira a sua password SUDO e aguarde até o processo de preparação do cartão terminar.
+
+![alt text](./imgs/piimager6.png)
+
+![alt text](./imgs/piimager7.png)
+
+O imager irá posteriormente verificar a estrutura do cartão, apesar de ser facultativo e poder cancelar, aconselha-se que faça a verificação.
+
+![alt text](./imgs/piimager8.png)
+
+No final o imager informa que pode remover o cartão, para tal clique no botão CONTINUE, fecha a aplicação imager e remova o cartão do leitor.
+
+![alt text](./imgs/piimager9.png)
+
+
+## Instalação do PI OS
+
+Ligue um teclado, rato e monitor ao RaspberyPI, insira o cartão preparado previamente, ligue o raspberyPI a uma fonte de energia de 5V 3A (Mínimo), pode ser pela porta USB-C ou diretamente pelos pinos de alimentação (caso da image)
+
+Acompanhe as instruções no ecrã. A instalação demora alguns minutos e envolver alguns "restarts" do raspbery.
+
+## Configuração do IP da placa Ethernet
+
+Siga as instruções do PI OS para alteração do ip da placa ethernet do raspbery para o seguinte:
+
+IP Address.....: 192.168.100.1
+SubnetMask.....: 255.255.255.0  (/24)
+Default Gateway: 192.168.100.1
+
+### Ativar o serviço de VNC Server
+
+(No RaspberyPI)
+Abrir o aplicativo de configração do raspbery pi (no menu do sistema), ir à secção de interfaces e ativas o VNC
+
+(No Linux)
+Instalar o TigerVNC. Pode ser feito pelo gestor de aplicações do Ubuntu. 
+Executar o TigerVNC inserir o IP configurado no passo anterior, confirmar que quer continuar quando for alertado para a falta de certificado, inserir as credênciais configuradas no primeiro passo.
+Nesta altura já deve conseguir abrir remotamente o raspberyPI
+
 
 ### Ativar deteção de câmara
 
 Editar o ficheiro de boot config.txt
 
-```bash
+```
 sudo nano /boot/config.txt 
 ```
 
@@ -29,17 +113,13 @@ dtoverlay=w1-gpio     #(Se não existir, criar)
 enable_uart=1         #(Se não existir, criar)
 ```
 
-### Ativar o serviço de VNC Server
-
-```bash
-sudo /etc/vnc/vncservice start vncserver-x11-serviced
-```
-
 ### Arrancar com o rovOS
 
 ```bash
 runrov
 ```
+
+
 
 ## Aceder ao stream de video
 
