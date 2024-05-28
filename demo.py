@@ -110,4 +110,4 @@ if __name__ == '__main__':
     joystick_thread = threading.Thread(target=joystick_control)
     joystick_thread.start()
     
-    app.run(host='0.0.0.0', port=80, debug=True, use_reloader=False)
+    app.run(host='0.0.0.0', port=8080, debug=True, use_reloader=False)
