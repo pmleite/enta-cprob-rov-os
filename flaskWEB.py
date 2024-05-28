@@ -2,7 +2,7 @@
 from flask import Flask, render_template, Response, request
 import cv2
 import pigpio
-import Adafruit_DHT
+
 
 app = Flask(__name__)
 pi = pigpio.pi()
