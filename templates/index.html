@@ -5,8 +5,9 @@
 </head>
 <body>
     <h1>ROV Control</h1>
-    <div>
-        <img src="192.168.68.134:5000/video_feed" width="640" height="480">
+    <div> 
+        {% comment %} Iframe to display the video feed       {% endcomment %}
+        <iframe src="http://192.168.68.134:5000/video_feed" width="640" height="480"></iframe>
     </div>
     <div>
         <input type="range" min="-100" max="100" value="0" id="motor1">
