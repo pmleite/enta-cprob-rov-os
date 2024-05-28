@@ -1,11 +1,7 @@
-from flask import Flask, render_template, jsonify
+import asyncio
+import websockets
+import json
 import RPi.GPIO as GPIO
-from time import sleep
-import threading
-import pygame
-#from sensors import read_temperature, read_ph, read_conductivity, read_gyroscope, read_sonar
-
-app = Flask(__name__)
 
 # Configuração dos pinos GPIO
 motor_pins = {
@@ -39,60 +35,13 @@ def control_motor(motor, speed):
             GPIO.output(dir_pin, GPIO.LOW)
             pwm_motors[motor].ChangeDutyCycle(speed)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-# @app.route('/sensors')
-# def sensors():
-#     data = {
-#         "temperature": read_temperature(),
-#         "ph": read_ph(),
-#         "conductivity": read_conductivity(),
-#         "gyroscope": read_gyroscope(),
-#         "sonar": read_sonar()
-#     }
-#     return jsonify(data)
-
-def initialize_joystick():
-    pygame.init()
-    pygame.joystick.init()
-    joystick_count = pygame.joystick.get_count()
-    if joystick_count > 0:
-        joystick = pygame.joystick.Joystick(0)
-        joystick.init()
-        return joystick
-    else:
-        return None
-
-def read_joystick_events(joystick):
-    pygame.event.pump()
-    axis_0 = joystick.get_axis(0)  # Horizontal axis
-    axis_1 = joystick.get_axis(1)  # Vertical axis
-    axis_2 = joystick.get_axis(2)  # Secondary Horizontal axis
-    axis_3 = joystick.get_axis(3)  # Secondary Vertical axis
-
-    return {
-        'horizontal': axis_0,
-        'vertical': axis_1,
-        'secondary_horizontal': axis_2,
-        'secondary_vertical': axis_3
-    }
-
-def joystick_control():
-    joystick = initialize_joystick()
-    if not joystick:
-        print('No joystick detected')
-        return
-
-    while True:
-        axes = read_joystick_events(joystick)
-        
-        # Mapping -1..1 to -100..100
-        horizontal_speed = int(axes['horizontal'] * 100)
-        vertical_speed = int(axes['vertical'] * 100)
-        secondary_horizontal_speed = int(axes['secondary_horizontal'] * 100)
-        secondary_vertical_speed = int(axes['secondary_vertical'] * 100)
+async def joystick_handler(websocket, path):
+    async for message in websocket:
+        data = json.loads(message)
+        horizontal_speed = int(data['horizontal'] * 100)
+        vertical_speed = int(data['vertical'] * 100)
+        secondary_horizontal_speed = int(data['secondary_horizontal'] * 100)
+        secondary_vertical_speed = int(data['secondary_vertical'] * 100)
 
         # Control horizontal motors
         control_motor('horizontal_left', horizontal_speed)
@@ -103,11 +52,8 @@ def joystick_control():
         control_motor('vertical_left_2', vertical_speed)
         control_motor('vertical_right_1', vertical_speed)
         control_motor('vertical_right_2', vertical_speed)
-        
-        sleep(0.1)
 
-if __name__ == '__main__':
-    joystick_thread = threading.Thread(target=joystick_control)
-    joystick_thread.start()
-    
-    app.run(host='0.0.0.0', port=8080, debug=True, use_reloader=False)
+start_server = websockets.serve(joystick_handler, "0.0.0.0", 8765)
+
+asyncio.get_event_loop().run_until_complete(start_server)
+asyncio.get_event_loop().run_forever()
