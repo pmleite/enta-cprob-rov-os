@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 import threading
 import pygame
-from sensors import read_temperature, read_ph, read_conductivity, read_gyroscope, read_sonar
+#from sensors import read_temperature, read_ph, read_conductivity, read_gyroscope, read_sonar
 
 app = Flask(__name__)
 
