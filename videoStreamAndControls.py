@@ -36,7 +36,7 @@ def control():
     motor = int(request.form['motor'])
     speed = int(request.form['speed'])
     set_motor_speed(motor, speed)
-    return '', 204
+    return '<h1>teste</h1>', 204
   
 @app.route('/')
 def index():
