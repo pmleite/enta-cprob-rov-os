@@ -39,7 +39,7 @@ def main():
     #teste de escrita
     
     
-    while True:    
+    #while True:    
         # # Send data to actuateboard
         # actuateboard.write(b"LETS TALK!\n")
         # Read data from sensboard
