@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
+    <h1>Controle ROV</h1>
     <div id="video">
-        <iframe src="http://192.168.68.134:5000" width="640" height="480"></iframe>
+        <h2>Vídeo</h2>
+        <img src="http://192.168.68.134:8080/?action=stream" width="640" height="480" alt="Camera Stream">
     </div>
     <div id="sensors">
         <h2>Sensores</h2>
@@ -19,7 +21,17 @@
         <p>Sonar: <span id="sonar"></span> m</p>
     </div>
 
-    <!-- <script>
+    <script>
+        const ws = new WebSocket('ws://<IP_DO_RASPBERRY_PI>:8765');
+
+        ws.onopen = () => {
+            console.log('WebSocket connection established');
+        };
+
+        ws.onmessage = (event) => {
+            console.log('Message from server ', event.data);
+        };
+
         function updateSensors() {
             fetch('/sensors')
                 .then(response => response.json())
@@ -35,6 +47,29 @@
         document.addEventListener('DOMContentLoaded', function () {
             setInterval(updateSensors, 1000);
         });
-    </script> -->
+
+        // Joystick handling
+        window.addEventListener("gamepadconnected", (event) => {
+            console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.",
+                event.gamepad.index, event.gamepad.id,
+                event.gamepad.buttons.length, event.gamepad.axes.length);
+            updateJoystick();
+        });
+
+        function updateJoystick() {
+            const gamepads = navigator.getGamepads();
+            const gp = gamepads[0];
+            if (gp) {
+                const data = {
+                    horizontal: gp.axes[0],
+                    vertical: gp.axes[1],
+                    secondary_horizontal: gp.axes[2],
+                    secondary_vertical: gp.axes[3]
+                };
+                ws.send(JSON.stringify(data));
+            }
+            requestAnimationFrame(updateJoystick);
+        }
+    </script>
 </body>
 </html>
