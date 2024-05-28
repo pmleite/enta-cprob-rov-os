@@ -43,16 +43,16 @@ def control_motor(motor, speed):
 def index():
     return render_template('index.html')
 
-@app.route('/sensors')
-def sensors():
-    data = {
-        "temperature": read_temperature(),
-        "ph": read_ph(),
-        "conductivity": read_conductivity(),
-        "gyroscope": read_gyroscope(),
-        "sonar": read_sonar()
-    }
-    return jsonify(data)
+# @app.route('/sensors')
+# def sensors():
+#     data = {
+#         "temperature": read_temperature(),
+#         "ph": read_ph(),
+#         "conductivity": read_conductivity(),
+#         "gyroscope": read_gyroscope(),
+#         "sonar": read_sonar()
+#     }
+#     return jsonify(data)
 
 def initialize_joystick():
     pygame.init()
