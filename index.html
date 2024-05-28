@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ENTA-CPROB ROV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle ROV</title>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <h1>Welcome to ENTA-CPROB ROV</h1>
-    <p>This is a simple webpage.</p>
+    <h1>Controle ROV</h1>
+    <div id="video">
+        <h2>Vídeo</h2>
+        <img src="http://<IP_DO_RASPBERRY_PI>:8080/?action=stream" width="640" height="480" alt="Camera Stream">
+    </div>
+    <div id="sensors">
+        <h2>Sensores</h2>
+        <p>Temperatura: <span id="temperature"></span> °C</p>
+        <p>pH: <span id="ph"></span></p>
+        <p>Condutividade: <span id="conductivity"></span> µS/cm</p>
+        <p>Giroscópio: <span id="gyroscope"></span></p>
+        <p>Sonar: <span id="sonar"></span> m</p>
+    </div>
+
+    <script>
+        function updateSensors() {
+            fetch('/sensors')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('temperature').textContent = data.temperature.toFixed(2);
+                    document.getElementById('ph').textContent = data.ph.toFixed(2);
+                    document.getElementById('conductivity').textContent = data.conductivity.toFixed(2);
+                    document.getElementById('gyroscope').textContent = `X: ${data.gyroscope.x.toFixed(2)}, Y: ${data.gyroscope.y.toFixed(2)}, Z: ${data.gyroscope.z.toFixed(2)}`;
+                    document.getElementById('sonar').textContent = data.sonar.toFixed(2);
+                });
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setInterval(updateSensors, 1000);
+        });
+    </script>
 </body>
 </html>
