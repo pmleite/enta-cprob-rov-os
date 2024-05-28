@@ -24,13 +24,7 @@ def video_feed():
 def index():
     return '''
     <html>
-        <head>
-            <title>Raspberry Pi Camera Stream</title>
-        </head>
-        <body>
-            <h1>Raspberry Pi Camera Stream</h1>
-            <img src="/video_feed" width="640" height="480">
-        </body>
+        <img src="/video_feed" width="640" height="480">
     </html>
     '''
 
