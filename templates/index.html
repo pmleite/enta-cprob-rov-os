@@ -4,67 +4,85 @@
     <title>Motor Control</title>
     <style>
         #joystick {
+            border: 2px solid black;
+            border-radius: 50%;
             width: 200px;
             height: 200px;
             position: relative;
         }
+        #knob {
+            background-color: gray;
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 75px;
+            left: 75px;
+            cursor: pointer;
+        }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.8.7/nipplejs.min.js"></script>
 </head>
 <body>
     <h1>Motor Control</h1>
     <div>
-        <label for="motor">Motor:</label>
-        <select id="motor">
-            <option value="A">Motor A</option>
-            <option value="B">Motor B</option>
-        </select>
-    </div>
-    <div>
-        <label for="speed">Speed (0-100):</label>
+        <label for="speed">Speed Multiplier (0-100):</label>
         <input type="range" id="speed" name="speed" min="0" max="100" value="50">
     </div>
-    <div id="joystick"></div>
+    <div id="joystick">
+        <div id="knob"></div>
+    </div>
 
     <script>
-        function controlMotor(action, speed) {
-            const motor = document.getElementById('motor').value;
+        const joystick = document.getElementById('joystick');
+        const knob = document.getElementById('knob');
+        const speedControl = document.getElementById('speed');
+        let isDragging = false;
 
+        joystick.addEventListener('mousedown', function(e) {
+            isDragging = true;
+        });
+
+        document.addEventListener('mouseup', function(e) {
+            isDragging = false;
+            // Reset the knob position to the center
+            knob.style.top = '75px';
+            knob.style.left = '75px';
+            // Stop motors
+            controlMotors(0, 0);
+        });
+
+        document.addEventListener('mousemove', function(e) {
+            if (isDragging) {
+                const rect = joystick.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                const deltaX = e.clientX - centerX;
+                const deltaY = e.clientY - centerY;
+                const distance = Math.min(75, Math.sqrt(deltaX * deltaX + deltaY * deltaY));
+                const angle = Math.atan2(deltaY, deltaX);
+
+                const knobX = 75 + distance * Math.cos(angle);
+                const knobY = 75 + distance * Math.sin(angle);
+                knob.style.left = `${knobX}px`;
+                knob.style.top = `${knobY}px`;
+
+                const speedMultiplier = speedControl.value / 100;
+                const motorA = Math.max(0, Math.min(100, 50 + (distance * speedMultiplier * Math.sin(angle))));
+                const motorB = Math.max(0, Math.min(100, 50 + (distance * speedMultiplier * Math.cos(angle))));
+                controlMotors(motorA, motorB);
+            }
+        });
+
+        function controlMotors(motorA, motorB) {
             fetch('/control', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: `motor=${motor}&action=${action}&speed=${speed}`
+                body: `motorA=${motorA}&motorB=${motorB}`
             });
         }
-
-        const joystick = nipplejs.create({
-            zone: document.getElementById('joystick'),
-            mode: 'static',
-            position: { left: '50%', top: '50%' },
-            color: 'blue'
-        });
-
-        joystick.on('move', (evt, data) => {
-            const speed = document.getElementById('speed').value;
-            if (data.direction) {
-                const direction = data.direction.angle;
-                if (direction === 'up') {
-                    controlMotor('forward', speed);
-                } else if (direction === 'down') {
-                    controlMotor('backward', speed);
-                } else if (direction === 'left') {
-                    controlMotor('left', speed);
-                } else if (direction === 'right') {
-                    controlMotor('right', speed);
-                }
-            }
-        });
-
-        joystick.on('end', () => {
-            controlMotor('stop', 0);
-        });
     </script>
 </body>
 </html>

@@ -27,23 +27,23 @@ pwm_b = GPIO.PWM(MOTOR_B_ENABLE, 1000)
 pwm_a.start(0)
 pwm_b.start(0)
 
-def set_motor_a(forward, speed):
-    if forward:
+def set_motor_a(speed):
+    if speed >= 0:
         GPIO.output(MOTOR_A_PIN1, GPIO.HIGH)
         GPIO.output(MOTOR_A_PIN2, GPIO.LOW)
     else:
         GPIO.output(MOTOR_A_PIN1, GPIO.LOW)
         GPIO.output(MOTOR_A_PIN2, GPIO.HIGH)
-    pwm_a.ChangeDutyCycle(speed)
+    pwm_a.ChangeDutyCycle(abs(speed))
 
-def set_motor_b(forward, speed):
-    if forward:
+def set_motor_b(speed):
+    if speed >= 0:
         GPIO.output(MOTOR_B_PIN1, GPIO.HIGH)
         GPIO.output(MOTOR_B_PIN2, GPIO.LOW)
     else:
         GPIO.output(MOTOR_B_PIN1, GPIO.LOW)
         GPIO.output(MOTOR_B_PIN2, GPIO.HIGH)
-    pwm_b.ChangeDutyCycle(speed)
+    pwm_b.ChangeDutyCycle(abs(speed))
 
 @app.route('/')
 def index():
@@ -51,33 +51,11 @@ def index():
 
 @app.route('/control', methods=['POST'])
 def control():
-    motor = request.form['motor']
-    action = request.form['action']
-    speed = int(request.form['speed'])
+    motor_a_speed = float(request.form['motorA'])
+    motor_b_speed = float(request.form['motorB'])
 
-    if motor == 'A':
-        if action == 'forward':
-            set_motor_a(True, speed)
-        elif action == 'backward':
-            set_motor_a(False, speed)
-        elif action == 'stop':
-            set_motor_a(True, 0)
-        elif action == 'left':  # Adicione a lógica de controle adicional se necessário
-            set_motor_a(True, speed)  # Defina o comportamento para a ação 'left'
-        elif action == 'right':  # Adicione a lógica de controle adicional se necessário
-            set_motor_a(True, speed)  # Defina o comportamento para a ação 'right'
-
-    elif motor == 'B':
-        if action == 'forward':
-            set_motor_b(True, speed)
-        elif action == 'backward':
-            set_motor_b(False, speed)
-        elif action == 'stop':
-            set_motor_b(True, 0)
-        elif action == 'left':  # Adicione a lógica de controle adicional se necessário
-            set_motor_b(True, speed)  # Defina o comportamento para a ação 'left'
-        elif action == 'right':  # Adicione a lógica de controle adicional se necessário
-            set_motor_b(True, speed)  # Defina o comportamento para a ação 'right'
+    set_motor_a(motor_a_speed)
+    set_motor_b(motor_b_speed)
 
     return 'OK'
 
