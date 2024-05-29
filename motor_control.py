@@ -22,7 +22,7 @@ GPIO.setup(MOTOR_B_PIN2, GPIO.OUT)
 GPIO.setup(MOTOR_B_ENABLE, GPIO.OUT)
 
 # Configuração PWM
-pwm_a = GPIO.PPWM(MOTOR_A_ENABLE, 1000)
+pwm_a = GPIO.PWM(MOTOR_A_ENABLE, 1000)
 pwm_b = GPIO.PWM(MOTOR_B_ENABLE, 1000)
 pwm_a.start(0)
 pwm_b.start(0)
