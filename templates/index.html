@@ -3,21 +3,13 @@
 <head>
     <title>Motor Control</title>
     <style>
-        .joystick {
-            display: grid;
-            grid-template-areas: 
-                "up up up"
-                "left stop right"
-                "down down down";
-            gap: 10px;
-            justify-items: center;
-            align-items: center;
-        }
-        .joystick button {
-            width: 50px;
-            height: 50px;
+        #joystick {
+            width: 200px;
+            height: 200px;
+            position: relative;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nipplejs/0.8.7/nipplejs.min.js"></script>
 </head>
 <body>
     <h1>Motor Control</h1>
@@ -32,18 +24,11 @@
         <label for="speed">Speed (0-100):</label>
         <input type="range" id="speed" name="speed" min="0" max="100" value="50">
     </div>
-    <div class="joystick">
-        <button onclick="controlMotor('forward')">Up</button>
-        <button onclick="controlMotor('left')">Left</button>
-        <button onclick="controlMotor('stop')">Stop</button>
-        <button onclick="controlMotor('right')">Right</button>
-        <button onclick="controlMotor('backward')">Down</button>
-    </div>
+    <div id="joystick"></div>
 
     <script>
-        function controlMotor(action) {
+        function controlMotor(action, speed) {
             const motor = document.getElementById('motor').value;
-            const speed = document.getElementById('speed').value;
 
             fetch('/control', {
                 method: 'POST',
@@ -53,6 +38,33 @@
                 body: `motor=${motor}&action=${action}&speed=${speed}`
             });
         }
+
+        const joystick = nipplejs.create({
+            zone: document.getElementById('joystick'),
+            mode: 'static',
+            position: { left: '50%', top: '50%' },
+            color: 'blue'
+        });
+
+        joystick.on('move', (evt, data) => {
+            const speed = document.getElementById('speed').value;
+            if (data.direction) {
+                const direction = data.direction.angle;
+                if (direction === 'up') {
+                    controlMotor('forward', speed);
+                } else if (direction === 'down') {
+                    controlMotor('backward', speed);
+                } else if (direction === 'left') {
+                    controlMotor('left', speed);
+                } else if (direction === 'right') {
+                    controlMotor('right', speed);
+                }
+            }
+        });
+
+        joystick.on('end', () => {
+            controlMotor('stop', 0);
+        });
     </script>
 </body>
 </html>

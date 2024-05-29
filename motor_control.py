@@ -62,10 +62,10 @@ def control():
             set_motor_a(False, speed)
         elif action == 'stop':
             set_motor_a(True, 0)
-        elif action == 'left':  # Additional control logic if needed
-            set_motor_a(True, speed)  # Define behavior for 'left' action
-        elif action == 'right':  # Additional control logic if needed
-            set_motor_a(True, speed)  # Define behavior for 'right' action
+        elif action == 'left':  # Adicione a lógica de controle adicional se necessário
+            set_motor_a(True, speed)  # Defina o comportamento para a ação 'left'
+        elif action == 'right':  # Adicione a lógica de controle adicional se necessário
+            set_motor_a(True, speed)  # Defina o comportamento para a ação 'right'
 
     elif motor == 'B':
         if action == 'forward':
@@ -74,10 +74,10 @@ def control():
             set_motor_b(False, speed)
         elif action == 'stop':
             set_motor_b(True, 0)
-        elif action == 'left':  # Additional control logic if needed
-            set_motor_b(True, speed)  # Define behavior for 'left' action
-        elif action == 'right':  # Additional control logic if needed
-            set_motor_b(True, speed)  # Define behavior for 'right' action
+        elif action == 'left':  # Adicione a lógica de controle adicional se necessário
+            set_motor_b(True, speed)  # Defina o comportamento para a ação 'left'
+        elif action == 'right':  # Adicione a lógica de controle adicional se necessário
+            set_motor_b(True, speed)  # Defina o comportamento para a ação 'right'
 
     return 'OK'
 
