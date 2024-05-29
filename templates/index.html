@@ -21,6 +21,13 @@
             left: 75px;
             cursor: pointer;
         }
+        #stopButton {
+            margin-top: 20px;
+            background-color: red;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +36,7 @@
         <label for="speed">Speed Multiplier (0-100):</label>
         <input type="range" id="speed" name="speed" min="0" max="100" value="50">
     </div>
-    <div id="joystick">
+    <div id="stopButton">
         <button onclick="controlMotors(0, 0)">Emergency Stop</button>
     </div>
     <div id="joystick">
