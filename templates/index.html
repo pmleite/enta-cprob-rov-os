@@ -2,27 +2,57 @@
 <html>
 <head>
     <title>Motor Control</title>
+    <style>
+        .joystick {
+            display: grid;
+            grid-template-areas: 
+                "up up up"
+                "left stop right"
+                "down down down";
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+        }
+        .joystick button {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
     <h1>Motor Control</h1>
-    <form action="/control" method="post">
+    <div>
         <label for="motor">Motor:</label>
-        <select name="motor" id="motor">
+        <select id="motor">
             <option value="A">Motor A</option>
             <option value="B">Motor B</option>
         </select>
-        <br>
-        <label for="action">Action:</label>
-        <select name="action" id="action">
-            <option value="forward">Forward</option>
-            <option value="backward">Backward</option>
-            <option value="stop">Stop</option>
-        </select>
-        <br>
+    </div>
+    <div>
         <label for="speed">Speed (0-100):</label>
-        <input type="number" id="speed" name="speed" min="0" max="100" value="50">
-        <br>
-        <button type="submit">Submit</button>
-    </form>
+        <input type="range" id="speed" name="speed" min="0" max="100" value="50">
+    </div>
+    <div class="joystick">
+        <button onclick="controlMotor('forward')">Up</button>
+        <button onclick="controlMotor('left')">Left</button>
+        <button onclick="controlMotor('stop')">Stop</button>
+        <button onclick="controlMotor('right')">Right</button>
+        <button onclick="controlMotor('backward')">Down</button>
+    </div>
+
+    <script>
+        function controlMotor(action) {
+            const motor = document.getElementById('motor').value;
+            const speed = document.getElementById('speed').value;
+
+            fetch('/control', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `motor=${motor}&action=${action}&speed=${speed}`
+            });
+        }
+    </script>
 </body>
 </html>

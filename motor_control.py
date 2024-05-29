@@ -54,7 +54,7 @@ def control():
     motor = request.form['motor']
     action = request.form['action']
     speed = int(request.form['speed'])
-    
+
     if motor == 'A':
         if action == 'forward':
             set_motor_a(True, speed)
@@ -62,6 +62,11 @@ def control():
             set_motor_a(False, speed)
         elif action == 'stop':
             set_motor_a(True, 0)
+        elif action == 'left':  # Additional control logic if needed
+            set_motor_a(True, speed)  # Define behavior for 'left' action
+        elif action == 'right':  # Additional control logic if needed
+            set_motor_a(True, speed)  # Define behavior for 'right' action
+
     elif motor == 'B':
         if action == 'forward':
             set_motor_b(True, speed)
@@ -69,7 +74,11 @@ def control():
             set_motor_b(False, speed)
         elif action == 'stop':
             set_motor_b(True, 0)
-    
+        elif action == 'left':  # Additional control logic if needed
+            set_motor_b(True, speed)  # Define behavior for 'left' action
+        elif action == 'right':  # Additional control logic if needed
+            set_motor_b(True, speed)  # Define behavior for 'right' action
+
     return 'OK'
 
 if __name__ == "__main__":
