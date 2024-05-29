@@ -4,17 +4,17 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 # Configuração dos pinos
-MOTOR_A_PIN1 = 20
-MOTOR_A_PIN2 = 21
-MOTOR_A_ENABLE = 16
+MOTOR_A_PIN1 = 16
+MOTOR_A_PIN2 = 20
+MOTOR_A_ENABLE = 21
 
 MOTOR_B_PIN1 = 19
 MOTOR_B_PIN2 = 26
 MOTOR_B_ENABLE = 13
 
-MOTOR_C_PIN1 = 27
-MOTOR_C_PIN2 = 17
-MOTOR_C_ENABLE = 22
+MOTOR_C_PIN1 = 0
+MOTOR_C_PIN2 = 5
+MOTOR_C_ENABLE = 6
 
 MOTOR_D_PIN1 = 7
 MOTOR_D_PIN2 = 8
