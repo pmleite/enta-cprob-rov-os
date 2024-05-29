@@ -22,28 +22,20 @@ GPIO.setup(MOTOR_B_PIN2, GPIO.OUT)
 GPIO.setup(MOTOR_B_ENABLE, GPIO.OUT)
 
 # Configuração PWM
-pwm_a = GPIO.PWM(MOTOR_A_ENABLE, 1000)
+pwm_a = GPIO.PPWM(MOTOR_A_ENABLE, 1000)
 pwm_b = GPIO.PWM(MOTOR_B_ENABLE, 1000)
 pwm_a.start(0)
 pwm_b.start(0)
 
-def set_motor_a(speed):
+def set_motor(motor_pins, speed):
+    pin1, pin2, pwm = motor_pins
     if speed >= 0:
-        GPIO.output(MOTOR_A_PIN1, GPIO.HIGH)
-        GPIO.output(MOTOR_A_PIN2, GPIO.LOW)
+        GPIO.output(pin1, GPIO.HIGH)
+        GPIO.output(pin2, GPIO.LOW)
     else:
-        GPIO.output(MOTOR_A_PIN1, GPIO.LOW)
-        GPIO.output(MOTOR_A_PIN2, GPIO.HIGH)
-    pwm_a.ChangeDutyCycle(abs(speed))
-
-def set_motor_b(speed):
-    if speed >= 0:
-        GPIO.output(MOTOR_B_PIN1, GPIO.HIGH)
-        GPIO.output(MOTOR_B_PIN2, GPIO.LOW)
-    else:
-        GPIO.output(MOTOR_B_PIN1, GPIO.LOW)
-        GPIO.output(MOTOR_B_PIN2, GPIO.HIGH)
-    pwm_b.ChangeDutyCycle(abs(speed))
+        GPIO.output(pin1, GPIO.LOW)
+        GPIO.output(pin2, GPIO.HIGH)
+    pwm.ChangeDutyCycle(abs(speed))
 
 @app.route('/')
 def index():
@@ -54,8 +46,8 @@ def control():
     motor_a_speed = float(request.form['motorA'])
     motor_b_speed = float(request.form['motorB'])
 
-    set_motor_a(motor_a_speed)
-    set_motor_b(motor_b_speed)
+    set_motor((MOTOR_A_PIN1, MOTOR_A_PIN2, pwm_a), motor_a_speed)
+    set_motor((MOTOR_B_PIN1, MOTOR_B_PIN2, pwm_b), motor_b_speed)
 
     return 'OK'
 
