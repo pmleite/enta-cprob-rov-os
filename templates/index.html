@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ROV Control</title>
+    <title>Motor Control</title>
 </head>
 <body>
-    <h1>ROV Control</h1>
-    <div> 
-        <iframe src="http://192.168.68.134:5000/video_feed" height="480" width="640"></iframe>
-    </div>
-    <div>
-        <input type="range" min="-100" max="100" value="0" id="motor1">
-        <button onclick="sendMotorSpeed(1)">Set Motor 1</button>
-    </div>
-    <script>
-        function sendMotorSpeed(motor) {
-            var speed = document.getElementById('motor' + motor).value;
-            fetch('/control', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'motor=' + motor + '&speed=' + speed
-            });
-        }
-    </script>
+    <h1>Motor Control</h1>
+    <form action="/control" method="post">
+        <label for="motor">Motor:</label>
+        <select name="motor" id="motor">
+            <option value="A">Motor A</option>
+            <option value="B">Motor B</option>
+        </select>
+        <br>
+        <label for="action">Action:</label>
+        <select name="action" id="action">
+            <option value="forward">Forward</option>
+            <option value="backward">Backward</option>
+            <option value="stop">Stop</option>
+        </select>
+        <br>
+        <label for="speed">Speed (0-100):</label>
+        <input type="number" id="speed" name="speed" min="0" max="100" value="50">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
