@@ -67,11 +67,13 @@ def index():
 def control():
     motor_a_speed = float(request.form['motorA'])
     motor_b_speed = float(request.form['motorB'])
+    motor_c_speed = float(request.form['motorA'])
+    motor_d_speed = float(request.form['motorB'])
 
     set_motor((MOTOR_A_PIN1, MOTOR_A_PIN2, pwm_a), motor_a_speed)
     set_motor((MOTOR_B_PIN1, MOTOR_B_PIN2, pwm_b), motor_b_speed)
-    set_motor((MOTOR_C_PIN1, MOTOR_C_PIN2, pwm_c), motor_a_speed)
-    set_motor((MOTOR_D_PIN1, MOTOR_D_PIN2, pwm_d), motor_b_speed)
+    set_motor((MOTOR_C_PIN1, MOTOR_C_PIN2, pwm_c), motor_c_speed)
+    set_motor((MOTOR_D_PIN1, MOTOR_D_PIN2, pwm_d), motor_d_speed)
     
     return 'OK'
 
