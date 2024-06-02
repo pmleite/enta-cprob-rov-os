@@ -68,7 +68,7 @@ pwm_RR_B.start(0)
 
 
 # Set up PWM for propulsors
-def set_motor(motorPWM_A, motorPWM_B, speed, direction):
+def set_motor(motorPWM_A, motorPWM_B, speed, direction = "U"):
   
   if speed == "U":
     motorPWM_A.ChangeDutyCycle(speed)
@@ -81,14 +81,14 @@ def set_motor(motorPWM_A, motorPWM_B, speed, direction):
 def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
-def control():
-  set_motor(pwm_FL_A, pwm_FL_B, 30, "U")
+def vertical_control():
+  set_motor(pwm_FL_A, pwm_FL_B, 30, "D")
 
 
 if __name__ == '__main__':
   try:
     while True:
-      control()
+      vertical_control()
   except KeyboardInterrupt:
       pass
       pwm_FL_A.stop()
