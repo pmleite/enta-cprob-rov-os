@@ -1,129 +1,75 @@
 import RPi.GPIO as GPIO
+import time
 
-GPIO.setmode(GPIO.BCM) 
+# Set up GPIO pins
+Motor1A = 17
+Motor1B = 27
+Motor2A = 22
+Motor2B = 23
 
-GPIO.setup(17, GPIO.OUT)
-GPIO.setup(27, GPIO.OUT)
-GPIO.setup(22, GPIO.OUT)
+# GPIO setup
+GPIO.setmode(GPIO.BCM)    # Use BCM pin numbering
+GPIO.setup(Motor1A, GPIO.OUT)
+GPIO.setup(Motor1B, GPIO.OUT)
+GPIO.setup(Motor2A, GPIO.OUT)
+GPIO.setup(Motor2B, GPIO.OUT)
 
-direction = input('Please define the direction (Left=1 or Right=2): ')
-dc = input('Please define the Motor PWM Duty Cycle (0-100): ')
-hz = input ('HZ: ')
-pwm = GPIO.PWM(27, hz)
+# Set up PWM on the GPIO pins
+pwm1A = GPIO.PWM(Motor1A, 100)  # PWM with 100Hz frequency on Motor1A
+pwm1B = GPIO.PWM(Motor1B, 100)  # PWM with 100Hz frequency on Motor1B
+pwm2A = GPIO.PWM(Motor2A, 100)  # PWM with 100Hz frequency on Motor2A
+pwm2B = GPIO.PWM(Motor2B, 100)  # PWM with 100Hz frequency on Motor2B
 
-if direction == 1:
-	GPIO.output(17, 1)
-	GPIO.output(22, 0)
-elif direction == 2:
-	GPIO.output(17, 0)
-	GPIO.output(22, 1)
+# Start PWM with a duty cycle of 0 (motors off)
+pwm1A.start(0)
+pwm1B.start(0)
+pwm2A.start(0)
+pwm2B.start(0)
+
+def set_motor1_speed(speed):
+    if speed > 0:
+        pwm1A.ChangeDutyCycle(speed)
+        pwm1B.ChangeDutyCycle(0)
+    else:
+        pwm1A.ChangeDutyCycle(0)
+        pwm1B.ChangeDutyCycle(-speed)
+
+def set_motor2_speed(speed):
+    if speed > 0:
+        pwm2A.ChangeDutyCycle(speed)
+        pwm2B.ChangeDutyCycle(0)
+    else:
+        pwm2A.ChangeDutyCycle(0)
+        pwm2B.ChangeDutyCycle(-speed)
+
+def rotate_clockwise():
+    set_motor1_speed(100)
+    set_motor2_speed(100)
+
+def rotate_counterclockwise():
+    set_motor1_speed(-100)
+    set_motor2_speed(-100)
+
+def stop_motors():
+    set_motor1_speed(0)
+    set_motor2_speed(0)
 
 try:
-        while True:
-                pwm.start(dc)
-
+    while True:
+        rotate_clockwise()
+        time.sleep(2)  # Rotate clockwise for 2 seconds
+        stop_motors()
+        time.sleep(1)  # Stop for 1 second
+        rotate_counterclockwise()
+        time.sleep(2)  # Rotate counterclockwise for 2 seconds
+        stop_motors()
+        time.sleep(1)  # Stop for 1 second
 except KeyboardInterrupt:
-        pwm.stop()
-        GPIO.cleanup()
+    pass
 
-
-
-
-
-# import RPi.GPIO as GPIO
-# GPIO.setmode(GPIO.BCM)  
-
-# # Configuração dos pinos
-# MOTOR_FL_PIN1   = 17
-# MOTOR_FL_PIN2   = 22
-# MOTOR_FL_PWM    = 27
-
-# MOTOR_FR_PIN1   = 23
-# MOTOR_FR_PIN2   = 24
-# MOTOR_FR_PWM    = 25
-
-# MOTOR_BL_PIN1   = 21
-# MOTOR_BL_PIN2   = 20
-# MOTOR_BL_PWM    = 16
-
-# MOTOR_BR_PIN1   = 13
-# MOTOR_BR_PIN2   = 19
-# MOTOR_BR_PWM    = 26
-
-# # GPIO Configuration
-# GPIO.setmode(GPIO.BCM)
-# GPIO.setup(MOTOR_FL_PIN1, GPIO.OUT)
-# GPIO.setup(MOTOR_FL_PIN2, GPIO.OUT)
-# GPIO.setup(MOTOR_FL_PWM,  GPIO.OUT)
-# GPIO.setup(MOTOR_FR_PIN1, GPIO.OUT)
-# GPIO.setup(MOTOR_FR_PIN2, GPIO.OUT)
-# GPIO.setup(MOTOR_FR_PWM,  GPIO.OUT)
-# GPIO.setup(MOTOR_BL_PIN1, GPIO.OUT)
-# GPIO.setup(MOTOR_BL_PIN2, GPIO.OUT)
-# GPIO.setup(MOTOR_BL_PWM,  GPIO.OUT)
-# GPIO.setup(MOTOR_BR_PIN1, GPIO.OUT)
-# GPIO.setup(MOTOR_BR_PIN2, GPIO.OUT)
-# GPIO.setup(MOTOR_BR_PWM,  GPIO.OUT)
-# print("GPIO Configured")
-
-# # PWM Initialization
-# pwm_1 = GPIO.PWM(MOTOR_FL_PWM, 40)
-# pwm_2 = GPIO.PWM(MOTOR_FR_PWM, 40)
-# pwm_3 = GPIO.PWM(MOTOR_BL_PWM, 40)
-# pwm_4 = GPIO.PWM(MOTOR_BR_PWM, 40)
-# print("PWM Initialized")
-# pwm_1.start(0)
-# pwm_2.start(0)
-# pwm_3.start(0)
-# pwm_4.start(0)
-# print("PWM Started")
-
-# def set_motor(motor_pins, speed):
-    
-#         pin1, pin2, pwm = motor_pins
-        
-#         if speed >= 0:
-#             GPIO.output(pin1, GPIO.HIGH)
-#             GPIO.output(pin2, GPIO.LOW)
-#         else:
-#             GPIO.output(pin1, GPIO.LOW)
-#             GPIO.output(pin2, GPIO.HIGH)
-            
-#         pwm.ChangeDutyCycle(abs(speed))
-        
-# def teste():  
-#     # Test
-#     while True: 
-#         print("Teste")
-#         set_motor((MOTOR_FL_PIN1, MOTOR_FL_PIN2, pwm_1), 50)
-#         set_motor((MOTOR_FR_PIN1, MOTOR_FR_PIN2, pwm_2), 100)
-#         set_motor((MOTOR_BL_PIN1, MOTOR_BL_PIN2, pwm_3), 100)
-#         set_motor((MOTOR_BR_PIN1, MOTOR_BR_PIN2, pwm_4), 100)
-
-
-# if __name__ == "__main__":
-#     try:
-#         teste()
-#     except KeyboardInterrupt:
-#         pass
-#     finally:
-#         print("Cleaning up")
-#         pwm_1.stop()
-#         pwm_2.stop()
-#         pwm_3.stop()
-#         pwm_4.stop()
-#         GPIO.cleanup()
-#         print("Program Finished")
-
-    
-        
-    
-
-
-
-
-
-
-
-
-
+# Cleanup
+pwm1A.stop()
+pwm1B.stop()
+pwm2A.stop()
+pwm2B.stop()
+GPIO.cleanup()
