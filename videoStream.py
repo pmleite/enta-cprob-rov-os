@@ -26,18 +26,6 @@ def gen():
 def video_feed():
     return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-# Motor control function
-def set_motor_speed(motor, speed):
-    pwm_value = int((speed + 100) * 2.55)
-    pi.set_PWM_dutycycle(motor, pwm_value)
-    
-@app.route('/control', methods=['POST'])
-def control():
-    motor = int(request.form['motor'])
-    speed = int(request.form['speed'])
-    set_motor_speed(motor, speed)
-    return '<h1>teste</h1>', 204
-  
 @app.route('/')
 def index():
     return render_template('index.html')
