@@ -1,6 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 
+# Definitions
+MINIUM_SPEED = 60
+
 # Set Vertical propulsors GPIO pins
 MOTOR_FL_PIN_A = 22  
 MOTOR_FL_PIN_B = 23
@@ -84,6 +87,11 @@ def stop_motors():
 # Set up PWM for propulsors
 def set_motor(motorPWM_A, motorPWM_B, speed, direction):
   
+  # Check if speed is lower than MINIUM_SPEED
+  if speed < MINIUM_SPEED:
+    speed = MINIUM_SPEED
+  
+  # Set motor direction
   if direction == "U":
     motorPWM_A.ChangeDutyCycle(speed)
     motorPWM_B.ChangeDutyCycle(0)
@@ -96,14 +104,14 @@ def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
 def vertical_control(direction="U"):
-  set_motor(pwm_FL_A, pwm_FL_B, 50, direction)
-  set_motor(pwm_FR_A, pwm_FR_B, 50, direction)
-  set_motor(pwm_BL_A, pwm_BL_B, 50, direction)
-  set_motor(pwm_BR_A, pwm_BR_B, 50, direction)
+  set_motor(pwm_FL_A, pwm_FL_B, 60, direction)
+  set_motor(pwm_FR_A, pwm_FR_B, 60, direction)
+  set_motor(pwm_BL_A, pwm_BL_B, 60, direction)
+  set_motor(pwm_BR_A, pwm_BR_B, 60, direction)
   
 def horizontal_control(direction="R"):
-  set_motor(pwm_RL_A, pwm_RL_B, 50, direction)
-  set_motor(pwm_RR_A, pwm_RR_B, 50, direction)
+  set_motor(pwm_RL_A, pwm_RL_B, 60, direction)
+  set_motor(pwm_RR_A, pwm_RR_B, 60, direction)
 
 
 if __name__ == '__main__':
@@ -111,7 +119,9 @@ if __name__ == '__main__':
     while True:
       vertical_control("U")
       horizontal_control("F")
+      set_ligths(True)
   except KeyboardInterrupt:
       pass
+      set_ligths(False)
       stop_motors()
       GPIO.cleanup()
