@@ -5,9 +5,6 @@ import time
 # Definitions
 MINIUM_SPEED = 70
 
-# Video capture
-camera = cv2.VideoCapture(0)
-
 # floodSensor
 FLOOD_SENSOR_PIN = 10
 # Set Vertical propulsors GPIO pins
