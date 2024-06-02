@@ -58,7 +58,7 @@ def set_motor(motor, speed, direction):
     
   motorPinA, motorPinB = motor
   
-  if direction == "Up" 0:
+  if direction == "Up":
     GPIO.output(motorPinA, speed)
     GPIO.output(motorPinB, GPIO.LOW)
   else:
