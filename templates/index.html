@@ -28,18 +28,34 @@
             border-radius: 5px;
             display: inline-block;
         }
-        .Title{
+        .Center{
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 100%;
             text-align: center;
         }
+        .Title{
+            color: #333;
+            background-color: #f1f1f1;
+            height: 100px;
+        }
+        .EmergencyButton{
+            background-color: red;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
-    <div class="Title">
+    <div class="Title Center">
         <h1>Motor Control</h1>
+        <h2>ENTA_CPROB - ROV Control</h2>
+    </div>
+
+    <div>
+        <button class="EmergencyButton Center" onclick="energencySTOP()">Emergency Stop</button>
     </div>
     
     <div>
@@ -47,7 +63,7 @@
         <input type="range" id="speed" name="speed" min="0" max="255" value="127">
     </div>
     <div id="stopButton">
-        <button onclick="controlMotors(0, 0)">Emergency Stop</button>
+        
     </div>
     <div id="joystick">
         <div id="knob"></div>
