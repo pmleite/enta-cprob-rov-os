@@ -6,10 +6,11 @@ Motor1A = 17
 Motor1B = 27
 Motor2A = 22
 Motor2B = 23
-Motor3A = 24
-Motor3B = 25
-Motor4A = 8
-Motor4B = 7
+
+Motor3A = 12
+Motor3B = 16
+Motor4A = 20
+Motor4B = 21
 
 # GPIO setup
 GPIO.setmode(GPIO.BCM)    # Use BCM pin numbering
@@ -58,26 +59,48 @@ def set_motor2_speed(speed):
         pwm2A.ChangeDutyCycle(0)
         pwm2B.ChangeDutyCycle(-speed)
 
+def set_motor3_speed(speed):
+    if speed > 0:
+        pwm3A.ChangeDutyCycle(speed)
+        pwm3B.ChangeDutyCycle(0)
+    else:
+        pwm3A.ChangeDutyCycle(0)
+        pwm3B.ChangeDutyCycle(-speed)
+        
+def set_motor4_speed(speed):
+    if speed > 0:
+        pwm4A.ChangeDutyCycle(speed)
+        pwm4B.ChangeDutyCycle(0)
+    else:
+        pwm4A.ChangeDutyCycle(0)
+        pwm4B.ChangeDutyCycle(-speed)
+
 def rotate_clockwise():
     set_motor1_speed(100)
     set_motor2_speed(100)
+    set_motor3_speed(100)
+    set_motor4_speed(100)
 
 def rotate_counterclockwise():
     set_motor1_speed(-100)
     set_motor2_speed(-100)
+    set_motor3_speed(-100)
+    set_motor4_speed(-100)
 
 def stop_motors():
     set_motor1_speed(0)
     set_motor2_speed(0)
+    set_motor3_speed(0)
+    set_motor4_speed(0)
 
 try:
     while True:
         rotate_clockwise()
-        time.sleep(2)  # Rotate clockwise for 2 seconds
+        time.sleep(5)  # Rotate clockwise for 2 seconds
         stop_motors()
         time.sleep(1)  # Stop for 1 second
         rotate_counterclockwise()
-        time.sleep(2)  # Rotate counterclockwise for 2 seconds
+        time.sleep(5)  # Rotate counterclockwise for 2 seconds
         stop_motors()
         time.sleep(1)  # Stop for 1 second
 except KeyboardInterrupt:
