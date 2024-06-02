@@ -159,7 +159,9 @@ def emergency():
 @app.route('/light', methods=['POST'])
 def lights():
     status = request.form['status']
-    set_ligths(status)
+    
+    print("status: ", status)
+  #  set_ligths(status)
     return "OK"
 
 if __name__ == "__main__":
