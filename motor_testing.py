@@ -1,6 +1,5 @@
 import RPi.GPIO as GPIO
-
-GPIO.setmode(GPIO.BCM)  
+  
 
 # Configuração dos pinos
 MOTOR_FL_PIN1   = 17
