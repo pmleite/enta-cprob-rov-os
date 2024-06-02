@@ -130,12 +130,12 @@ def horizontal_control(direction="R", spd=60):
   set_motor(pwm_RR_A, pwm_RR_B, spd, direction)
   
 def emergency_stop():
-  set_motor(pwm_FL_A, pwm_FL_B, 0, direction)
-  set_motor(pwm_FR_A, pwm_FR_B, 0, direction)
-  set_motor(pwm_BL_A, pwm_BL_B, 0, direction)
-  set_motor(pwm_BR_A, pwm_BR_B, 0, direction)
-  set_motor(pwm_RL_A, pwm_RL_B, 0, direction)
-  set_motor(pwm_RR_A, pwm_RR_B, 0, direction)
+  set_motor(pwm_FL_A, pwm_FL_B, 0, "U")
+  set_motor(pwm_FR_A, pwm_FR_B, 0, "U")
+  set_motor(pwm_BL_A, pwm_BL_B, 0, "U")
+  set_motor(pwm_BR_A, pwm_BR_B, 0, "U")
+  set_motor(pwm_RL_A, pwm_RL_B, 0, "U")
+  set_motor(pwm_RR_A, pwm_RR_B, 0, "U")
   
   
 @app.route('/')
