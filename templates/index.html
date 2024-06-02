@@ -46,6 +46,12 @@
             border-radius: 5px;
             display: inline-block;
         }
+        .btOnOff{
+            background-color: green;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -54,20 +60,13 @@
         <h2>ENTA_CPROB - ROV Control</h2>
     </div>
 
-    <div>
-        <button class="Center" onclick="lightON()">Light ON</button>
-        <button class="Center" onclick="lightOFF()">Light OFF</button>
+    <div class="Center">
+        <button class="btOnOff" onclick="lightON()">Light ON</button>
+        <button  onclick="lightOFF()">Light OFF</button>
 
-        <button class="EmergencyButton Center" onclick="emergencySTOP()">Emergency Stop</button>
+        <button class="EmergencyButton" onclick="emergencySTOP()">Emergency Stop</button>
     </div>
     
-    <div>
-        <label for="speed">Speed Multiplier (0-255):</label>
-        <input type="range" id="speed" name="speed" min="0" max="100" value="50">
-    </div>
-    <div id="stopButton">
-        
-    </div>
     <div id="joystick">
         <div id="knob"></div>
     </div>
