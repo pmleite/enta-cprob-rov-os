@@ -63,10 +63,10 @@ def teste():
     # Test
     while True: 
         print("Teste")
-        set_motor((MOTOR_FL_PIN1, MOTOR_FL_PIN2, pwm_1), 50)
-        set_motor((MOTOR_FR_PIN1, MOTOR_FR_PIN2, pwm_2), 100)
-        set_motor((MOTOR_BL_PIN1, MOTOR_BL_PIN2, pwm_3), 100)
-        set_motor((MOTOR_BR_PIN1, MOTOR_BR_PIN2, pwm_4), 100)
+        set_motor((MOTOR_FL_PIN1, MOTOR_FL_PIN2, pwm_1), 10)
+        set_motor((MOTOR_FR_PIN1, MOTOR_FR_PIN2, pwm_2), 10)
+        set_motor((MOTOR_BL_PIN1, MOTOR_BL_PIN2, pwm_3), 10)
+        set_motor((MOTOR_BR_PIN1, MOTOR_BR_PIN2, pwm_4), 10)
 
 
 if __name__ == "__main__":
