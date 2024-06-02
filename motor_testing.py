@@ -31,19 +31,22 @@ GPIO.setup(MOTOR_3_PWM, GPIO.OUT)
 GPIO.setup(MOTOR_4_PIN1, GPIO.OUT)
 GPIO.setup(MOTOR_4_PIN2, GPIO.OUT)
 GPIO.setup(MOTOR_4_PWM, GPIO.OUT)
+print("GPIO Configured")
 
 # PWM Initialization
 pwm_1 = GPIO.PWM(MOTOR_1_PWM, 100)
 pwm_2 = GPIO.PWM(MOTOR_2_PWM, 100)
 pwm_3 = GPIO.PWM(MOTOR_3_PWM, 100)
 pwm_4 = GPIO.PWM(MOTOR_4_PWM, 100)
+print("PWM Initialized")
 pwm_1.start(0)
 pwm_2.start(0)
 pwm_3.start(0)
 pwm_4.start(0)
+print("PWM Started")
 
 def set_motor(motor_pins, speed):
-        
+    
         pin1, pin2, pwm = motor_pins
         
         if speed >= 0:
@@ -52,11 +55,13 @@ def set_motor(motor_pins, speed):
         else:
             GPIO.output(pin1, GPIO.LOW)
             GPIO.output(pin2, GPIO.HIGH)
-        
+            
         pwm.ChangeDutyCycle(abs(speed))
         
 def teste():  
+    # Test
     while True: 
+        print("Teste")
         set_motor((MOTOR_1_PIN1, MOTOR_1_PIN2, pwm_1), 100)
         set_motor((MOTOR_2_PIN1, MOTOR_2_PIN2, pwm_2), 100)
         set_motor((MOTOR_3_PIN1, MOTOR_3_PIN2, pwm_3), 100)
