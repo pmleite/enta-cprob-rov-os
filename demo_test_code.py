@@ -137,9 +137,9 @@ def index():
 @app.route('/control', methods=['POST'])
 def control():
     
-    motorFL_BL = float(request.form['motorA'])
-    motorBL_BR = float(request.form['motorB'])
-    emergenCyStop = request.form['emergency']
+    motorFL_BL    = float(request.form['motorA'])
+    motorBL_BR    = float(request.form['motorB'])
+    emergenCyStop = float(request.form['emergency'])
     
     print("motorFL_BL: ", motorFL_BL)
     
