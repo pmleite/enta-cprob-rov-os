@@ -82,6 +82,7 @@ def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
 def vertical_control():
+  set_motor(pwm_FL_A, pwm_FL_B, 50, "D")
   set_motor(pwm_FR_A, pwm_FR_B, 50, "D")
 
 
