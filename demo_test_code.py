@@ -103,10 +103,7 @@ def check_flood_sensor():
 # Set up PWM for propulsors
 def set_motor(motorPWM_A, motorPWM_B, speed, direction):
   
-  # Check if speed is lower than MINIUM_SPEED
-  if speed < MINIUM_SPEED:
-    speed = MINIUM_SPEED
-  
+
   # Set motor direction
   if direction == "U":
     motorPWM_A.ChangeDutyCycle(speed)
