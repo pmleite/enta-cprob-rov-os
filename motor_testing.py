@@ -74,11 +74,13 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         pass
     finally:
+        print("Cleaning up")
         pwm_1.stop()
         # pwm_2.stop()
         # pwm_3.stop()
         # pwm_4.stop()
         GPIO.cleanup()
+        print("Program Finished")
 
     
         
