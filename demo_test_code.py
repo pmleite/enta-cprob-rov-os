@@ -96,7 +96,7 @@ if __name__ == '__main__':
   try:
     while True:
       vertical_control("U")
-      horizontal_control("R")
+      horizontal_control("F")
   except KeyboardInterrupt:
       pass
       pwm_FL_A.stop()
