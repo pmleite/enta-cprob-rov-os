@@ -1,6 +1,8 @@
-
+from flask import Flask, render_template, request
 import RPi.GPIO as GPIO
 import time
+
+app = Flask(__name__)
 
 # Definitions
 MINIUM_SPEED = 70
@@ -126,17 +128,31 @@ def vertical_control(direction="U"):
 def horizontal_control(direction="R"):
   set_motor(pwm_RL_A, pwm_RL_B, 60, direction)
   set_motor(pwm_RR_A, pwm_RR_B, 60, direction)
+  
+  
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/control', methods=['POST'])
+def control():
+    motor_a_speed = float(request.form['motorA'])
+    motor_b_speed = float(request.form['motorB'])
+    
+    return "OK"
 
 
-if __name__ == '__main__':
-  try:
-    while True:
-      vertical_control("U")
-      horizontal_control("F")
-      set_ligths(True)
-      check_flood_sensor()
-  except KeyboardInterrupt:
-      pass
+if __name__ == "__main__":
+    try:
+        app.run(host='0.0.0.0', port=5000)
+        while True:
+          vertical_control("U")
+          horizontal_control("F")
+          set_ligths(True)
+          check_flood_sensor()
+    except KeyboardInterrupt:
+        pass
+    finally:
       set_ligths(False)
       stop_motors()
       GPIO.cleanup()
