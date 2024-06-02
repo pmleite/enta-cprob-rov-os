@@ -112,11 +112,20 @@ def set_motor(motorPWM_A, motorPWM_B, speed, direction):
   if direction == "U":
     motorPWM_A.ChangeDutyCycle(abs(speed))
     motorPWM_B.ChangeDutyCycle(0)
-  else:
+
+  elif direction == "D":
+    motorPWM_A.ChangeDutyCycle(0)
+    motorPWM_B.ChangeDutyCycle(abs(speed))
+    
+  elif direction == "F":
+    motorPWM_A.ChangeDutyCycle(abs(speed))
+    motorPWM_B.ChangeDutyCycle(0)
+  
+  elif direction == "R":
     motorPWM_A.ChangeDutyCycle(0)
     motorPWM_B.ChangeDutyCycle(abs(speed))
   
-    
+  
 def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
   return  "OK"
@@ -165,6 +174,16 @@ def control():
 @app.route('/emergency', methods=['POST'])
 def emergency():
     emergency_stop()
+    return "OK"
+  
+@app.route('/forward', methods=['POST'])
+def forward():
+    horizontal_control("F", 80)
+    return "OK"
+  
+@app.route('/backward', methods=['POST'])
+def backward():
+    horizontal_control("R", 80)
     return "OK"
 
 @app.route('/light', methods=['POST'])
