@@ -52,6 +52,20 @@ pwm_RL_B = GPIO.PWM(MOTOR_RL_PIN_B, 100)
 pwm_RR_A = GPIO.PWM(MOTOR_RR_PIN_A, 100)
 pwm_RR_B = GPIO.PWM(MOTOR_RR_PIN_B, 100)
 
+pwm_FL_A.start(0)
+pwm_FL_B.start(0)
+pwm_FR_A.start(0)
+pwm_FR_B.start(0)
+pwm_BL_A.start(0)
+pwm_BL_B.start(0)
+pwm_BR_A.start(0)
+pwm_BR_B.start(0)
+pwm_RL_A.start(0)
+pwm_RL_B.start(0)
+pwm_RR_A.start(0)
+pwm_RR_B.start(0)
+
+
 
 # Set up PWM for propulsors
 def set_motor(motorPinA, motorPinB, speed, direction):
@@ -79,4 +93,6 @@ if __name__ == '__main__':
       pass
       pwm_FL_A.stop()
       pwm_FL_B.stop()
+      pwm_FR_A.stop()
+      pwm_FR_B.stop()
       GPIO.cleanup()
