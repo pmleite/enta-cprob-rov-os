@@ -154,11 +154,13 @@ def control():
 @app.route('/emergency', methods=['POST'])
 def emergency():
     stop_motors()
-    while True:
-      set_ligths(True)
-      check_flood_sensor()
     return "OK"
 
+@app.route('/light', methods=['POST'])
+def lights():
+    status = request.form['status']
+    set_ligths(status)
+    return "OK"
 
 if __name__ == "__main__":
     try:

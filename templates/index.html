@@ -55,6 +55,9 @@
     </div>
 
     <div>
+        <button class="Center" onclick="lightON()">Light ON</button>
+        <button class="Center" onclick="lightOFF()">Light OFF</button>
+        
         <button class="EmergencyButton Center" onclick="emergencySTOP()">Emergency Stop</button>
     </div>
     
@@ -130,6 +133,26 @@
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 body: `emergency=1`
+            });
+        }
+
+        function lightON(){
+            fetch('/light', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `status=1`
+            });
+        }
+
+        function lightOFF(){
+            fetch('/light', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `status=0`
             });
         }
 
