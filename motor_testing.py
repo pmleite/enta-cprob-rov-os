@@ -2,9 +2,9 @@ from gpiozero import PWMOutputDevice, DigitalOutputDevice
 from time import sleep
 
 # Define motor control pins
-PWM_PIN = 21
-IN1_PIN = 16
-IN2_PIN = 20
+PWM_PIN = 27
+IN1_PIN = 17
+IN2_PIN = 22
 
 # Initialize the motor control pins
 motor_pwm = PWMOutputDevice(PWM_PIN)
