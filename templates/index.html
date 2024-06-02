@@ -28,13 +28,6 @@
             left: 75px;
             cursor: pointer;
         }
-        #stopButton {
-            margin-top: 20px;
-            background-color: red;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-        }
         .Center{
             display: block;
             margin-left: auto;
@@ -73,7 +66,7 @@
         }
         .controls{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             margin-top: 20px;
             background-color: #00FF00;
         }
@@ -88,6 +81,7 @@
         .forwardButton{
             background-color: green;
             padding: 20px;
+            margin: 10px;
             border-radius: 5px;
             display: inline-block;
             width: 200px;
@@ -95,12 +89,36 @@
 
         }
         .backwardButton{
-            background-color: red;
+            background-color: green;
             padding: 20px;
+            margin: 10px;
             border-radius: 5px;
             display: inline-block;
             width: 200px;
             border: 2px solid black;
+        }
+        .stopButton{
+            background-color: red;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            width: 200px;
+            border: 2px solid black;
+        }
+        #button{
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            width: 200px;
+            border: 2px solid black;
+        }
+        .leftZone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
         }
     </style>
 </head>
@@ -117,10 +135,11 @@
     </div>
     
     <div class="controls">
-        <div>
+        <div class="leftZone">
             <div>
                 <div class="btns">
                     <button class="forwardButton" onclick="goForward()">Forward</button>
+                    <button class="stopButton" onclick="stop()">Stop</button>
                     <button class="backwardButton" onclick="goBackward()">Backward</button>
                 </div>
                 <div id="joystick">
@@ -208,6 +227,16 @@
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 body: `backward=1`
+            });
+        }
+
+        function stop(){
+            fetch('/stop', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `stop=1`
             });
         }
 

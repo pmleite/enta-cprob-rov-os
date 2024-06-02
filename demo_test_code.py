@@ -149,6 +149,11 @@ def emergency_stop():
   horizontal_control("R", 0)
   horizontal_control("R", 0)
   return "OK"
+
+def stopFR():
+  horizontal_control("R", 0)
+  horizontal_control("R", 0)
+  return "OK"
   
 @app.route('/')
 def index():
@@ -184,6 +189,11 @@ def forward():
 @app.route('/backward', methods=['POST'])
 def backward():
     horizontal_control("R", 80)
+    return "OK"
+  
+@app.route('/stop', methods=['POST'])
+def stop():
+    stopFR()
     return "OK"
 
 @app.route('/light', methods=['POST'])
