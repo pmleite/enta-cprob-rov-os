@@ -2,10 +2,10 @@ import RPi.GPIO as GPIO
 import time
 
 # Set Vertical propulsors GPIO pins
-MOTOR_FL_PIN_A = 17
-MOTOR_FL_PIN_B = 27
-MOTOR_FR_PIN_A = 22
-MOTOR_FR_PIN_B = 23
+MOTOR_FL_PIN_A = 22  
+MOTOR_FL_PIN_B = 23
+MOTOR_FR_PIN_A = 17
+MOTOR_FR_PIN_B = 27
 MOTOR_BL_PIN_A = 12
 MOTOR_BL_PIN_B = 16
 MOTOR_BR_PIN_A = 20
@@ -58,10 +58,10 @@ def set_motor(motor, speed, direction):
     
   motorPinA, motorPinB = motor
   
-  if direction == "Up":
+  if direction == "U":
     GPIO.output(motorPinA, speed)
     GPIO.output(motorPinB, GPIO.LOW)
-  elif direction == "Down":
+  elif direction == "D":
     GPIO.output(motorPinA, GPIO.LOW)
     GPIO.output(motorPinB, speed)
   
@@ -70,7 +70,7 @@ def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
 def control():
-  set_motor((MOTOR_FL_PIN_A, MOTOR_FL_PIN_B), 80, "Down")
+  set_motor((MOTOR_FL_PIN_A, MOTOR_FL_PIN_B), 80, "U")
 
 
 if __name__ == '__main__':
