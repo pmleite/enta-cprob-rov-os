@@ -75,7 +75,7 @@ def set_motor(motorPWM_A, motorPWM_B, speed, direction):
     motorPWM_B.ChangeDutyCycle(0)
   else:
     motorPWM_A.ChangeDutyCycle(0)
-    motorPWM_B.ChangeDutyCycle(-speed)
+    motorPWM_B.ChangeDutyCycle(speed)
   
     
 def set_ligths(status):
