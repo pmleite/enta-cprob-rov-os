@@ -88,14 +88,14 @@ def vertical_control(direction="U"):
   set_motor(pwm_BR_A, pwm_BR_B, 50, direction)
   
 def horizontal_control(direction="R"):
-  #set_motor(pwm_RL_A, pwm_RL_B, 50, direction)
+  set_motor(pwm_RL_A, pwm_RL_B, 50, direction)
   set_motor(pwm_RR_A, pwm_RR_B, 50, direction)
 
 
 if __name__ == '__main__':
   try:
     while True:
-      #vertical_control("U")
+      vertical_control("U")
       horizontal_control("R")
   except KeyboardInterrupt:
       pass
