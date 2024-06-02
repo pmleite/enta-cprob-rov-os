@@ -119,8 +119,8 @@
         <div>
             <div>
                 <div class="btns">
-                    <button class="forwardButton" onclick="lightON()">Forward</button>
-                    <button class="backwardButton" onclick="lightON()">Backward</button>
+                    <button class="forwardButton" onclick="goForward()">Forward</button>
+                    <button class="backwardButton" onclick="goBackward()">Backward</button>
                 </div>
                 <div id="joystick">
                     <div id="knob"></div>
@@ -209,7 +209,7 @@
                 body: `backward=1`
             });
         }
-        
+
         function emergencySTOP(){
             fetch('/emergency', {
                 method: 'POST',
