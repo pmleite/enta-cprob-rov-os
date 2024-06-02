@@ -2,10 +2,10 @@ import RPi.GPIO as GPIO
 import time
 
 # Set up GPIO pins
-Motor1A = 17
-Motor1B = 27
-Motor2A = 22
-Motor2B = 23
+Motor1A = 6
+Motor1B = 13
+Motor2A = 19
+Motor2B = 26
 
 # GPIO setup
 GPIO.setmode(GPIO.BCM)    # Use BCM pin numbering
