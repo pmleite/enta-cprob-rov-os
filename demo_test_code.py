@@ -45,7 +45,7 @@ GPIO.setup(MOTOR_RR_PIN_B, GPIO.OUT)
 GPIO.setup(LIGHT_PIN, GPIO.OUT)
 
 # Set up GPIO flood sensor pin mode
-GPIO.setup(DIGITAL_PIN, GPIO.IN)
+GPIO.setup(FLOOD_SENSOR_PIN, GPIO.IN)
 
 
 # Set up PWM for propulsors
