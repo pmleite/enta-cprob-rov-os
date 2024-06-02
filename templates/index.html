@@ -57,13 +57,13 @@
     <div>
         <button class="Center" onclick="lightON()">Light ON</button>
         <button class="Center" onclick="lightOFF()">Light OFF</button>
-        
+
         <button class="EmergencyButton Center" onclick="emergencySTOP()">Emergency Stop</button>
     </div>
     
     <div>
         <label for="speed">Speed Multiplier (0-255):</label>
-        <input type="range" id="speed" name="speed" min="0" max="255" value="127">
+        <input type="range" id="speed" name="speed" min="0" max="100" value="50">
     </div>
     <div id="stopButton">
         
@@ -75,7 +75,7 @@
     <script>
         const joystick = document.getElementById('joystick');
         const knob = document.getElementById('knob');
-        const speedControl = document.getElementById('speed');
+        const speedControl = 100;
         let isDragging = false;
 
         joystick.addEventListener('mousedown', function(e) {
@@ -101,7 +101,7 @@
                 knob.style.left = `${knobX}px`;
                 knob.style.top = `${knobY}px`;
 
-                const speedMultiplier = speedControl.value / 100;
+                const speedMultiplier = 1;
 
                 let motorASpeed = distance * speedMultiplier;
                 let motorBSpeed = distance * speedMultiplier;
@@ -121,7 +121,7 @@
                     motorASpeed = motorASpeed * (1 + Math.abs(deltaX / 75));
                     motorBSpeed = motorBSpeed * (1 - Math.abs(deltaX / 75));
                 }
-
+                console.log(motorASpeed, motorBSpeed);
                 controlMotors(motorASpeed, motorBSpeed);
             }
         });
