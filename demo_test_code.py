@@ -61,7 +61,7 @@ def set_motor(motor, speed, direction):
   if direction == "Up":
     GPIO.output(motorPinA, speed)
     GPIO.output(motorPinB, GPIO.LOW)
-  else:
+  elif direction == "Down":
     GPIO.output(motorPinA, GPIO.LOW)
     GPIO.output(motorPinB, speed)
   
@@ -70,7 +70,7 @@ def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
 def control():
-  set_motor((MOTOR_FL_PIN_A, MOTOR_FL_PIN_B), 80, "Up")
+  set_motor((MOTOR_FL_PIN_A, MOTOR_FL_PIN_B), 80, "Down")
 
 
 if __name__ == '__main__':
