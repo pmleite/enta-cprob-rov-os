@@ -141,8 +141,12 @@ def control():
     
     print("motorFL_BL: ", motorFL_BL)
     
-    vertical_control("U", motorFL_BL)
-    vertical_control("U", motorBL_BR)
+    if motorFL_BL > 0:
+      vertical_control("U", motorFL_BL)
+      vertical_control("U", motorBL_BR)
+    else:
+      vertical_control("D", motorFL_BL)
+      vertical_control("D", motorBL_BR)
   
     return "OK"
 
