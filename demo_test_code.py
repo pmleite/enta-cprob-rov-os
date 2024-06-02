@@ -1,12 +1,20 @@
+from flask import Flask, render_template, Response, request
 import RPi.GPIO as GPIO
+import cv2
 import time
 
 # Definitions
-MINIUM_SPEED = 60
+MINIUM_SPEED = 70
+tTCP_PORT    = 5000
+
+# Set up Flask app
+app = Flask(__name__)
+
+# Video capture
+camera = cv2.VideoCapture(0)
 
 # floodSensor
 FLOOD_SENSOR_PIN = 10
-
 # Set Vertical propulsors GPIO pins
 MOTOR_FL_PIN_A = 22  
 MOTOR_FL_PIN_B = 23
@@ -93,11 +101,10 @@ def stop_motors():
 # Check flood sensor
 def check_flood_sensor():
   if GPIO.input(FLOOD_SENSOR_PIN):
-    print("Not Flooded")
-    return True
-  else:
-    print("Flooded")
     return False
+  else:
+    print("Floode Alert!")
+    return True
 
 # Set up PWM for propulsors
 def set_motor(motorPWM_A, motorPWM_B, speed, direction):
@@ -129,9 +136,32 @@ def horizontal_control(direction="R"):
   set_motor(pwm_RR_A, pwm_RR_B, 60, direction)
 
 
+def genFrames():
+    while True:
+        ret, frame = camera.read()
+        if not ret:
+            break
+        _, buffer = cv2.imencode('.jpg', frame)
+        frame = buffer.tobytes()
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
+
+# Video streaming
+@app.route('/video_feed')
+def video_feed():
+    return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+
+
+
 if __name__ == '__main__':
   try:
     while True:
+      app.run(host='0.0.0.0', port=tcp_port)
       vertical_control("U")
       horizontal_control("F")
       set_ligths(True)
