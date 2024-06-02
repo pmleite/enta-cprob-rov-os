@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-  
+GPIO.setmode(GPIO.BCM)  
 
 # Configuração dos pinos
 MOTOR_FL_PIN1   = 17
@@ -35,10 +35,10 @@ GPIO.setup(MOTOR_BR_PWM,  GPIO.OUT)
 print("GPIO Configured")
 
 # PWM Initialization
-pwm_1 = GPIO.PWM(MOTOR_FL_PWM, 100)
-pwm_2 = GPIO.PWM(MOTOR_FR_PWM, 100)
-pwm_3 = GPIO.PWM(MOTOR_BL_PWM, 100)
-pwm_4 = GPIO.PWM(MOTOR_BR_PWM, 100)
+pwm_1 = GPIO.PWM(MOTOR_FL_PWM, 40)
+pwm_2 = GPIO.PWM(MOTOR_FR_PWM, 40)
+pwm_3 = GPIO.PWM(MOTOR_BL_PWM, 40)
+pwm_4 = GPIO.PWM(MOTOR_BR_PWM, 40)
 print("PWM Initialized")
 pwm_1.start(0)
 pwm_2.start(0)
@@ -63,10 +63,10 @@ def teste():
     # Test
     while True: 
         print("Teste")
-        set_motor((MOTOR_FL_PIN1, MOTOR_FL_PIN2, pwm_1), 10)
-        set_motor((MOTOR_FR_PIN1, MOTOR_FR_PIN2, pwm_2), 10)
-        set_motor((MOTOR_BL_PIN1, MOTOR_BL_PIN2, pwm_3), 10)
-        set_motor((MOTOR_BR_PIN1, MOTOR_BR_PIN2, pwm_4), 10)
+        set_motor((MOTOR_FL_PIN1, MOTOR_FL_PIN2, pwm_1), 50)
+        set_motor((MOTOR_FR_PIN1, MOTOR_FR_PIN2, pwm_2), 100)
+        set_motor((MOTOR_BL_PIN1, MOTOR_BL_PIN2, pwm_3), 100)
+        set_motor((MOTOR_BR_PIN1, MOTOR_BR_PIN2, pwm_4), 100)
 
 
 if __name__ == "__main__":
