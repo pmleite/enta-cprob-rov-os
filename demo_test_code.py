@@ -56,20 +56,21 @@ pwm_RR_B = GPIO.PWM(MOTOR_RR_PIN_B, 100)
 # Set up PWM for propulsors
 def set_motor(motor_pins, speed):
     
-    pin1, pin2, pwm = motor_pins
+  pin1, pin2, pwm = motor_pins
   
-    if speed >= 0:
-        GPIO.output(pin1, GPIO.HIGH)
-        GPIO.output(pin2, GPIO.LOW)
-    else:
-        GPIO.output(pin1, GPIO.LOW)
-        GPIO.output(pin2, GPIO.HIGH)
-    pwm.ChangeDutyCycle(abs(speed))
+  if speed >= 0:
+    GPIO.output(pin1, GPIO.HIGH)
+    GPIO.output(pin2, GPIO.LOW)
+  else:
+    GPIO.output(pin1, GPIO.LOW)
+    GPIO.output(pin2, GPIO.HIGH)
+  
+  pwm.ChangeDutyCycle(abs(speed))
     
 def set_ligths(status):
-    GPIO.output(LIGHT_PIN, status):
+  GPIO.output(LIGHT_PIN, status)
       
-def control()
+def control():
   set_motor((MOTOR_FL_PIN_A, MOTOR_FL_PIN_B, pwm_a), 80)
 
 
