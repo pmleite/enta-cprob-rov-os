@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request
-
+        
 app = Flask(__name__)
 
 # Configuração dos pinos
