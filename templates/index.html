@@ -3,6 +3,11 @@
 <head>
     <title>Motor Control</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         #joystick {
             border: 2px solid black;
             border-radius: 50%;
@@ -37,7 +42,7 @@
         }
         .Title{
             color: #333;
-            background-color: #f1f1f1;
+            background-color: "#f4f4f4";
             height: 100px;
         }
         .EmergencyButton{
@@ -61,6 +66,10 @@
             display: inline-block;
             width: 100px;
         }
+        .buttons{
+            margin-top: 20px;
+            background-color: "#f8f8f8";
+        }
     </style>
 </head>
 <body>
@@ -69,10 +78,9 @@
         <h2>ENTA_CPROB - ROV Control</h2>
     </div>
 
-    <div class="Center">
+    <div class="Center buttons">
         <button class="btOn"  onclick="lightON()">Light ON</button>
         <button class="btOff" onclick="lightOFF()">Light OFF</button>
-
         <button class="EmergencyButton" onclick="emergencySTOP()">Emergency Stop</button>
     </div>
     
