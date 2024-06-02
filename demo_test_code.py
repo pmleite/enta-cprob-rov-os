@@ -119,15 +119,15 @@ def set_motor(motorPWM_A, motorPWM_B, speed, direction):
 def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
-def vertical_control(direction="U"):
-  set_motor(pwm_FL_A, pwm_FL_B, 60, direction)
-  set_motor(pwm_FR_A, pwm_FR_B, 60, direction)
-  set_motor(pwm_BL_A, pwm_BL_B, 60, direction)
-  set_motor(pwm_BR_A, pwm_BR_B, 60, direction)
+def vertical_control(direction="U", spd=60):
+  set_motor(pwm_FL_A, pwm_FL_B, spd, direction)
+  set_motor(pwm_FR_A, pwm_FR_B, spd, direction)
+  set_motor(pwm_BL_A, pwm_BL_B, spd, direction)
+  set_motor(pwm_BR_A, pwm_BR_B, spd, direction)
   
-def horizontal_control(direction="R"):
-  set_motor(pwm_RL_A, pwm_RL_B, 60, direction)
-  set_motor(pwm_RR_A, pwm_RR_B, 60, direction)
+def horizontal_control(direction="R", spd=60):
+  set_motor(pwm_RL_A, pwm_RL_B, spd, direction)
+  set_motor(pwm_RR_A, pwm_RR_B, spd, direction)
   
   
 @app.route('/')
@@ -136,9 +136,14 @@ def index():
 
 @app.route('/control', methods=['POST'])
 def control():
-    motor_a_speed = float(request.form['motorA'])
-    motor_b_speed = float(request.form['motorB'])
+    motorFL_BL = float(request.form['motorA'])
+    motorBL_BR = float(request.form['motorB'])
     
+    print("motorFL_BL: ", motorFL_BL)
+    
+    vertical_control("U", motorFL_BL)
+    vertical_control("U", motorBL_BR)
+  
     return "OK"
 
 
@@ -146,8 +151,6 @@ if __name__ == "__main__":
     try:
         app.run(host='0.0.0.0', port=5000)
         while True:
-          vertical_control("U")
-          horizontal_control("F")
           set_ligths(True)
           check_flood_sensor()
     except KeyboardInterrupt:
