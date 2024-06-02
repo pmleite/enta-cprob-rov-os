@@ -68,9 +68,9 @@ pwm_RR_B.start(0)
 
 
 # Set up PWM for propulsors
-def set_motor(motorPWM_A, motorPWM_B, speed, direction = "U"):
+def set_motor(motorPWM_A, motorPWM_B, speed, direction):
   
-  if speed == "U":
+  if direction == "U":
     motorPWM_A.ChangeDutyCycle(speed)
     motorPWM_B.ChangeDutyCycle(0)
   else:
