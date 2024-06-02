@@ -55,7 +55,7 @@
     </div>
 
     <div>
-        <button class="EmergencyButton Center" onclick="energencySTOP()">Emergency Stop</button>
+        <button class="EmergencyButton Center" onclick="emergencySTOP()">Emergency Stop</button>
     </div>
     
     <div>
@@ -122,6 +122,16 @@
                 controlMotors(motorASpeed, motorBSpeed);
             }
         });
+
+        function emergencySTOP(){
+            fetch('/emergency', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `emergency=1`
+            });
+        }
 
         function controlMotors(motorA, motorB) {
             fetch('/control', {

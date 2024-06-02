@@ -136,8 +136,10 @@ def index():
 
 @app.route('/control', methods=['POST'])
 def control():
+    
     motorFL_BL = float(request.form['motorA'])
     motorBL_BR = float(request.form['motorB'])
+    emergenCyStop = request.form['emergency']
     
     print("motorFL_BL: ", motorFL_BL)
     
@@ -147,6 +149,11 @@ def control():
     else:
       vertical_control("D", motorFL_BL)
       vertical_control("D", motorBL_BR)
+      
+    if emergenCyStop == "true":
+      stop_motors()
+      while True:
+        print("Emergency Stop!")
   
     return "OK"
 
