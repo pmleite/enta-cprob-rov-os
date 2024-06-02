@@ -4,6 +4,9 @@ import time
 # Definitions
 MINIUM_SPEED = 60
 
+# floodSensor
+FLOOD_SENSOR_PIN = 10
+
 # Set Vertical propulsors GPIO pins
 MOTOR_FL_PIN_A = 22  
 MOTOR_FL_PIN_B = 23
@@ -37,8 +40,12 @@ GPIO.setup(MOTOR_RL_PIN_A, GPIO.OUT)
 GPIO.setup(MOTOR_RL_PIN_B, GPIO.OUT)
 GPIO.setup(MOTOR_RR_PIN_A, GPIO.OUT)
 GPIO.setup(MOTOR_RR_PIN_B, GPIO.OUT)
+
 # Set up GPIO light pin mode
 GPIO.setup(LIGHT_PIN, GPIO.OUT)
+
+# Set up GPIO flood sensor pin mode
+GPIO.setup(DIGITAL_PIN, GPIO.IN)
 
 
 # Set up PWM for propulsors
@@ -83,6 +90,14 @@ def stop_motors():
   pwm_RR_B.stop()  
 
 
+# Check flood sensor
+def check_flood_sensor():
+  if GPIO.input(FLOOD_SENSOR_PIN):
+    print("Flood detected")
+    return True
+  else:
+    print("No flood detected")
+    return False
 
 # Set up PWM for propulsors
 def set_motor(motorPWM_A, motorPWM_B, speed, direction):
@@ -120,6 +135,7 @@ if __name__ == '__main__':
       vertical_control("U")
       horizontal_control("F")
       set_ligths(True)
+      check_flood_sensor()
   except KeyboardInterrupt:
       pass
       set_ligths(False)
