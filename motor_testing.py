@@ -3,9 +3,9 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)  
 
 # Configuração dos pinos
-MOTOR_1_PIN1   = 20
-MOTOR_1_PIN2   = 16
-MOTOR_1_PWM    = 21
+MOTOR_1_PIN1   = 17
+MOTOR_1_PIN2   = 22
+MOTOR_1_PWM    = 27
 
 # MOTOR_2_PIN1   = 23
 # MOTOR_2_PIN2   = 24
