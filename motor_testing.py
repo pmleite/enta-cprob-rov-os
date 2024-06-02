@@ -63,9 +63,19 @@ def teste():
         set_motor((MOTOR_4_PIN1, MOTOR_4_PIN2, pwm_4), 100)
 
 
-
 if __name__ == "__main__":
-    teste()
+    try:
+        teste()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        pwm_1.stop()
+        pwm_2.stop()
+        pwm_3.stop()
+        pwm_4.stop()
+        GPIO.cleanup()
+
+    
         
     
 
