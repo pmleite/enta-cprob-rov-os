@@ -79,6 +79,6 @@ if __main__ == '__main__':
       control()
   except KeyboardInterrupt:
       pass
-      pwm1A.stop()
-      pwm1B.stop()
+      pwm_FL_A.stop()
+      pwm_FL_B.stop()
       GPIO.cleanup()
