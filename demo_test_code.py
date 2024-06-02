@@ -65,6 +65,20 @@ pwm_RL_B.start(0)
 pwm_RR_A.start(0)
 pwm_RR_B.start(0)
 
+def stop_motors():
+  pwm_FL_A.stop()
+  pwm_FL_B.stop()
+  pwm_FR_A.stop()
+  pwm_FR_B.stop()
+  pwm_BL_A.stop()
+  pwm_BL_B.stop()
+  pwm_BR_A.stop()
+  pwm_BR_B.stop()
+  pwm_RL_A.stop()
+  pwm_RL_B.stop()
+  pwm_RR_A.stop()
+  pwm_RR_B.stop()  
+
 
 
 # Set up PWM for propulsors
@@ -99,8 +113,5 @@ if __name__ == '__main__':
       horizontal_control("F")
   except KeyboardInterrupt:
       pass
-      pwm_FL_A.stop()
-      pwm_FL_B.stop()
-      pwm_FR_A.stop()
-      pwm_FR_B.stop()
+      stop_motors()
       GPIO.cleanup()
