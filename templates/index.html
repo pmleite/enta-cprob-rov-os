@@ -70,6 +70,18 @@
             margin-top: 20px;
             background-color: "#f8f8f8";
         }
+        .controls{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            background-color: "#f8f8f8";
+        }
+        .jstk{
+            display: inline-block;
+            width: 30%;
+            height: 500px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
@@ -84,8 +96,8 @@
         <button class="EmergencyButton" onclick="emergencySTOP()">Emergency Stop</button>
     </div>
     
-    <div class="Center">
-        <div id="joystick">
+    <div class="controls">
+        <div calss="jstk" id="joystick">
             <div id="knob"></div>
         </div>
         <div calss="VideoStream">
