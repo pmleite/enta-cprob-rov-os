@@ -1,96 +1,57 @@
-import RPi.GPIO as GPIO
+from gpiozero import PWMOutputDevice, DigitalOutputDevice
+from time import sleep
 
-# Configuração dos pinos
-MOTOR_1_PIN1   = 20
-MOTOR_1_PIN2   = 16
-MOTOR_1_PWM    = 21
+# Define motor control pins
+PWM_PIN = 21
+IN1_PIN = 16
+IN2_PIN = 20
 
-# MOTOR_2_PIN1   = 23
-# MOTOR_2_PIN2   = 24
-# MOTOR_2_PWM    = 25
+# Initialize the motor control pins
+motor_pwm = PWMOutputDevice(PWM_PIN)
+motor_in1 = DigitalOutputDevice(IN1_PIN)
+motor_in2 = DigitalOutputDevice(IN2_PIN)
 
-# MOTOR_3_PIN1   = 21
-# MOTOR_3_PIN2   = 20
-# MOTOR_3_PWM    = 16
+def motor_forward(speed):
+    motor_in1.on()
+    motor_in2.off()
+    motor_pwm.value = speed
 
-# MOTOR_4_PIN1   = 13
-# MOTOR_4_PIN2   = 19
-# MOTOR_4_PWM    = 26
+def motor_backward(speed):
+    motor_in1.off()
+    motor_in2.on()
+    motor_pwm.value = speed
 
-# GPIO Configuration
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(MOTOR_1_PIN1, GPIO.OUT)
-GPIO.setup(MOTOR_1_PIN2, GPIO.OUT)
-GPIO.setup(MOTOR_1_PWM, GPIO.OUT)
-# GPIO.setup(MOTOR_2_PIN1, GPIO.OUT)
-# GPIO.setup(MOTOR_2_PIN2, GPIO.OUT)
-# GPIO.setup(MOTOR_2_PWM, GPIO.OUT)
-# GPIO.setup(MOTOR_3_PIN1, GPIO.OUT)
-# GPIO.setup(MOTOR_3_PIN2, GPIO.OUT)
-# GPIO.setup(MOTOR_3_PWM, GPIO.OUT)
-# GPIO.setup(MOTOR_4_PIN1, GPIO.OUT)
-# GPIO.setup(MOTOR_4_PIN2, GPIO.OUT)
-# GPIO.setup(MOTOR_4_PWM, GPIO.OUT)
-print("GPIO Configured")
+def motor_stop():
+    motor_in1.off()
+    motor_in2.off()
+    motor_pwm.value = 0
 
-# PWM Initialization
-pwm_1 = GPIO.PWM(MOTOR_1_PWM, 100)
-# pwm_2 = GPIO.PWM(MOTOR_2_PWM, 100)
-# pwm_3 = GPIO.PWM(MOTOR_3_PWM, 100)
-# pwm_4 = GPIO.PWM(MOTOR_4_PWM, 100)
-print("PWM Initialized")
-pwm_1.start(0)
-# pwm_2.start(0)
-# pwm_3.start(0)
-# pwm_4.start(0)
-print("PWM Started")
-
-def set_motor(motor_pins, speed):
-    
-        pin1, pin2, pwm = motor_pins
+try:
+    while True:
+        print("Motor forward at full speed")
+        motor_forward(1.0)
+        sleep(2)
         
-        if speed >= 0:
-            GPIO.output(pin1, GPIO.HIGH)
-            GPIO.output(pin2, GPIO.LOW)
-        else:
-            GPIO.output(pin1, GPIO.LOW)
-            GPIO.output(pin2, GPIO.HIGH)
-            
-        pwm.ChangeDutyCycle(abs(speed))
+        print("Motor forward at half speed")
+        motor_forward(0.5)
+        sleep(2)
         
-def teste():  
-    # Test
-    while True: 
-        print("Teste")
-        set_motor((MOTOR_1_PIN1, MOTOR_1_PIN2, pwm_1), 100)
-        # set_motor((MOTOR_2_PIN1, MOTOR_2_PIN2, pwm_2), 100)
-        # set_motor((MOTOR_3_PIN1, MOTOR_3_PIN2, pwm_3), 100)
-        # set_motor((MOTOR_4_PIN1, MOTOR_4_PIN2, pwm_4), 100)
-
-
-if __name__ == "__main__":
-    try:
-        teste()
-    except KeyboardInterrupt:
-        pass
-    finally:
-        print("Cleaning up")
-        pwm_1.stop()
-        # pwm_2.stop()
-        # pwm_3.stop()
-        # pwm_4.stop()
-        GPIO.cleanup()
-        print("Program Finished")
-
-    
+        print("Motor stop")
+        motor_stop()
+        sleep(2)
         
-    
+        print("Motor backward at full speed")
+        motor_backward(1.0)
+        sleep(2)
+        
+        print("Motor backward at half speed")
+        motor_backward(0.5)
+        sleep(2)
+        
+        print("Motor stop")
+        motor_stop()
+        sleep(2)
 
-
-
-
-
-
-
-
-
+except KeyboardInterrupt:
+    print("Program stopped")
+    motor_stop()
