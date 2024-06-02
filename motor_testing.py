@@ -7,6 +7,9 @@ IN1_PIN = 17
 IN2_PIN = 22
 
 # Initialize the motor control pins
+GPIO.setmode(GPIO.BCM)
+
+
 motor_pwm = PWMOutputDevice(PWM_PIN)
 motor_in1 = DigitalOutputDevice(IN1_PIN)
 motor_in2 = DigitalOutputDevice(IN2_PIN)
@@ -29,7 +32,7 @@ def motor_stop():
 try:
     while True:
         print("Motor forward at full speed")
-        motor_forward(100)
+        motor_forward(1.0)
         
 except KeyboardInterrupt:
     print("Program stopped")
