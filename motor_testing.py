@@ -55,11 +55,12 @@ def set_motor(motor_pins, speed):
         
         pwm.ChangeDutyCycle(abs(speed))
         
-def teste():   
-    set_motor((MOTOR_1_PIN1, MOTOR_1_PIN2, pwm_1), 100)
-    set_motor((MOTOR_2_PIN1, MOTOR_2_PIN2, pwm_2), 100)
-    set_motor((MOTOR_3_PIN1, MOTOR_3_PIN2, pwm_3), 100)
-    set_motor((MOTOR_4_PIN1, MOTOR_4_PIN2, pwm_4), 100)
+def teste():  
+    while True: 
+        set_motor((MOTOR_1_PIN1, MOTOR_1_PIN2, pwm_1), 100)
+        set_motor((MOTOR_2_PIN1, MOTOR_2_PIN2, pwm_2), 100)
+        set_motor((MOTOR_3_PIN1, MOTOR_3_PIN2, pwm_3), 100)
+        set_motor((MOTOR_4_PIN1, MOTOR_4_PIN2, pwm_4), 100)
 
 
 
