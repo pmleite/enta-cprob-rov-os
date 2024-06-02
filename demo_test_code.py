@@ -130,6 +130,7 @@ def horizontal_control(direction="R", spd=60):
   set_motor(pwm_RR_A, pwm_RR_B, spd, direction)
   
 def emergency_stop():
+  print("Emergency Stop!")
   set_motor(pwm_FL_A, pwm_FL_B, 0, "U")
   set_motor(pwm_FR_A, pwm_FR_B, 0, "U")
   set_motor(pwm_BL_A, pwm_BL_B, 0, "U")
