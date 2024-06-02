@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO
 import time
 
 # Set Vertical propulsors GPIO pins
-MOTOR_FL_PIN_A = 23  
-MOTOR_FL_PIN_B = 22
+MOTOR_FL_PIN_A = 22  
+MOTOR_FL_PIN_B = 23
 MOTOR_FR_PIN_A = 17
 MOTOR_FR_PIN_B = 27
 MOTOR_BL_PIN_A = 12
