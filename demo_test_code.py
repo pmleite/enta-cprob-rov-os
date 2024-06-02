@@ -93,10 +93,10 @@ def stop_motors():
 # Check flood sensor
 def check_flood_sensor():
   if GPIO.input(FLOOD_SENSOR_PIN):
-    print("Flood detected")
+    print("Not Flooded")
     return True
   else:
-    print("No flood detected")
+    print("Flooded")
     return False
 
 # Set up PWM for propulsors
