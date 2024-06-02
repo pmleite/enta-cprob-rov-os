@@ -81,14 +81,18 @@ def set_motor(motorPWM_A, motorPWM_B, speed, direction):
 def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
-def vertical_control():
-  set_motor(pwm_BR_A, pwm_BR_B, 50, "U")
+def vertical_control(direction="U"):
+  
+  set_motor(pwm_FL_A, pwm_FL_B, 50, direction)
+  set_motor(pwm_FR_A, pwm_FR_B, 50, direction)
+  set_motor(pwm_BL_A, pwm_BL_B, 50, direction)
+  set_motor(pwm_BR_A, pwm_BR_B, 50, direction)
 
 
 if __name__ == '__main__':
   try:
     while True:
-      vertical_control()
+      vertical_control("U")
   except KeyboardInterrupt:
       pass
       pwm_FL_A.stop()
