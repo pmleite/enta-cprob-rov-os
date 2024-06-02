@@ -5,7 +5,7 @@ import time
 
 # Definitions
 MINIUM_SPEED = 70
-tTCP_PORT    = 5000
+TCP_PORT     = 5000
 
 # Set up Flask app
 app = Flask(__name__)
@@ -156,12 +156,10 @@ def index():
     return render_template('index.html')
 
 
-
-
 if __name__ == '__main__':
   try:
     while True:
-      app.run(host='0.0.0.0', port=tcp_port)
+      app.run(host='0.0.0.0', port=TCP_PORT)
       vertical_control("U")
       horizontal_control("F")
       set_ligths(True)
