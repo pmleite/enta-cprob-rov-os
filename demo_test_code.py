@@ -115,16 +115,19 @@ def set_motor(motorPWM_A, motorPWM_B, speed, direction):
     
 def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
+  return  "OK"
       
 def vertical_control(direction="U", spd=60):
   set_motor(pwm_FL_A, pwm_FL_B, spd, direction)
   set_motor(pwm_FR_A, pwm_FR_B, spd, direction)
   set_motor(pwm_BL_A, pwm_BL_B, spd, direction)
   set_motor(pwm_BR_A, pwm_BR_B, spd, direction)
+  return "OK"
   
 def horizontal_control(direction="R", spd=60):
   set_motor(pwm_RL_A, pwm_RL_B, spd, direction)
   set_motor(pwm_RR_A, pwm_RR_B, spd, direction)
+  return "OK"
   
 def emergency_stop():
   print("Emergency Stop!")
@@ -132,6 +135,7 @@ def emergency_stop():
   vertical_control("U", 0)
   horizontal_control("R", 0)
   horizontal_control("R", 0)
+  return "OK"
   
 @app.route('/')
 def index():
