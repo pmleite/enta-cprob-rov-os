@@ -84,9 +84,16 @@
         <button class="EmergencyButton" onclick="emergencySTOP()">Emergency Stop</button>
     </div>
     
-    <div id="joystick">
-        <div id="knob"></div>
+    <div class="Center">
+        <div id="joystick">
+            <div id="knob"></div>
+        </div>
+        <div calss="VideoStream">
+            <iframe width="640" height="480" src="http://192.168.68.134:5000/video_feed" ></iframe>
+        </div>
     </div>
+
+    
 
     <script>
         const joystick = document.getElementById('joystick');
