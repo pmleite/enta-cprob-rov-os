@@ -139,8 +139,7 @@ def control():
     
     motorFL_BL    = float(request.form['motorA'])
     motorBL_BR    = float(request.form['motorB'])
-    emergenCyStop = float(request.form['emergency'])
-    
+  
     print("motorFL_BL: ", motorFL_BL)
     
     if motorFL_BL > 0:
@@ -149,12 +148,15 @@ def control():
     else:
       vertical_control("D", motorFL_BL)
       vertical_control("D", motorBL_BR)
-      
-    if emergenCyStop == "true":
-      stop_motors()
-      while True:
-        print("Emergency Stop!")
   
+    return "OK"
+
+@app.route('/emergency', methods=['POST'])
+def emergency():
+    stop_motors()
+    while True:
+      set_ligths(True)
+      check_flood_sensor()
     return "OK"
 
 
