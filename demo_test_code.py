@@ -158,19 +158,18 @@ def emergency():
 
 @app.route('/light', methods=['POST'])
 def lights():
+
     status = request.form['status']
-    print("status: ", status)
     if status == "1":
       set_ligths(True)
     else:
       set_ligths(False)
-    return "OK"
+
 
 if __name__ == "__main__":
     try:
         app.run(host='0.0.0.0', port=5000)
         while True:
-          set_ligths(True)
           check_flood_sensor()
     except KeyboardInterrupt:
         pass
