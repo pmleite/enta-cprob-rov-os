@@ -138,11 +138,11 @@ try:
         rotate_clockwise()
         time.sleep(5)  # Rotate clockwise for 2 seconds
         stop_motors()
-        time.sleep(1)  # Stop for 1 second
+        time.sleep(5)  # Stop for 1 second
         rotate_counterclockwise()
         time.sleep(5)  # Rotate counterclockwise for 2 seconds
         stop_motors()
-        time.sleep(1)  # Stop for 1 second
+        time.sleep(5)  # Stop for 1 second
 except KeyboardInterrupt:
     pass
 
