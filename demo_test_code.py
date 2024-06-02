@@ -73,7 +73,7 @@ def control():
   set_motor((MOTOR_FL_PIN_A, MOTOR_FL_PIN_B), 80, "Up")
 
 
-if __main__ == '__main__':
+if __name__ == '__main__':
   try:
     while True:
       control()
