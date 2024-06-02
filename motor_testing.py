@@ -29,29 +29,8 @@ def motor_stop():
 try:
     while True:
         print("Motor forward at full speed")
-        motor_forward(1.0)
-        sleep(2)
+        motor_forward(100)
         
-        print("Motor forward at half speed")
-        motor_forward(0.5)
-        sleep(2)
-        
-        print("Motor stop")
-        motor_stop()
-        sleep(2)
-        
-        print("Motor backward at full speed")
-        motor_backward(1.0)
-        sleep(2)
-        
-        print("Motor backward at half speed")
-        motor_backward(0.5)
-        sleep(2)
-        
-        print("Motor stop")
-        motor_stop()
-        sleep(2)
-
 except KeyboardInterrupt:
     print("Program stopped")
     motor_stop()
