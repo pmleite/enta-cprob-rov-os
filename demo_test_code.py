@@ -68,21 +68,21 @@ pwm_RR_B.start(0)
 
 
 # Set up PWM for propulsors
-def set_motor(motorPinA, motorPinB, speed, direction):
+def set_motor(motorPWM_A, motorPWM_B, speed, direction):
   
-  if direction == "U":
-    GPIO.output(motorPinA, speed)
-    GPIO.output(motorPinB, 0)
-  elif direction == "D":
-    GPIO.output(motorPinA, 0)
-    GPIO.output(motorPinB, speed)
+  if speed == "U":
+    motorPWM_A.ChangeDutyCycle(speed)
+    motorPWM_B.ChangeDutyCycle(0)
+  else:
+    motorPWM_A.ChangeDutyCycle(0)
+    motorPWM_B.ChangeDutyCycle(-speed)
   
     
 def set_ligths(status):
   GPIO.output(LIGHT_PIN, status)
       
 def control():
-  set_motor(MOTOR_FL_PIN_A, MOTOR_FL_PIN_B, 30, "U")
+  set_motor(pwm_FL_A, pwm_FL_B, 30, "U")
 
 
 if __name__ == '__main__':
