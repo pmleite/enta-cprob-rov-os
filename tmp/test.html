@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROV Control Panel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .sensor-values {
+            margin: 20px 0;
+        }
+        .sensor-values div {
+            margin: 10px 0;
+        }
+        .slider, .joystick-container {
+            margin: 20px 0;
+        }
+        .joystick {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            border-radius: 50%;
+            position: relative;
+        }
+    </style>
+    <script src="nipplejs.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ROV Control Panel</h1>
+        <div class="controls">
+            <button class="button" onclick="toggleLight()">Turn On/Off Light</button>
+            <button class="button" onclick="emergencyStop()">Emergency Stop</button>
+            <div class="slider">
+                <label for="horizontal-motor">Horizontal Motor Control</label>
+                <input type="range" id="horizontal-motor" min="0" max="100" value="50" oninput="controlHorizontalMotor(this.value)">
+            </div>
+            <div class="joystick-container">
+                <label for="vertical-motor">Vertical Motor Control</label>
+                <div id="joystick" class="joystick"></div>
+            </div>
+            <button class="button" onclick="fullSpeedForward()">Full Speed Forward</button>
+            <button class="button" onclick="fullSpeedBackward()">Full Speed Backward</button>
+            <button class="button" onclick="stopHorizontalMotion()">Stop Horizontal Motion</button>
+        </div>
+        <div class="sensor-values">
+            <h2>Sensor Values</h2>
+            <div id="sensor1">Sensor 1: <span>0</span></div>
+            <div id="sensor2">Sensor 2: <span>0</span></div>
+            <div id="sensor3">Sensor 3: <span>0</span></div>
+            <div id="sensor4">Sensor 4: <span>0</span></div>
+            <div id="sensor5">Sensor 5: <span>0</span></div>
+            <div id="sensor6">Sensor 6: <span>0</span></div>
+        </div>
+    </div>
+    <script>
+        function toggleLight() {
+            // Code to toggle the light on/off
+            console.log("Toggled light");
+        }
+
+        function emergencyStop() {
+            // Code to stop the motor in an emergency
+            console.log("Emergency stop");
+        }
+
+        function controlHorizontalMotor(value) {
+            // Code to control the horizontal motor
+            console.log("Horizontal motor value:", value);
+        }
+
+        function fullSpeedForward() {
+            // Code to set motors to full speed forward
+            console.log("Full speed forward");
+        }
+
+        function fullSpeedBackward() {
+            // Code to set motors to full speed backward
+            console.log("Full speed backward");
+        }
+
+        function stopHorizontalMotion() {
+            // Code to stop horizontal motion
+            console.log("Stopped horizontal motion");
+        }
+
+        // Function to update sensor values (example with dummy data)
+        function updateSensorValues() {
+            document.getElementById('sensor1').querySelector('span').innerText = Math.random().toFixed(2);
+            document.getElementById('sensor2').querySelector('span').innerText = Math.random().toFixed(2);
+            document.getElementById('sensor3').querySelector('span').innerText = Math.random().toFixed(2);
+            document.getElementById('sensor4').querySelector('span').innerText = Math.random().toFixed(2);
+            document.getElementById('sensor5').querySelector('span').innerText = Math.random().toFixed(2);
+            document.getElementById('sensor6').querySelector('span').innerText = Math.random().toFixed(2);
+        }
+
+        // Update sensor values every second
+        setInterval(updateSensorValues, 1000);
+
+        // Initialize joystick
+        const joystick = nipplejs.create({
+            zone: document.getElementById('joystick'),
+            mode: 'static',
+            position: { left: '50%', top: '50%' },
+            color: 'blue'
+        });
+
+        joystick.on('move', function (evt, data) {
+            const distance = data.distance;
+            const angle = data.angle.degree;
+            // Code to control the vertical motor based on joystick movement
+            console.log(`Joystick moved. Distance: ${distance}, Angle: ${angle}`);
+        });
+
+        joystick.on('end', function () {
+            // Code to stop the vertical motor when joystick is released
+            console.log('Joystick released');
+        });
+    </script>
+</body>
+</html>

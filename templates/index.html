@@ -46,27 +46,27 @@
      </div> 
         <div >
             <a class="infoTXT">PH Value</a><br>
-            <a class="infoValues">13.5</a>
+            <a id="PHSensor" class="infoValues"><span>0</span></a>
         </div> 
         <div >
             <a class="infoTXT">Cond. Value</a><br>
-            <a class="infoValues">13.5</a>
+            <a id="CondSensor" class="infoValues"><span>0</span></a>
         </div> 
         <div >
             <a class="infoTXT">Ext Temp</a><br>
-            <a class="infoValues">5</a>
+            <a id="TmpSensor" class="infoValues"><span>0</span></a>
         </div> 
         <div >
             <a class="infoTXT">Bat Level</a><br>
-            <a class="infoValues">85%</a>
+            <a id="BatSensor" class="infoValues"><span>0</span></a>
         </div> 
         <div >
             <a class="infoTXT">Sonar Det.</a><br>
-            <a class="infoValues">FALSE</a>
+            <a id="SonarSensor" class="infoValues"><span>0</span></a>
         </div> 
         <div >
-            <a class="infoTXT">X,Y,Z</a><br>
-            <a class="infoValues">0,0,0</a>
+            <a class="infoTXT">Gyro Info</a><br>
+            <a id="GiroSensor" class="infoValues"><span>0</span></a>
         </div> 
     </div>
 
@@ -77,6 +77,9 @@
     const knob = document.getElementById('knob');
     const speedControl = 100;
     let isDragging = false;
+
+    // Update sensor values every second
+    setInterval(updateSensorValues, 5000);
 
     joystick.addEventListener('mousedown', function(e) {
         isDragging = true;
@@ -205,6 +208,24 @@
     slider.oninput = function() {
     output.innerHTML = this.value;
     }
+
+    function updateSensorValues() {
+
+        const minGyroValue = -180; // Assuming -180 degrees per second
+        const maxGyroValue = 180; // Assuming +180 degrees per second
+
+        const randomXGyroValue = Math.random() * (maxGyroValue - minGyroValue) + minGyroValue;
+        const randomYGyroValue = Math.random() * (maxGyroValue - minGyroValue) + minGyroValue;
+        const randomZGyroValue = Math.random() * (maxGyroValue - minGyroValue) + minGyroValue;
+    
+        document.getElementById('PHSensor').querySelector('span').innerText = (Math.random() * (8.4 - 7.5) + 7.5).toFixed(2) + " pH";
+        document.getElementById('CondSensor').querySelector('span').innerText = (Math.random() * (53000 - 57000) + 53000).toFixed(2) + " µS/cm";
+        document.getElementById('TmpSensor').querySelector('span').innerText = (Math.random() * (25 - 10) + 10).toFixed(2) + " °C";
+        document.getElementById('BatSensor').querySelector('span').innerText = "100%";
+        document.getElementById('SonarSensor').querySelector('span').innerText = "FALSE";
+        document.getElementById('GiroSensor').querySelector('span').innerText = randomXGyroValue.toFixed(3) + "°/s, " + randomYGyroValue.toFixed(3) + "°/s, " + randomZGyroValue.toFixed(3) + "°/s";
+    }
+
 </script> 
 </body>
 </html>
