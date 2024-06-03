@@ -76,6 +76,7 @@
     const joystick = document.getElementById('joystick');
     const knob = document.getElementById('knob');
     const speedControl = 100;
+    let BatteryLevel = 100;
     let isDragging = false;
 
     // Update sensor values every second
@@ -210,6 +211,8 @@
     }
 
     function updateSensorValues() {
+        
+        BatteryLevel = BatteryLevel-0.01;
 
         const minGyroValue = -180; // Assuming -180 degrees per second
         const maxGyroValue = 180; // Assuming +180 degrees per second
@@ -221,7 +224,7 @@
         document.getElementById('PHSensor').querySelector('span').innerText = (Math.random() * (8.4 - 7.5) + 7.5).toFixed(2) + " pH";
         document.getElementById('CondSensor').querySelector('span').innerText = (Math.random() * (53000 - 57000) + 53000).toFixed(2) + " µS/cm";
         document.getElementById('TmpSensor').querySelector('span').innerText = (Math.random() * (25 - 10) + 10).toFixed(2) + " °C";
-        document.getElementById('BatSensor').querySelector('span').innerText = "100%";
+        document.getElementById('BatSensor').querySelector('span').innerText = BatteryLevel.toFixed(2) + " %";
         document.getElementById('SonarSensor').querySelector('span').innerText = "FALSE";
         document.getElementById('GiroSensor').querySelector('span').innerText = randomXGyroValue.toFixed(3) + "°/s, " + randomYGyroValue.toFixed(3) + "°/s, " + randomZGyroValue.toFixed(3) + "°/s";
     }
