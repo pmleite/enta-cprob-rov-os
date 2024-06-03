@@ -15,7 +15,8 @@ def main():
     # Start main system sub-process  
     try:
       subprocess.Popen(["python3", "enta-cprob-rov-os.py"])
-      print("Main system up...!")     
+      print("Main system up...!") 
+      time.sleep(3)     
     except:
       print("Erro ao iniciar o sistema principal.")
       print("Verifique o compoenente enta-cprob-rov-os.py e tente novamente")

@@ -6,18 +6,23 @@
 #define TEMP_PIN        A0
 #define EC_SENSOR_PIN   A1
 #define PH_SENSOR_PIN   A2
+#define MPU             0x68
+
+
 
 #define SONAR_1_TRIGPIN 11
 #define SONAR_1_ECHOPIN 10
 #define SONAR_2_TRIGPIN 9
 #define SONAR_2_ECHOPIN 8
 
-float waterTemp = 25.0;
-float voltageEC, valueEC;
-float voltagePH, valuePH;
-float sonar1Distance, sonar1Duration; 
-float sonar2Distance, sonar2Duration;
-float gyroX, gyroY, GyroZ;
+float   waterTemp = 25.0;
+float   voltageEC, valueEC;
+float   voltagePH, valuePH;
+float   sonar1Distance, sonar1Duration; 
+float   sonar2Distance, sonar2Duration;
+float   gyroX, gyroY, GyroZ;
+int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
+
 
 DFRobot_PH ph;
 DFRobot_EC10 ec;
