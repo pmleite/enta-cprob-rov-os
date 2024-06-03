@@ -40,8 +40,14 @@
        </div>
       </div>
       <div class="item3">
+        <div >
+            <a class="infoTXT">Camera Stream</a>
+        </div>
         <div class="VideoStream">
             <iframe width="640" height="480" src="http://192.168.68.134:5000/video_feed"></iframe>
+        </div>
+        <div >
+            <a id="Time" class="infoTXT"><span>0</span></a>
         </div>
      </div> 
         <div >
@@ -80,7 +86,7 @@
     let isDragging = false;
 
     // Update sensor values every second
-    setInterval(updateSensorValues, 5000);
+    setInterval(updateSensorValues, 1000);
 
     joystick.addEventListener('mousedown', function(e) {
         isDragging = true;
@@ -212,7 +218,7 @@
 
     function updateSensorValues() {
         
-        BatteryLevel = BatteryLevel-0.01;
+        BatteryLevel = BatteryLevel-0.001;
 
         const minGyroValue = -180; // Assuming -180 degrees per second
         const maxGyroValue = 180; // Assuming +180 degrees per second
@@ -227,6 +233,7 @@
         document.getElementById('BatSensor').querySelector('span').innerText = BatteryLevel.toFixed(2) + " %";
         document.getElementById('SonarSensor').querySelector('span').innerText = "FALSE";
         document.getElementById('GiroSensor').querySelector('span').innerText = randomXGyroValue.toFixed(3) + "°/s, " + randomYGyroValue.toFixed(3) + "°/s, " + randomZGyroValue.toFixed(3) + "°/s";
+        document.getElementById('Time').querySelector('span').innerText = new Date();
     }
 
 </script> 
