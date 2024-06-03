@@ -3,17 +3,24 @@ body{
     margin: 0;
     padding: 0;
     background-color: #101720;
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-transparency: 0.5;
 }
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
-    padding: 10px;
+    gap: 0px;
+    padding: 0px;
   }
   
 .grid-container > div {
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 30px;
 }
 
@@ -118,23 +125,24 @@ text-decoration: none;
     font-size: 20px;
 }
 
-
 .slidecontainer {
 width: 100%; /* Width of the outside container */
 }
 
-
 .slider {
--webkit-appearance: none;  /* Override default CSS styles */
+-webkit-appearance: none;  
 appearance: none;
 width: 50%; 
-height: 15px; 
-background: #d3d3d3; /* Grey background */
-outline: none; /* Remove outline */
-opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
--webkit-transition: .2s; /* 0.2 seconds transition on hover */
+height: 5px; 
+background: #d3d3d3; 
+outline: none; 
+opacity: 0.7; 
+-webkit-transition: .2s; 
 transition: opacity .2s;
 }
+
+
+
 
 .infoTXT{
     font-family: Arial, Helvetica, sans-serif;
