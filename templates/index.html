@@ -1,279 +1,210 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Motor Control</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #8fdfee;
-        
-        }
-        #joystick {
-            border: 2px solid black;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            position: relative;
-        }
-        #knob {
-            background-color: gray;
-            border: 2px solid black;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            top: 75px;
-            left: 75px;
-            cursor: pointer;
-        }
-        .Center{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            text-align: center;
-        }
-        .title{
-            display: block;
-            background-color: #00d4ff;
-            height: 100px;
-        }
-        .EmergencyButton{
-            background-color: red;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            width: 200px;
-        }
-        .btOn{
-            background-color: green;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            width: 100px;
-        }
-        .btOff{
-            background-color: red;
-            padding: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            width: 100px;
-        }
-        .buttons{
-            margin-top: 20px;
-        }
-        .controls{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 20px;
-            background-color: #00FF00;
-        }
-        .btns{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-
-        }
-        .forwardButton{
-            background-color: green;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            width: 200px;
-            border: 2px solid black;
-
-        }
-        .backwardButton{
-            background-color: green;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 5px;
-            display: inline-block;
-            width: 200px;
-            border: 2px solid black;
-        }
-        .stopButton{
-            background-color: red;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 10px;
-            display: inline-block;
-            width: 200px;
-            border: 2px solid black;
-        }
-        #button{
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-            display: inline-block;
-            width: 200px;
-            border: 2px solid black;
-        }
-    </style>
 </head>
 <body>
-    <div class="title Center">
-        <h1>Motor Control</h1>
-        <h2>ENTA_CPROB - ROV Control</h2>
-    </div>
-
-    <div class="Center buttons">
-        <button class="btOn"  onclick="lightON()">Light ON</button>
-        <button class="btOff" onclick="lightOFF()">Light OFF</button>
-        <button class="EmergencyButton" onclick="emergencySTOP()">Emergency Stop</button>
-    </div>
-    
-    <div class="controls">
-        <div class="leftZone">
+    <div class="grid-container">
+      <div class="item1">
+        <!-- Image as logo and Title -->
+        <img src="cprob_logo.png" alt="Logo" height="100px">
+      </div>
+      <div class="item2">
+       
+       <div class="grid-container">
+         <div class="item1">
+            <div class="Center buttons">
+                <button class="btnGreen" onclick="lightON()">Light ON</button>
+                <button class="btnRed" onclick="lightOFF()">Light OFF</button>
+                <button class="btnRed" onclick="emergencySTOP()">Emergency Stop</button>
+            </div>
+         </div>
+         <div class="item1">
+            <div id="joystick">
+                <div id="knob"></div>
+            </div>
+         </div>
+         <div class="item1">
+            <a class="infoTXT">Speed Control</a>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+            <a class="infoTXT"><<< &emsp;&emsp; >>></a><br><br>
             <div>
-                <div class="btns">
-                    <button class="forwardButton" onclick="goForward()">Forward</button>
-                    <button class="stopButton" onclick="stop()">Stop</button>
-                    <button class="backwardButton" onclick="goBackward()">Backward</button>
-                </div>
-                <div id="joystick">
-                    <div id="knob"></div>
-                </div>
-            </div> 
-            
-        </div>
+                <button class="btnGreen fullSpeed" onclick="goBackward()">Full Speed Back</button>
+                <button class="btnRed" onclick="stop()">STOP</button>
+                <button class="btnGreen fullSpeed" onclick="goForward()">Full Speed Front</button>
+            </div>
+         </div>
+       </div>
+      </div>
+      <div class="item3">
         <div class="VideoStream">
             <iframe width="640" height="480" src="http://192.168.68.134:5000/video_feed"></iframe>
         </div>
+     </div> 
+        <div >
+            <a class="infoTXT">PH Value</a><br>
+            <a class="infoValues">13.5</a>
+        </div> 
+        <div >
+            <a class="infoTXT">Cond. Value</a><br>
+            <a class="infoValues">13.5</a>
+        </div> 
+        <div >
+            <a class="infoTXT">Ext Temp</a><br>
+            <a class="infoValues">5</a>
+        </div> 
+        <div >
+            <a class="infoTXT">Bat Level</a><br>
+            <a class="infoValues">85%</a>
+        </div> 
+        <div >
+            <a class="infoTXT">Sonar Det.</a><br>
+            <a class="infoValues">FALSE</a>
+        </div> 
+        <div >
+            <a class="infoTXT">X,Y,Z</a><br>
+            <a class="infoValues">0,0,0</a>
+        </div> 
     </div>
 
-    
 
-    <script>
-        const joystick = document.getElementById('joystick');
-        const knob = document.getElementById('knob');
-        const speedControl = 100;
-        let isDragging = false;
+<script>
 
-        joystick.addEventListener('mousedown', function(e) {
-            isDragging = true;
-        });
+    const joystick = document.getElementById('joystick');
+    const knob = document.getElementById('knob');
+    const speedControl = 100;
+    let isDragging = false;
 
-        document.addEventListener('mouseup', function(e) {
-            isDragging = false;
-        });
+    joystick.addEventListener('mousedown', function(e) {
+        isDragging = true;
+    });
 
-        document.addEventListener('mousemove', function(e) {
-            if (isDragging) {
-                const rect = joystick.getBoundingClientRect();
-                const centerX = rect.left + rect.width / 2;
-                const centerY = rect.top + rect.height / 2;
-                const deltaX = e.clientX - centerX;
-                const deltaY = e.clientY - centerY;
-                const distance = Math.min(75, Math.sqrt(deltaX * deltaX + deltaY * deltaY));
-                const angle = Math.atan2(deltaY, deltaX);
+    document.addEventListener('mouseup', function(e) {
+        isDragging = false;
+    });
 
-                const knobX = 75 + distance * Math.cos(angle);
-                const knobY = 75 + distance * Math.sin(angle);
-                knob.style.left = `${knobX}px`;
-                knob.style.top = `${knobY}px`;
+    document.addEventListener('mousemove', function(e) {
+        if (isDragging) {
+            const rect = joystick.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+            const deltaX = e.clientX - centerX;
+            const deltaY = e.clientY - centerY;
+            const distance = Math.min(75, Math.sqrt(deltaX * deltaX + deltaY * deltaY));
+            const angle = Math.atan2(deltaY, deltaX);
 
-                const speedMultiplier = 1;
+            const knobX = 75 + distance * Math.cos(angle);
+            const knobY = 75 + distance * Math.sin(angle);
+            knob.style.left = `${knobX}px`;
+            knob.style.top = `${knobY}px`;
 
-                let motorASpeed = distance * speedMultiplier;
-                let motorBSpeed = distance * speedMultiplier;
+            const speedMultiplier = 1;
 
-                if (deltaY < 0) {  // Forward
-                    motorASpeed = motorASpeed;
-                    motorBSpeed = motorBSpeed;
-                } else {  // Backward
-                    motorASpeed = -motorASpeed;
-                    motorBSpeed = -motorBSpeed;
-                }
+            let motorASpeed = distance * speedMultiplier;
+            let motorBSpeed = distance * speedMultiplier;
 
-                if (deltaX > 0) {  // Right
-                    motorASpeed = motorASpeed * (1 - Math.abs(deltaX / 75));
-                    motorBSpeed = motorBSpeed * (1 + Math.abs(deltaX / 75));
-                } else {  // Left
-                    motorASpeed = motorASpeed * (1 + Math.abs(deltaX / 75));
-                    motorBSpeed = motorBSpeed * (1 - Math.abs(deltaX / 75));
-                }
-                console.log(motorASpeed, motorBSpeed);
-                controlMotors(motorASpeed, motorBSpeed);
+            if (deltaY < 0) {  // Forward
+                motorASpeed = motorASpeed;
+                motorBSpeed = motorBSpeed;
+            } else {  // Backward
+                motorASpeed = -motorASpeed;
+                motorBSpeed = -motorBSpeed;
             }
+
+            if (deltaX > 0) {  // Right
+                motorASpeed = motorASpeed * (1 - Math.abs(deltaX / 75));
+                motorBSpeed = motorBSpeed * (1 + Math.abs(deltaX / 75));
+            } else {  // Left
+                motorASpeed = motorASpeed * (1 + Math.abs(deltaX / 75));
+                motorBSpeed = motorBSpeed * (1 - Math.abs(deltaX / 75));
+            }
+            console.log(motorASpeed, motorBSpeed);
+            controlMotors(motorASpeed, motorBSpeed);
+        }
+    });
+
+
+    function goForward(){
+        fetch('/forward', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `forward=1`
         });
+    }
 
+    function goBackward(){
+        fetch('/backward', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `backward=1`
+        });
+    }
 
-        function goForward(){
-            fetch('/forward', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `forward=1`
-            });
-        }
+    function stop(){
+        fetch('/stop', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `stop=1`
+        });
+    }
 
-        function goBackward(){
-            fetch('/backward', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `backward=1`
-            });
-        }
+    function emergencySTOP(){
+        fetch('/emergency', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `emergency=1`
+        });
+    }
 
-        function stop(){
-            fetch('/stop', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `stop=1`
-            });
-        }
+    function lightON(){
+        fetch('/light', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `status=1`
+        });
+    }
 
-        function emergencySTOP(){
-            fetch('/emergency', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `emergency=1`
-            });
-        }
+    function lightOFF(){
+        fetch('/light', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `status=0`
+        });
+    }
 
-        function lightON(){
-            fetch('/light', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `status=1`
-            });
-        }
+    function controlMotors(motorA, motorB) {
+        fetch('/control', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `motorA=${motorA}&motorB=${motorB}`
+        });
+    }
 
-        function lightOFF(){
-            fetch('/light', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `status=0`
-            });
-        }
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value; // Display the default slider value
 
-        function controlMotors(motorA, motorB) {
-            fetch('/control', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: `motorA=${motorA}&motorB=${motorB}`
-            });
-        }
-    </script>
+    // Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+    output.innerHTML = this.value;
+    }
+</script> 
 </body>
 </html>
