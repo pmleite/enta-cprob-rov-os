@@ -1,0 +1,7100 @@
+[
+    {
+        "timestamp": "2024-05-21T18:16:28",
+        "water_temp": 15.61,
+        "ph": 7.89,
+        "conductivity": 48.83,
+        "sonar1_distance": 0.55,
+        "sonar2_distance": 3.05,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.05,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:29",
+        "water_temp": 15.25,
+        "ph": 8.08,
+        "conductivity": 35.52,
+        "sonar1_distance": 0.59,
+        "sonar2_distance": 4.27,
+        "gyro": {
+            "x": -0.08,
+            "y": -0.1,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:30",
+        "water_temp": 17.26,
+        "ph": 8.17,
+        "conductivity": 32.16,
+        "sonar1_distance": 4.79,
+        "sonar2_distance": 2.9,
+        "gyro": {
+            "x": -0.08,
+            "y": 0.03,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:31",
+        "water_temp": 17.31,
+        "ph": 8.01,
+        "conductivity": 33.09,
+        "sonar1_distance": 1.18,
+        "sonar2_distance": 3.31,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.03,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:32",
+        "water_temp": 17.45,
+        "ph": 8.14,
+        "conductivity": 43.16,
+        "sonar1_distance": 4.94,
+        "sonar2_distance": 3.83,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.06,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:33",
+        "water_temp": 17.9,
+        "ph": 8.14,
+        "conductivity": 32.43,
+        "sonar1_distance": 2.57,
+        "sonar2_distance": 4.85,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.1,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:34",
+        "water_temp": 15.97,
+        "ph": 8.1,
+        "conductivity": 36.18,
+        "sonar1_distance": 1.64,
+        "sonar2_distance": 2.51,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.08,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:35",
+        "water_temp": 15.33,
+        "ph": 7.93,
+        "conductivity": 41.76,
+        "sonar1_distance": 3.11,
+        "sonar2_distance": 1.26,
+        "gyro": {
+            "x": -0.04,
+            "y": 0.23,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:36",
+        "water_temp": 14.28,
+        "ph": 7.87,
+        "conductivity": 49.76,
+        "sonar1_distance": 0.74,
+        "sonar2_distance": 1.35,
+        "gyro": {
+            "x": 0.17,
+            "y": 0.02,
+            "z": 0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:37",
+        "water_temp": 17.98,
+        "ph": 7.9,
+        "conductivity": 34.99,
+        "sonar1_distance": 4.35,
+        "sonar2_distance": 3.95,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.08,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:38",
+        "water_temp": 14.93,
+        "ph": 7.98,
+        "conductivity": 43.96,
+        "sonar1_distance": 2.6,
+        "sonar2_distance": 2.69,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.06,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:39",
+        "water_temp": 15.76,
+        "ph": 7.95,
+        "conductivity": 38.96,
+        "sonar1_distance": 1.61,
+        "sonar2_distance": 3.68,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.09,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:40",
+        "water_temp": 14.35,
+        "ph": 8.17,
+        "conductivity": 30.85,
+        "sonar1_distance": 3.78,
+        "sonar2_distance": 4.45,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.19,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:41",
+        "water_temp": 15.68,
+        "ph": 7.91,
+        "conductivity": 48.81,
+        "sonar1_distance": 4.48,
+        "sonar2_distance": 3.19,
+        "gyro": {
+            "x": 0.17,
+            "y": -0.01,
+            "z": -0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:42",
+        "water_temp": 15.73,
+        "ph": 8.17,
+        "conductivity": 30.26,
+        "sonar1_distance": 4.7,
+        "sonar2_distance": 4.71,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.06,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:43",
+        "water_temp": 17.47,
+        "ph": 8.04,
+        "conductivity": 48.42,
+        "sonar1_distance": 3.3,
+        "sonar2_distance": 2.41,
+        "gyro": {
+            "x": -0.2,
+            "y": -0.03,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:44",
+        "water_temp": 16.84,
+        "ph": 8.1,
+        "conductivity": 44.1,
+        "sonar1_distance": 2.32,
+        "sonar2_distance": 3.53,
+        "gyro": {
+            "x": -0.11,
+            "y": -0.01,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:45",
+        "water_temp": 14.37,
+        "ph": 7.85,
+        "conductivity": 49.76,
+        "sonar1_distance": 1.08,
+        "sonar2_distance": 0.94,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.17,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:46",
+        "water_temp": 15.62,
+        "ph": 8.08,
+        "conductivity": 37.03,
+        "sonar1_distance": 2.85,
+        "sonar2_distance": 1.51,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.22,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:47",
+        "water_temp": 14.76,
+        "ph": 7.92,
+        "conductivity": 34.2,
+        "sonar1_distance": 2.69,
+        "sonar2_distance": 2.72,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.13,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:48",
+        "water_temp": 15.41,
+        "ph": 7.84,
+        "conductivity": 38.18,
+        "sonar1_distance": 0.88,
+        "sonar2_distance": 3.4,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.15,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:49",
+        "water_temp": 14.83,
+        "ph": 8.12,
+        "conductivity": 47.12,
+        "sonar1_distance": 3.95,
+        "sonar2_distance": 2.09,
+        "gyro": {
+            "x": 0.1,
+            "y": -0.03,
+            "z": 0.27
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:50",
+        "water_temp": 14.2,
+        "ph": 7.97,
+        "conductivity": 47.48,
+        "sonar1_distance": 4.67,
+        "sonar2_distance": 1.36,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.13,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:51",
+        "water_temp": 14.54,
+        "ph": 8.19,
+        "conductivity": 33.35,
+        "sonar1_distance": 1.18,
+        "sonar2_distance": 1.05,
+        "gyro": {
+            "x": -0.04,
+            "y": -0.1,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:52",
+        "water_temp": 15.22,
+        "ph": 7.8,
+        "conductivity": 49.55,
+        "sonar1_distance": 0.6,
+        "sonar2_distance": 0.94,
+        "gyro": {
+            "x": 0.13,
+            "y": -0.07,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:53",
+        "water_temp": 15.13,
+        "ph": 8.01,
+        "conductivity": 48.25,
+        "sonar1_distance": 0.58,
+        "sonar2_distance": 4.01,
+        "gyro": {
+            "x": 0.14,
+            "y": -0.0,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:54",
+        "water_temp": 17.77,
+        "ph": 8.11,
+        "conductivity": 42.58,
+        "sonar1_distance": 4.61,
+        "sonar2_distance": 3.22,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.04,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:55",
+        "water_temp": 16.94,
+        "ph": 7.93,
+        "conductivity": 45.69,
+        "sonar1_distance": 0.52,
+        "sonar2_distance": 1.41,
+        "gyro": {
+            "x": 0.13,
+            "y": 0.02,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:56",
+        "water_temp": 16.94,
+        "ph": 8.08,
+        "conductivity": 36.23,
+        "sonar1_distance": 3.2,
+        "sonar2_distance": 2.81,
+        "gyro": {
+            "x": 0.15,
+            "y": 0.08,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:57",
+        "water_temp": 17.09,
+        "ph": 7.9,
+        "conductivity": 31.81,
+        "sonar1_distance": 4.29,
+        "sonar2_distance": 4.51,
+        "gyro": {
+            "x": 0.1,
+            "y": -0.05,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:58",
+        "water_temp": 14.79,
+        "ph": 8.02,
+        "conductivity": 43.52,
+        "sonar1_distance": 4.02,
+        "sonar2_distance": 1.51,
+        "gyro": {
+            "x": -0.15,
+            "y": -0.09,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:16:59",
+        "water_temp": 14.75,
+        "ph": 8.13,
+        "conductivity": 30.83,
+        "sonar1_distance": 2.72,
+        "sonar2_distance": 1.09,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.03,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:00",
+        "water_temp": 17.17,
+        "ph": 8.08,
+        "conductivity": 32.62,
+        "sonar1_distance": 2.94,
+        "sonar2_distance": 2.33,
+        "gyro": {
+            "x": -0.04,
+            "y": -0.09,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:01",
+        "water_temp": 17.94,
+        "ph": 8.16,
+        "conductivity": 43.45,
+        "sonar1_distance": 2.38,
+        "sonar2_distance": 4.47,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.16,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:02",
+        "water_temp": 15.45,
+        "ph": 7.94,
+        "conductivity": 40.24,
+        "sonar1_distance": 4.34,
+        "sonar2_distance": 1.63,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.11,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:03",
+        "water_temp": 17.01,
+        "ph": 8.06,
+        "conductivity": 49.15,
+        "sonar1_distance": 3.65,
+        "sonar2_distance": 2.63,
+        "gyro": {
+            "x": 0.26,
+            "y": 0.19,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:04",
+        "water_temp": 17.1,
+        "ph": 7.86,
+        "conductivity": 49.1,
+        "sonar1_distance": 2.84,
+        "sonar2_distance": 3.94,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.01,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:05",
+        "water_temp": 14.39,
+        "ph": 8.13,
+        "conductivity": 46.84,
+        "sonar1_distance": 4.11,
+        "sonar2_distance": 3.5,
+        "gyro": {
+            "x": -0.14,
+            "y": 0.05,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:06",
+        "water_temp": 17.39,
+        "ph": 7.97,
+        "conductivity": 42.51,
+        "sonar1_distance": 2.61,
+        "sonar2_distance": 2.06,
+        "gyro": {
+            "x": -0.08,
+            "y": 0.02,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:07",
+        "water_temp": 16.56,
+        "ph": 7.96,
+        "conductivity": 39.32,
+        "sonar1_distance": 3.27,
+        "sonar2_distance": 1.34,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.09,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:08",
+        "water_temp": 17.9,
+        "ph": 7.98,
+        "conductivity": 45.04,
+        "sonar1_distance": 4.57,
+        "sonar2_distance": 1.98,
+        "gyro": {
+            "x": -0.25,
+            "y": -0.06,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:09",
+        "water_temp": 17.41,
+        "ph": 7.89,
+        "conductivity": 38.03,
+        "sonar1_distance": 4.35,
+        "sonar2_distance": 3.96,
+        "gyro": {
+            "x": 0.15,
+            "y": -0.01,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:10",
+        "water_temp": 17.94,
+        "ph": 7.84,
+        "conductivity": 32.93,
+        "sonar1_distance": 1.9,
+        "sonar2_distance": 4.7,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.03,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:11",
+        "water_temp": 14.42,
+        "ph": 7.82,
+        "conductivity": 32.49,
+        "sonar1_distance": 2.05,
+        "sonar2_distance": 4.46,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.05,
+            "z": -0.25
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:12",
+        "water_temp": 16.47,
+        "ph": 7.98,
+        "conductivity": 38.73,
+        "sonar1_distance": 1.72,
+        "sonar2_distance": 2.34,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.01,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:13",
+        "water_temp": 16.99,
+        "ph": 8.15,
+        "conductivity": 48.23,
+        "sonar1_distance": 0.84,
+        "sonar2_distance": 0.53,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.08,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:14",
+        "water_temp": 15.96,
+        "ph": 8.19,
+        "conductivity": 48.91,
+        "sonar1_distance": 3.8,
+        "sonar2_distance": 1.69,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.1,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:15",
+        "water_temp": 17.31,
+        "ph": 7.97,
+        "conductivity": 36.07,
+        "sonar1_distance": 3.51,
+        "sonar2_distance": 2.14,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.29,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:16",
+        "water_temp": 14.81,
+        "ph": 8.0,
+        "conductivity": 38.47,
+        "sonar1_distance": 2.64,
+        "sonar2_distance": 2.5,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.19,
+            "z": -0.25
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:17",
+        "water_temp": 16.33,
+        "ph": 8.15,
+        "conductivity": 43.79,
+        "sonar1_distance": 4.63,
+        "sonar2_distance": 0.73,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.11,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:18",
+        "water_temp": 15.02,
+        "ph": 8.08,
+        "conductivity": 42.32,
+        "sonar1_distance": 4.71,
+        "sonar2_distance": 3.27,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.12,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:19",
+        "water_temp": 15.59,
+        "ph": 8.05,
+        "conductivity": 33.89,
+        "sonar1_distance": 4.74,
+        "sonar2_distance": 3.26,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.03,
+            "z": -0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:20",
+        "water_temp": 15.52,
+        "ph": 7.96,
+        "conductivity": 32.31,
+        "sonar1_distance": 2.88,
+        "sonar2_distance": 0.74,
+        "gyro": {
+            "x": 0.11,
+            "y": 0.06,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:21",
+        "water_temp": 16.67,
+        "ph": 8.1,
+        "conductivity": 43.55,
+        "sonar1_distance": 3.9,
+        "sonar2_distance": 1.1,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.14,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:22",
+        "water_temp": 17.88,
+        "ph": 8.15,
+        "conductivity": 41.63,
+        "sonar1_distance": 0.61,
+        "sonar2_distance": 1.86,
+        "gyro": {
+            "x": 0.17,
+            "y": 0.06,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:23",
+        "water_temp": 14.58,
+        "ph": 8.08,
+        "conductivity": 33.69,
+        "sonar1_distance": 0.7,
+        "sonar2_distance": 2.67,
+        "gyro": {
+            "x": 0.0,
+            "y": -0.18,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:24",
+        "water_temp": 17.23,
+        "ph": 7.83,
+        "conductivity": 50.0,
+        "sonar1_distance": 0.66,
+        "sonar2_distance": 3.96,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.04,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:25",
+        "water_temp": 15.11,
+        "ph": 8.03,
+        "conductivity": 35.38,
+        "sonar1_distance": 0.93,
+        "sonar2_distance": 2.07,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.17,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:26",
+        "water_temp": 17.3,
+        "ph": 8.04,
+        "conductivity": 45.36,
+        "sonar1_distance": 4.43,
+        "sonar2_distance": 2.4,
+        "gyro": {
+            "x": 0.15,
+            "y": -0.04,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:27",
+        "water_temp": 16.73,
+        "ph": 7.99,
+        "conductivity": 45.95,
+        "sonar1_distance": 4.23,
+        "sonar2_distance": 3.34,
+        "gyro": {
+            "x": -0.18,
+            "y": -0.03,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:28",
+        "water_temp": 16.13,
+        "ph": 7.97,
+        "conductivity": 38.13,
+        "sonar1_distance": 1.18,
+        "sonar2_distance": 1.81,
+        "gyro": {
+            "x": 0.11,
+            "y": 0.05,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:29",
+        "water_temp": 17.51,
+        "ph": 7.94,
+        "conductivity": 45.26,
+        "sonar1_distance": 4.84,
+        "sonar2_distance": 4.97,
+        "gyro": {
+            "x": 0.05,
+            "y": 0.11,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:30",
+        "water_temp": 14.22,
+        "ph": 7.82,
+        "conductivity": 44.44,
+        "sonar1_distance": 4.75,
+        "sonar2_distance": 1.38,
+        "gyro": {
+            "x": -0.13,
+            "y": 0.01,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:31",
+        "water_temp": 14.6,
+        "ph": 8.1,
+        "conductivity": 47.5,
+        "sonar1_distance": 2.13,
+        "sonar2_distance": 0.98,
+        "gyro": {
+            "x": 0.14,
+            "y": 0.13,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:32",
+        "water_temp": 16.41,
+        "ph": 7.85,
+        "conductivity": 46.74,
+        "sonar1_distance": 1.84,
+        "sonar2_distance": 4.66,
+        "gyro": {
+            "x": -0.03,
+            "y": 0.12,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:33",
+        "water_temp": 17.31,
+        "ph": 8.05,
+        "conductivity": 36.96,
+        "sonar1_distance": 4.55,
+        "sonar2_distance": 3.68,
+        "gyro": {
+            "x": -0.04,
+            "y": -0.03,
+            "z": 0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:34",
+        "water_temp": 16.79,
+        "ph": 7.94,
+        "conductivity": 35.86,
+        "sonar1_distance": 4.27,
+        "sonar2_distance": 4.48,
+        "gyro": {
+            "x": -0.03,
+            "y": 0.0,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:35",
+        "water_temp": 16.86,
+        "ph": 8.14,
+        "conductivity": 48.34,
+        "sonar1_distance": 1.44,
+        "sonar2_distance": 3.53,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.06,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:36",
+        "water_temp": 15.92,
+        "ph": 7.96,
+        "conductivity": 49.61,
+        "sonar1_distance": 3.26,
+        "sonar2_distance": 4.66,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.14,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:37",
+        "water_temp": 16.96,
+        "ph": 7.96,
+        "conductivity": 43.07,
+        "sonar1_distance": 3.13,
+        "sonar2_distance": 1.08,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.11,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:38",
+        "water_temp": 17.64,
+        "ph": 8.03,
+        "conductivity": 40.36,
+        "sonar1_distance": 4.04,
+        "sonar2_distance": 3.08,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.07,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:39",
+        "water_temp": 14.71,
+        "ph": 7.92,
+        "conductivity": 49.71,
+        "sonar1_distance": 2.53,
+        "sonar2_distance": 3.97,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.06,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:40",
+        "water_temp": 15.61,
+        "ph": 8.09,
+        "conductivity": 44.81,
+        "sonar1_distance": 1.57,
+        "sonar2_distance": 3.99,
+        "gyro": {
+            "x": -0.0,
+            "y": -0.02,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:41",
+        "water_temp": 15.3,
+        "ph": 7.94,
+        "conductivity": 38.78,
+        "sonar1_distance": 3.67,
+        "sonar2_distance": 2.4,
+        "gyro": {
+            "x": -0.04,
+            "y": -0.08,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:42",
+        "water_temp": 14.32,
+        "ph": 8.06,
+        "conductivity": 42.26,
+        "sonar1_distance": 1.71,
+        "sonar2_distance": 3.23,
+        "gyro": {
+            "x": 0.12,
+            "y": 0.01,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:43",
+        "water_temp": 14.9,
+        "ph": 7.97,
+        "conductivity": 39.04,
+        "sonar1_distance": 1.1,
+        "sonar2_distance": 4.41,
+        "gyro": {
+            "x": -0.13,
+            "y": -0.1,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:44",
+        "water_temp": 17.89,
+        "ph": 7.95,
+        "conductivity": 44.36,
+        "sonar1_distance": 3.46,
+        "sonar2_distance": 4.7,
+        "gyro": {
+            "x": -0.22,
+            "y": -0.13,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:45",
+        "water_temp": 17.47,
+        "ph": 7.95,
+        "conductivity": 32.15,
+        "sonar1_distance": 1.41,
+        "sonar2_distance": 3.68,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.13,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:46",
+        "water_temp": 14.36,
+        "ph": 7.82,
+        "conductivity": 34.84,
+        "sonar1_distance": 4.01,
+        "sonar2_distance": 2.13,
+        "gyro": {
+            "x": -0.17,
+            "y": 0.04,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:47",
+        "water_temp": 16.22,
+        "ph": 7.97,
+        "conductivity": 37.42,
+        "sonar1_distance": 3.74,
+        "sonar2_distance": 3.87,
+        "gyro": {
+            "x": -0.11,
+            "y": 0.11,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:48",
+        "water_temp": 14.57,
+        "ph": 8.01,
+        "conductivity": 47.02,
+        "sonar1_distance": 0.5,
+        "sonar2_distance": 4.03,
+        "gyro": {
+            "x": 0.17,
+            "y": -0.08,
+            "z": -0.35
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:49",
+        "water_temp": 17.32,
+        "ph": 8.16,
+        "conductivity": 31.28,
+        "sonar1_distance": 4.79,
+        "sonar2_distance": 2.29,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.01,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:50",
+        "water_temp": 15.66,
+        "ph": 8.07,
+        "conductivity": 34.61,
+        "sonar1_distance": 2.61,
+        "sonar2_distance": 4.27,
+        "gyro": {
+            "x": 0.16,
+            "y": -0.19,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:51",
+        "water_temp": 15.11,
+        "ph": 8.05,
+        "conductivity": 41.75,
+        "sonar1_distance": 4.2,
+        "sonar2_distance": 3.53,
+        "gyro": {
+            "x": 0.07,
+            "y": 0.12,
+            "z": -0.29
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:52",
+        "water_temp": 16.93,
+        "ph": 8.19,
+        "conductivity": 49.38,
+        "sonar1_distance": 3.07,
+        "sonar2_distance": 3.97,
+        "gyro": {
+            "x": -0.0,
+            "y": 0.1,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:53",
+        "water_temp": 14.28,
+        "ph": 7.83,
+        "conductivity": 41.18,
+        "sonar1_distance": 1.76,
+        "sonar2_distance": 1.2,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.04,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:54",
+        "water_temp": 14.82,
+        "ph": 8.09,
+        "conductivity": 40.52,
+        "sonar1_distance": 0.53,
+        "sonar2_distance": 2.15,
+        "gyro": {
+            "x": -0.11,
+            "y": -0.04,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:55",
+        "water_temp": 17.5,
+        "ph": 8.03,
+        "conductivity": 32.01,
+        "sonar1_distance": 1.44,
+        "sonar2_distance": 4.69,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.03,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:56",
+        "water_temp": 15.55,
+        "ph": 7.98,
+        "conductivity": 38.96,
+        "sonar1_distance": 2.36,
+        "sonar2_distance": 3.62,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.04,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:57",
+        "water_temp": 15.32,
+        "ph": 8.01,
+        "conductivity": 48.39,
+        "sonar1_distance": 2.22,
+        "sonar2_distance": 1.78,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.22,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:58",
+        "water_temp": 17.86,
+        "ph": 7.81,
+        "conductivity": 46.08,
+        "sonar1_distance": 3.75,
+        "sonar2_distance": 2.75,
+        "gyro": {
+            "x": 0.12,
+            "y": 0.11,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:17:59",
+        "water_temp": 17.47,
+        "ph": 8.1,
+        "conductivity": 43.95,
+        "sonar1_distance": 0.96,
+        "sonar2_distance": 2.32,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.07,
+            "z": 0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:00",
+        "water_temp": 14.88,
+        "ph": 8.07,
+        "conductivity": 41.09,
+        "sonar1_distance": 1.29,
+        "sonar2_distance": 3.31,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.07,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:01",
+        "water_temp": 15.31,
+        "ph": 8.09,
+        "conductivity": 45.45,
+        "sonar1_distance": 2.52,
+        "sonar2_distance": 1.16,
+        "gyro": {
+            "x": 0.11,
+            "y": -0.04,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:02",
+        "water_temp": 17.26,
+        "ph": 8.12,
+        "conductivity": 49.64,
+        "sonar1_distance": 3.99,
+        "sonar2_distance": 2.13,
+        "gyro": {
+            "x": 0.16,
+            "y": -0.01,
+            "z": 0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:03",
+        "water_temp": 17.54,
+        "ph": 7.91,
+        "conductivity": 38.34,
+        "sonar1_distance": 4.33,
+        "sonar2_distance": 4.06,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.15,
+            "z": 0.23
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:04",
+        "water_temp": 15.21,
+        "ph": 8.02,
+        "conductivity": 38.44,
+        "sonar1_distance": 1.89,
+        "sonar2_distance": 3.42,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.11,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:05",
+        "water_temp": 15.48,
+        "ph": 7.86,
+        "conductivity": 40.38,
+        "sonar1_distance": 4.66,
+        "sonar2_distance": 4.07,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.07,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:06",
+        "water_temp": 17.39,
+        "ph": 8.06,
+        "conductivity": 38.5,
+        "sonar1_distance": 0.93,
+        "sonar2_distance": 0.6,
+        "gyro": {
+            "x": 0.15,
+            "y": -0.05,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:07",
+        "water_temp": 17.9,
+        "ph": 7.97,
+        "conductivity": 40.34,
+        "sonar1_distance": 2.01,
+        "sonar2_distance": 0.63,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.15,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:08",
+        "water_temp": 17.79,
+        "ph": 8.13,
+        "conductivity": 32.29,
+        "sonar1_distance": 0.73,
+        "sonar2_distance": 4.25,
+        "gyro": {
+            "x": 0.07,
+            "y": 0.02,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:09",
+        "water_temp": 15.45,
+        "ph": 8.07,
+        "conductivity": 37.69,
+        "sonar1_distance": 3.69,
+        "sonar2_distance": 4.87,
+        "gyro": {
+            "x": 0.1,
+            "y": -0.05,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:10",
+        "water_temp": 15.49,
+        "ph": 7.86,
+        "conductivity": 31.28,
+        "sonar1_distance": 4.62,
+        "sonar2_distance": 4.75,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.12,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:11",
+        "water_temp": 16.1,
+        "ph": 7.8,
+        "conductivity": 37.12,
+        "sonar1_distance": 3.86,
+        "sonar2_distance": 2.28,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.0,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:12",
+        "water_temp": 14.79,
+        "ph": 7.92,
+        "conductivity": 37.7,
+        "sonar1_distance": 1.01,
+        "sonar2_distance": 3.55,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.05,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:13",
+        "water_temp": 17.78,
+        "ph": 7.94,
+        "conductivity": 46.53,
+        "sonar1_distance": 2.64,
+        "sonar2_distance": 4.74,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.07,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:14",
+        "water_temp": 14.66,
+        "ph": 8.15,
+        "conductivity": 36.4,
+        "sonar1_distance": 3.82,
+        "sonar2_distance": 4.08,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.16,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:15",
+        "water_temp": 15.64,
+        "ph": 8.17,
+        "conductivity": 37.96,
+        "sonar1_distance": 2.65,
+        "sonar2_distance": 3.77,
+        "gyro": {
+            "x": 0.16,
+            "y": -0.05,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:16",
+        "water_temp": 16.1,
+        "ph": 8.08,
+        "conductivity": 33.87,
+        "sonar1_distance": 2.74,
+        "sonar2_distance": 1.59,
+        "gyro": {
+            "x": 0.11,
+            "y": 0.03,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:17",
+        "water_temp": 14.39,
+        "ph": 8.14,
+        "conductivity": 43.84,
+        "sonar1_distance": 2.86,
+        "sonar2_distance": 3.12,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.08,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:18",
+        "water_temp": 15.08,
+        "ph": 7.84,
+        "conductivity": 30.29,
+        "sonar1_distance": 2.27,
+        "sonar2_distance": 3.55,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.06,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:19",
+        "water_temp": 15.72,
+        "ph": 8.17,
+        "conductivity": 43.7,
+        "sonar1_distance": 4.84,
+        "sonar2_distance": 0.63,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.02,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:20",
+        "water_temp": 17.88,
+        "ph": 8.18,
+        "conductivity": 31.83,
+        "sonar1_distance": 1.66,
+        "sonar2_distance": 4.48,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.09,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:21",
+        "water_temp": 14.66,
+        "ph": 7.92,
+        "conductivity": 45.4,
+        "sonar1_distance": 4.95,
+        "sonar2_distance": 0.66,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.09,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:22",
+        "water_temp": 16.28,
+        "ph": 8.12,
+        "conductivity": 38.61,
+        "sonar1_distance": 1.67,
+        "sonar2_distance": 3.04,
+        "gyro": {
+            "x": 0.0,
+            "y": -0.04,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:23",
+        "water_temp": 17.02,
+        "ph": 8.01,
+        "conductivity": 31.57,
+        "sonar1_distance": 3.89,
+        "sonar2_distance": 2.25,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.01,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:24",
+        "water_temp": 17.71,
+        "ph": 8.07,
+        "conductivity": 45.21,
+        "sonar1_distance": 0.72,
+        "sonar2_distance": 3.3,
+        "gyro": {
+            "x": -0.15,
+            "y": 0.08,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:25",
+        "water_temp": 16.8,
+        "ph": 8.14,
+        "conductivity": 45.21,
+        "sonar1_distance": 4.27,
+        "sonar2_distance": 4.08,
+        "gyro": {
+            "x": -0.03,
+            "y": 0.22,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:26",
+        "water_temp": 15.5,
+        "ph": 8.19,
+        "conductivity": 40.72,
+        "sonar1_distance": 0.7,
+        "sonar2_distance": 1.21,
+        "gyro": {
+            "x": -0.04,
+            "y": 0.05,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:27",
+        "water_temp": 17.0,
+        "ph": 7.95,
+        "conductivity": 33.53,
+        "sonar1_distance": 0.84,
+        "sonar2_distance": 3.12,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.02,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:28",
+        "water_temp": 15.02,
+        "ph": 8.09,
+        "conductivity": 33.37,
+        "sonar1_distance": 1.79,
+        "sonar2_distance": 2.45,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.07,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:29",
+        "water_temp": 14.28,
+        "ph": 7.94,
+        "conductivity": 38.86,
+        "sonar1_distance": 2.24,
+        "sonar2_distance": 3.05,
+        "gyro": {
+            "x": -0.0,
+            "y": -0.04,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:30",
+        "water_temp": 16.91,
+        "ph": 7.97,
+        "conductivity": 38.7,
+        "sonar1_distance": 2.6,
+        "sonar2_distance": 1.96,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.07,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:31",
+        "water_temp": 17.29,
+        "ph": 8.12,
+        "conductivity": 41.67,
+        "sonar1_distance": 1.16,
+        "sonar2_distance": 1.87,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.06,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:32",
+        "water_temp": 14.62,
+        "ph": 8.01,
+        "conductivity": 30.91,
+        "sonar1_distance": 2.19,
+        "sonar2_distance": 3.54,
+        "gyro": {
+            "x": 0.09,
+            "y": 0.27,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:33",
+        "water_temp": 16.52,
+        "ph": 8.08,
+        "conductivity": 30.22,
+        "sonar1_distance": 3.98,
+        "sonar2_distance": 4.61,
+        "gyro": {
+            "x": -0.05,
+            "y": -0.14,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:34",
+        "water_temp": 15.71,
+        "ph": 8.03,
+        "conductivity": 38.93,
+        "sonar1_distance": 3.86,
+        "sonar2_distance": 4.19,
+        "gyro": {
+            "x": 0.05,
+            "y": 0.04,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:35",
+        "water_temp": 15.34,
+        "ph": 7.92,
+        "conductivity": 49.59,
+        "sonar1_distance": 3.04,
+        "sonar2_distance": 3.69,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.11,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:36",
+        "water_temp": 17.64,
+        "ph": 8.16,
+        "conductivity": 31.22,
+        "sonar1_distance": 1.87,
+        "sonar2_distance": 4.11,
+        "gyro": {
+            "x": 0.09,
+            "y": 0.0,
+            "z": -0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:37",
+        "water_temp": 16.59,
+        "ph": 7.98,
+        "conductivity": 49.01,
+        "sonar1_distance": 1.99,
+        "sonar2_distance": 0.75,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.1,
+            "z": -0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:38",
+        "water_temp": 16.56,
+        "ph": 8.14,
+        "conductivity": 39.9,
+        "sonar1_distance": 2.05,
+        "sonar2_distance": 2.48,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.01,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:39",
+        "water_temp": 15.31,
+        "ph": 7.93,
+        "conductivity": 32.09,
+        "sonar1_distance": 2.87,
+        "sonar2_distance": 3.97,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.04,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:40",
+        "water_temp": 14.61,
+        "ph": 8.14,
+        "conductivity": 47.15,
+        "sonar1_distance": 3.7,
+        "sonar2_distance": 3.05,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.05,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:41",
+        "water_temp": 17.68,
+        "ph": 7.83,
+        "conductivity": 41.36,
+        "sonar1_distance": 3.56,
+        "sonar2_distance": 4.44,
+        "gyro": {
+            "x": 0.14,
+            "y": 0.02,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:42",
+        "water_temp": 14.58,
+        "ph": 7.87,
+        "conductivity": 38.55,
+        "sonar1_distance": 4.66,
+        "sonar2_distance": 2.18,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.02,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:43",
+        "water_temp": 15.18,
+        "ph": 8.06,
+        "conductivity": 35.66,
+        "sonar1_distance": 3.16,
+        "sonar2_distance": 2.37,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.13,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:44",
+        "water_temp": 14.93,
+        "ph": 8.02,
+        "conductivity": 41.22,
+        "sonar1_distance": 4.18,
+        "sonar2_distance": 1.27,
+        "gyro": {
+            "x": -0.0,
+            "y": 0.16,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:45",
+        "water_temp": 16.25,
+        "ph": 8.07,
+        "conductivity": 39.93,
+        "sonar1_distance": 4.89,
+        "sonar2_distance": 4.58,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.03,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:46",
+        "water_temp": 14.18,
+        "ph": 8.18,
+        "conductivity": 31.71,
+        "sonar1_distance": 3.89,
+        "sonar2_distance": 4.8,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.1,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:47",
+        "water_temp": 16.22,
+        "ph": 7.92,
+        "conductivity": 44.15,
+        "sonar1_distance": 0.71,
+        "sonar2_distance": 1.45,
+        "gyro": {
+            "x": -0.29,
+            "y": -0.0,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:48",
+        "water_temp": 15.79,
+        "ph": 7.85,
+        "conductivity": 43.23,
+        "sonar1_distance": 2.38,
+        "sonar2_distance": 1.53,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.13,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:49",
+        "water_temp": 16.18,
+        "ph": 7.86,
+        "conductivity": 33.49,
+        "sonar1_distance": 1.53,
+        "sonar2_distance": 3.6,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.01,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:50",
+        "water_temp": 15.29,
+        "ph": 8.05,
+        "conductivity": 32.92,
+        "sonar1_distance": 1.56,
+        "sonar2_distance": 2.95,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.06,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:51",
+        "water_temp": 15.9,
+        "ph": 8.01,
+        "conductivity": 34.55,
+        "sonar1_distance": 2.57,
+        "sonar2_distance": 0.66,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.12,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:52",
+        "water_temp": 16.74,
+        "ph": 7.9,
+        "conductivity": 31.2,
+        "sonar1_distance": 0.85,
+        "sonar2_distance": 1.44,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.04,
+            "z": 0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:53",
+        "water_temp": 17.74,
+        "ph": 8.08,
+        "conductivity": 38.84,
+        "sonar1_distance": 0.9,
+        "sonar2_distance": 4.22,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.0,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:54",
+        "water_temp": 17.41,
+        "ph": 7.82,
+        "conductivity": 43.26,
+        "sonar1_distance": 1.48,
+        "sonar2_distance": 3.27,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.13,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:55",
+        "water_temp": 17.06,
+        "ph": 7.92,
+        "conductivity": 48.61,
+        "sonar1_distance": 3.59,
+        "sonar2_distance": 1.8,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.01,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:56",
+        "water_temp": 16.36,
+        "ph": 7.81,
+        "conductivity": 46.43,
+        "sonar1_distance": 1.01,
+        "sonar2_distance": 1.13,
+        "gyro": {
+            "x": -0.2,
+            "y": 0.0,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:57",
+        "water_temp": 15.53,
+        "ph": 7.9,
+        "conductivity": 45.16,
+        "sonar1_distance": 3.77,
+        "sonar2_distance": 4.99,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.2,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:58",
+        "water_temp": 14.68,
+        "ph": 7.96,
+        "conductivity": 31.26,
+        "sonar1_distance": 2.77,
+        "sonar2_distance": 4.13,
+        "gyro": {
+            "x": 0.15,
+            "y": -0.19,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:18:59",
+        "water_temp": 17.8,
+        "ph": 8.2,
+        "conductivity": 38.29,
+        "sonar1_distance": 3.53,
+        "sonar2_distance": 3.78,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.1,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:00",
+        "water_temp": 16.17,
+        "ph": 7.83,
+        "conductivity": 40.1,
+        "sonar1_distance": 1.39,
+        "sonar2_distance": 2.37,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.06,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:01",
+        "water_temp": 15.29,
+        "ph": 7.94,
+        "conductivity": 41.75,
+        "sonar1_distance": 3.28,
+        "sonar2_distance": 4.08,
+        "gyro": {
+            "x": -0.05,
+            "y": -0.02,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:02",
+        "water_temp": 14.05,
+        "ph": 8.04,
+        "conductivity": 35.2,
+        "sonar1_distance": 2.59,
+        "sonar2_distance": 2.13,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.13,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:03",
+        "water_temp": 15.35,
+        "ph": 7.95,
+        "conductivity": 30.35,
+        "sonar1_distance": 3.72,
+        "sonar2_distance": 2.89,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.09,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:04",
+        "water_temp": 17.92,
+        "ph": 7.8,
+        "conductivity": 33.55,
+        "sonar1_distance": 1.39,
+        "sonar2_distance": 2.8,
+        "gyro": {
+            "x": 0.2,
+            "y": -0.02,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:05",
+        "water_temp": 14.31,
+        "ph": 8.06,
+        "conductivity": 43.62,
+        "sonar1_distance": 3.81,
+        "sonar2_distance": 4.05,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.19,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:06",
+        "water_temp": 16.37,
+        "ph": 8.11,
+        "conductivity": 32.96,
+        "sonar1_distance": 4.45,
+        "sonar2_distance": 0.95,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.03,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:07",
+        "water_temp": 16.61,
+        "ph": 7.82,
+        "conductivity": 35.81,
+        "sonar1_distance": 4.3,
+        "sonar2_distance": 2.39,
+        "gyro": {
+            "x": -0.17,
+            "y": 0.03,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:08",
+        "water_temp": 16.94,
+        "ph": 7.9,
+        "conductivity": 45.35,
+        "sonar1_distance": 1.1,
+        "sonar2_distance": 1.64,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.09,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:09",
+        "water_temp": 14.43,
+        "ph": 8.14,
+        "conductivity": 37.19,
+        "sonar1_distance": 3.52,
+        "sonar2_distance": 1.91,
+        "gyro": {
+            "x": 0.16,
+            "y": 0.02,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:10",
+        "water_temp": 15.09,
+        "ph": 7.9,
+        "conductivity": 37.37,
+        "sonar1_distance": 2.46,
+        "sonar2_distance": 3.38,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.07,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:11",
+        "water_temp": 14.61,
+        "ph": 7.85,
+        "conductivity": 41.16,
+        "sonar1_distance": 2.71,
+        "sonar2_distance": 1.14,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.1,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:12",
+        "water_temp": 16.76,
+        "ph": 7.94,
+        "conductivity": 47.31,
+        "sonar1_distance": 2.66,
+        "sonar2_distance": 3.3,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.01,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:13",
+        "water_temp": 16.07,
+        "ph": 7.89,
+        "conductivity": 45.24,
+        "sonar1_distance": 3.57,
+        "sonar2_distance": 4.27,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.07,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:14",
+        "water_temp": 15.03,
+        "ph": 8.08,
+        "conductivity": 48.86,
+        "sonar1_distance": 4.88,
+        "sonar2_distance": 0.64,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.04,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:15",
+        "water_temp": 17.15,
+        "ph": 7.92,
+        "conductivity": 44.24,
+        "sonar1_distance": 0.78,
+        "sonar2_distance": 2.61,
+        "gyro": {
+            "x": -0.14,
+            "y": -0.05,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:16",
+        "water_temp": 15.69,
+        "ph": 7.92,
+        "conductivity": 41.06,
+        "sonar1_distance": 4.2,
+        "sonar2_distance": 3.34,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.1,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:17",
+        "water_temp": 17.75,
+        "ph": 7.87,
+        "conductivity": 47.53,
+        "sonar1_distance": 4.92,
+        "sonar2_distance": 2.64,
+        "gyro": {
+            "x": 0.24,
+            "y": -0.15,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:18",
+        "water_temp": 15.74,
+        "ph": 7.97,
+        "conductivity": 48.3,
+        "sonar1_distance": 4.03,
+        "sonar2_distance": 4.05,
+        "gyro": {
+            "x": -0.08,
+            "y": 0.16,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:19",
+        "water_temp": 16.46,
+        "ph": 7.91,
+        "conductivity": 37.41,
+        "sonar1_distance": 3.44,
+        "sonar2_distance": 2.14,
+        "gyro": {
+            "x": -0.05,
+            "y": -0.0,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:20",
+        "water_temp": 16.58,
+        "ph": 8.15,
+        "conductivity": 41.72,
+        "sonar1_distance": 4.49,
+        "sonar2_distance": 3.21,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.09,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:21",
+        "water_temp": 15.94,
+        "ph": 8.05,
+        "conductivity": 47.25,
+        "sonar1_distance": 1.77,
+        "sonar2_distance": 3.16,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.11,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:22",
+        "water_temp": 17.89,
+        "ph": 7.95,
+        "conductivity": 42.92,
+        "sonar1_distance": 2.58,
+        "sonar2_distance": 1.64,
+        "gyro": {
+            "x": 0.19,
+            "y": -0.24,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:23",
+        "water_temp": 15.47,
+        "ph": 8.08,
+        "conductivity": 49.35,
+        "sonar1_distance": 1.84,
+        "sonar2_distance": 0.7,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.08,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:24",
+        "water_temp": 15.74,
+        "ph": 7.8,
+        "conductivity": 37.44,
+        "sonar1_distance": 3.27,
+        "sonar2_distance": 3.03,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.02,
+            "z": -0.21
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:25",
+        "water_temp": 14.17,
+        "ph": 8.05,
+        "conductivity": 44.8,
+        "sonar1_distance": 0.78,
+        "sonar2_distance": 4.56,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.08,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:26",
+        "water_temp": 17.9,
+        "ph": 8.12,
+        "conductivity": 32.96,
+        "sonar1_distance": 4.24,
+        "sonar2_distance": 3.22,
+        "gyro": {
+            "x": 0.14,
+            "y": 0.03,
+            "z": -0.24
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:27",
+        "water_temp": 16.89,
+        "ph": 8.16,
+        "conductivity": 36.81,
+        "sonar1_distance": 1.21,
+        "sonar2_distance": 3.48,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.04,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:28",
+        "water_temp": 16.09,
+        "ph": 8.01,
+        "conductivity": 30.31,
+        "sonar1_distance": 3.27,
+        "sonar2_distance": 2.65,
+        "gyro": {
+            "x": 0.16,
+            "y": 0.19,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:29",
+        "water_temp": 16.4,
+        "ph": 8.01,
+        "conductivity": 38.54,
+        "sonar1_distance": 2.05,
+        "sonar2_distance": 0.56,
+        "gyro": {
+            "x": -0.09,
+            "y": -0.14,
+            "z": 0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:30",
+        "water_temp": 17.74,
+        "ph": 8.09,
+        "conductivity": 31.05,
+        "sonar1_distance": 1.28,
+        "sonar2_distance": 2.87,
+        "gyro": {
+            "x": 0.14,
+            "y": 0.02,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:31",
+        "water_temp": 17.86,
+        "ph": 7.95,
+        "conductivity": 32.46,
+        "sonar1_distance": 0.8,
+        "sonar2_distance": 1.93,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.13,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:32",
+        "water_temp": 15.17,
+        "ph": 8.18,
+        "conductivity": 43.04,
+        "sonar1_distance": 0.67,
+        "sonar2_distance": 2.08,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.11,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:33",
+        "water_temp": 14.62,
+        "ph": 8.08,
+        "conductivity": 36.89,
+        "sonar1_distance": 2.93,
+        "sonar2_distance": 3.23,
+        "gyro": {
+            "x": 0.14,
+            "y": 0.08,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:34",
+        "water_temp": 17.85,
+        "ph": 7.94,
+        "conductivity": 34.13,
+        "sonar1_distance": 3.77,
+        "sonar2_distance": 3.84,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.03,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:35",
+        "water_temp": 15.88,
+        "ph": 8.15,
+        "conductivity": 33.7,
+        "sonar1_distance": 2.1,
+        "sonar2_distance": 2.02,
+        "gyro": {
+            "x": -0.05,
+            "y": -0.0,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:36",
+        "water_temp": 14.47,
+        "ph": 8.18,
+        "conductivity": 39.88,
+        "sonar1_distance": 0.82,
+        "sonar2_distance": 0.85,
+        "gyro": {
+            "x": 0.11,
+            "y": -0.1,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:37",
+        "water_temp": 15.87,
+        "ph": 8.17,
+        "conductivity": 33.65,
+        "sonar1_distance": 3.44,
+        "sonar2_distance": 2.95,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.02,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:38",
+        "water_temp": 14.58,
+        "ph": 7.98,
+        "conductivity": 36.95,
+        "sonar1_distance": 2.33,
+        "sonar2_distance": 3.82,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.01,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:39",
+        "water_temp": 14.47,
+        "ph": 7.93,
+        "conductivity": 44.85,
+        "sonar1_distance": 2.53,
+        "sonar2_distance": 1.69,
+        "gyro": {
+            "x": -0.13,
+            "y": 0.24,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:40",
+        "water_temp": 17.28,
+        "ph": 8.04,
+        "conductivity": 30.87,
+        "sonar1_distance": 4.49,
+        "sonar2_distance": 2.39,
+        "gyro": {
+            "x": -0.17,
+            "y": 0.16,
+            "z": -0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:41",
+        "water_temp": 15.3,
+        "ph": 7.85,
+        "conductivity": 46.19,
+        "sonar1_distance": 2.96,
+        "sonar2_distance": 1.84,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.04,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:42",
+        "water_temp": 15.31,
+        "ph": 7.84,
+        "conductivity": 34.47,
+        "sonar1_distance": 4.11,
+        "sonar2_distance": 1.57,
+        "gyro": {
+            "x": -0.0,
+            "y": -0.07,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:43",
+        "water_temp": 17.07,
+        "ph": 7.99,
+        "conductivity": 46.86,
+        "sonar1_distance": 0.52,
+        "sonar2_distance": 1.92,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.1,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:44",
+        "water_temp": 16.1,
+        "ph": 7.98,
+        "conductivity": 33.75,
+        "sonar1_distance": 2.03,
+        "sonar2_distance": 2.83,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.18,
+            "z": -0.22
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:45",
+        "water_temp": 16.85,
+        "ph": 8.08,
+        "conductivity": 46.43,
+        "sonar1_distance": 3.83,
+        "sonar2_distance": 2.9,
+        "gyro": {
+            "x": 0.09,
+            "y": 0.06,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:46",
+        "water_temp": 14.71,
+        "ph": 8.11,
+        "conductivity": 37.89,
+        "sonar1_distance": 2.54,
+        "sonar2_distance": 3.32,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.12,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:47",
+        "water_temp": 15.12,
+        "ph": 8.13,
+        "conductivity": 36.43,
+        "sonar1_distance": 1.56,
+        "sonar2_distance": 4.84,
+        "gyro": {
+            "x": -0.04,
+            "y": -0.15,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:48",
+        "water_temp": 15.95,
+        "ph": 8.19,
+        "conductivity": 47.48,
+        "sonar1_distance": 2.11,
+        "sonar2_distance": 1.47,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.16,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:49",
+        "water_temp": 14.65,
+        "ph": 7.91,
+        "conductivity": 31.29,
+        "sonar1_distance": 0.67,
+        "sonar2_distance": 1.34,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.04,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:50",
+        "water_temp": 14.34,
+        "ph": 8.19,
+        "conductivity": 40.38,
+        "sonar1_distance": 2.28,
+        "sonar2_distance": 3.88,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.09,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:51",
+        "water_temp": 16.25,
+        "ph": 7.87,
+        "conductivity": 44.74,
+        "sonar1_distance": 4.97,
+        "sonar2_distance": 1.05,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.12,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:52",
+        "water_temp": 17.43,
+        "ph": 8.01,
+        "conductivity": 36.53,
+        "sonar1_distance": 0.71,
+        "sonar2_distance": 1.85,
+        "gyro": {
+            "x": -0.05,
+            "y": -0.06,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:53",
+        "water_temp": 16.95,
+        "ph": 7.82,
+        "conductivity": 36.72,
+        "sonar1_distance": 4.57,
+        "sonar2_distance": 2.92,
+        "gyro": {
+            "x": -0.09,
+            "y": 0.02,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:54",
+        "water_temp": 14.02,
+        "ph": 7.93,
+        "conductivity": 39.01,
+        "sonar1_distance": 3.02,
+        "sonar2_distance": 3.7,
+        "gyro": {
+            "x": 0.19,
+            "y": 0.0,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:55",
+        "water_temp": 16.68,
+        "ph": 8.04,
+        "conductivity": 41.51,
+        "sonar1_distance": 3.74,
+        "sonar2_distance": 0.9,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.1,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:56",
+        "water_temp": 16.41,
+        "ph": 7.8,
+        "conductivity": 36.25,
+        "sonar1_distance": 2.97,
+        "sonar2_distance": 3.61,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.02,
+            "z": 0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:57",
+        "water_temp": 17.9,
+        "ph": 8.09,
+        "conductivity": 49.94,
+        "sonar1_distance": 2.58,
+        "sonar2_distance": 4.15,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.03,
+            "z": -0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:58",
+        "water_temp": 17.24,
+        "ph": 7.93,
+        "conductivity": 39.93,
+        "sonar1_distance": 3.47,
+        "sonar2_distance": 3.92,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.11,
+            "z": -0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:19:59",
+        "water_temp": 15.88,
+        "ph": 8.0,
+        "conductivity": 44.11,
+        "sonar1_distance": 4.7,
+        "sonar2_distance": 1.36,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.19,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:00",
+        "water_temp": 17.23,
+        "ph": 8.18,
+        "conductivity": 47.84,
+        "sonar1_distance": 4.74,
+        "sonar2_distance": 0.89,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.16,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:01",
+        "water_temp": 15.21,
+        "ph": 8.03,
+        "conductivity": 43.55,
+        "sonar1_distance": 4.62,
+        "sonar2_distance": 4.44,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.02,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:02",
+        "water_temp": 17.28,
+        "ph": 8.15,
+        "conductivity": 42.75,
+        "sonar1_distance": 1.22,
+        "sonar2_distance": 4.32,
+        "gyro": {
+            "x": 0.19,
+            "y": 0.05,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:03",
+        "water_temp": 15.34,
+        "ph": 8.14,
+        "conductivity": 47.49,
+        "sonar1_distance": 3.39,
+        "sonar2_distance": 4.37,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.1,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:04",
+        "water_temp": 16.84,
+        "ph": 7.94,
+        "conductivity": 44.02,
+        "sonar1_distance": 2.96,
+        "sonar2_distance": 0.75,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.0,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:05",
+        "water_temp": 16.79,
+        "ph": 8.13,
+        "conductivity": 30.46,
+        "sonar1_distance": 2.69,
+        "sonar2_distance": 2.52,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.06,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:06",
+        "water_temp": 15.61,
+        "ph": 7.94,
+        "conductivity": 49.72,
+        "sonar1_distance": 4.67,
+        "sonar2_distance": 2.62,
+        "gyro": {
+            "x": -0.12,
+            "y": -0.03,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:07",
+        "water_temp": 16.11,
+        "ph": 7.91,
+        "conductivity": 31.67,
+        "sonar1_distance": 4.87,
+        "sonar2_distance": 1.76,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.11,
+            "z": -0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:08",
+        "water_temp": 16.03,
+        "ph": 8.16,
+        "conductivity": 37.84,
+        "sonar1_distance": 0.75,
+        "sonar2_distance": 4.35,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.22,
+            "z": 0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:09",
+        "water_temp": 17.95,
+        "ph": 7.93,
+        "conductivity": 35.19,
+        "sonar1_distance": 1.43,
+        "sonar2_distance": 2.94,
+        "gyro": {
+            "x": -0.03,
+            "y": 0.06,
+            "z": -0.22
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:10",
+        "water_temp": 16.98,
+        "ph": 7.96,
+        "conductivity": 36.29,
+        "sonar1_distance": 3.51,
+        "sonar2_distance": 3.21,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.09,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:11",
+        "water_temp": 15.32,
+        "ph": 7.86,
+        "conductivity": 39.89,
+        "sonar1_distance": 3.7,
+        "sonar2_distance": 3.48,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.05,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:12",
+        "water_temp": 15.66,
+        "ph": 8.18,
+        "conductivity": 31.07,
+        "sonar1_distance": 4.77,
+        "sonar2_distance": 2.82,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.1,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:13",
+        "water_temp": 17.47,
+        "ph": 7.98,
+        "conductivity": 45.59,
+        "sonar1_distance": 1.76,
+        "sonar2_distance": 2.39,
+        "gyro": {
+            "x": -0.16,
+            "y": 0.15,
+            "z": -0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:14",
+        "water_temp": 15.92,
+        "ph": 8.12,
+        "conductivity": 39.52,
+        "sonar1_distance": 4.4,
+        "sonar2_distance": 3.78,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.19,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:15",
+        "water_temp": 14.91,
+        "ph": 7.84,
+        "conductivity": 39.64,
+        "sonar1_distance": 3.06,
+        "sonar2_distance": 2.49,
+        "gyro": {
+            "x": 0.11,
+            "y": -0.1,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:16",
+        "water_temp": 17.78,
+        "ph": 7.8,
+        "conductivity": 41.07,
+        "sonar1_distance": 2.78,
+        "sonar2_distance": 3.73,
+        "gyro": {
+            "x": 0.1,
+            "y": -0.04,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:17",
+        "water_temp": 14.16,
+        "ph": 8.06,
+        "conductivity": 43.24,
+        "sonar1_distance": 4.99,
+        "sonar2_distance": 1.85,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.17,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:18",
+        "water_temp": 15.16,
+        "ph": 8.15,
+        "conductivity": 45.89,
+        "sonar1_distance": 4.9,
+        "sonar2_distance": 4.31,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.02,
+            "z": 0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:19",
+        "water_temp": 16.67,
+        "ph": 7.85,
+        "conductivity": 39.47,
+        "sonar1_distance": 3.0,
+        "sonar2_distance": 3.36,
+        "gyro": {
+            "x": 0.21,
+            "y": 0.08,
+            "z": -0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:20",
+        "water_temp": 15.6,
+        "ph": 8.12,
+        "conductivity": 43.64,
+        "sonar1_distance": 4.29,
+        "sonar2_distance": 4.82,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.01,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:21",
+        "water_temp": 14.66,
+        "ph": 7.9,
+        "conductivity": 48.31,
+        "sonar1_distance": 4.22,
+        "sonar2_distance": 4.66,
+        "gyro": {
+            "x": -0.16,
+            "y": 0.06,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:22",
+        "water_temp": 14.41,
+        "ph": 7.96,
+        "conductivity": 49.1,
+        "sonar1_distance": 2.13,
+        "sonar2_distance": 4.45,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.11,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:23",
+        "water_temp": 14.31,
+        "ph": 7.95,
+        "conductivity": 44.76,
+        "sonar1_distance": 4.99,
+        "sonar2_distance": 2.05,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.08,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:24",
+        "water_temp": 15.95,
+        "ph": 7.96,
+        "conductivity": 45.12,
+        "sonar1_distance": 2.17,
+        "sonar2_distance": 0.89,
+        "gyro": {
+            "x": 0.13,
+            "y": 0.17,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:25",
+        "water_temp": 16.84,
+        "ph": 8.09,
+        "conductivity": 39.07,
+        "sonar1_distance": 2.62,
+        "sonar2_distance": 3.62,
+        "gyro": {
+            "x": 0.09,
+            "y": -0.2,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:26",
+        "water_temp": 16.22,
+        "ph": 8.06,
+        "conductivity": 33.44,
+        "sonar1_distance": 1.62,
+        "sonar2_distance": 3.38,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.09,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:27",
+        "water_temp": 15.04,
+        "ph": 7.94,
+        "conductivity": 43.34,
+        "sonar1_distance": 2.96,
+        "sonar2_distance": 0.91,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.05,
+            "z": -0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:28",
+        "water_temp": 16.2,
+        "ph": 7.85,
+        "conductivity": 50.0,
+        "sonar1_distance": 1.29,
+        "sonar2_distance": 2.55,
+        "gyro": {
+            "x": 0.09,
+            "y": 0.07,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:29",
+        "water_temp": 16.6,
+        "ph": 7.99,
+        "conductivity": 48.79,
+        "sonar1_distance": 1.55,
+        "sonar2_distance": 4.54,
+        "gyro": {
+            "x": -0.0,
+            "y": 0.06,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:30",
+        "water_temp": 16.43,
+        "ph": 7.96,
+        "conductivity": 33.18,
+        "sonar1_distance": 1.51,
+        "sonar2_distance": 1.11,
+        "gyro": {
+            "x": 0.11,
+            "y": -0.08,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:31",
+        "water_temp": 17.4,
+        "ph": 7.83,
+        "conductivity": 36.75,
+        "sonar1_distance": 0.85,
+        "sonar2_distance": 3.14,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.13,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:32",
+        "water_temp": 14.45,
+        "ph": 7.93,
+        "conductivity": 46.75,
+        "sonar1_distance": 3.51,
+        "sonar2_distance": 3.75,
+        "gyro": {
+            "x": 0.09,
+            "y": 0.13,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:33",
+        "water_temp": 16.27,
+        "ph": 8.05,
+        "conductivity": 45.96,
+        "sonar1_distance": 4.59,
+        "sonar2_distance": 4.53,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.19,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:34",
+        "water_temp": 14.05,
+        "ph": 8.06,
+        "conductivity": 49.34,
+        "sonar1_distance": 4.56,
+        "sonar2_distance": 1.46,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.2,
+            "z": -0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:35",
+        "water_temp": 14.03,
+        "ph": 7.85,
+        "conductivity": 31.03,
+        "sonar1_distance": 2.8,
+        "sonar2_distance": 0.67,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.07,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:36",
+        "water_temp": 15.0,
+        "ph": 8.02,
+        "conductivity": 44.51,
+        "sonar1_distance": 3.53,
+        "sonar2_distance": 3.47,
+        "gyro": {
+            "x": 0.12,
+            "y": 0.07,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:37",
+        "water_temp": 15.31,
+        "ph": 8.09,
+        "conductivity": 36.85,
+        "sonar1_distance": 2.68,
+        "sonar2_distance": 4.71,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.03,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:38",
+        "water_temp": 17.06,
+        "ph": 8.01,
+        "conductivity": 46.62,
+        "sonar1_distance": 2.98,
+        "sonar2_distance": 4.29,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.14,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:39",
+        "water_temp": 16.65,
+        "ph": 8.02,
+        "conductivity": 47.52,
+        "sonar1_distance": 1.93,
+        "sonar2_distance": 3.03,
+        "gyro": {
+            "x": -0.24,
+            "y": 0.06,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:40",
+        "water_temp": 17.43,
+        "ph": 7.86,
+        "conductivity": 48.85,
+        "sonar1_distance": 4.78,
+        "sonar2_distance": 2.83,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.2,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:41",
+        "water_temp": 17.65,
+        "ph": 8.0,
+        "conductivity": 48.29,
+        "sonar1_distance": 2.55,
+        "sonar2_distance": 4.03,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.04,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:42",
+        "water_temp": 17.12,
+        "ph": 8.01,
+        "conductivity": 43.87,
+        "sonar1_distance": 3.0,
+        "sonar2_distance": 1.69,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.0,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:43",
+        "water_temp": 17.0,
+        "ph": 7.91,
+        "conductivity": 42.49,
+        "sonar1_distance": 2.75,
+        "sonar2_distance": 0.9,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.1,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:44",
+        "water_temp": 17.92,
+        "ph": 8.15,
+        "conductivity": 48.82,
+        "sonar1_distance": 2.89,
+        "sonar2_distance": 0.56,
+        "gyro": {
+            "x": -0.11,
+            "y": 0.08,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:45",
+        "water_temp": 15.8,
+        "ph": 8.03,
+        "conductivity": 48.93,
+        "sonar1_distance": 4.33,
+        "sonar2_distance": 3.69,
+        "gyro": {
+            "x": -0.04,
+            "y": 0.04,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:46",
+        "water_temp": 17.15,
+        "ph": 7.81,
+        "conductivity": 44.67,
+        "sonar1_distance": 2.81,
+        "sonar2_distance": 3.28,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.07,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:47",
+        "water_temp": 17.48,
+        "ph": 8.05,
+        "conductivity": 30.47,
+        "sonar1_distance": 2.89,
+        "sonar2_distance": 1.78,
+        "gyro": {
+            "x": -0.13,
+            "y": -0.04,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:48",
+        "water_temp": 16.0,
+        "ph": 8.0,
+        "conductivity": 40.75,
+        "sonar1_distance": 4.11,
+        "sonar2_distance": 3.05,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.15,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:49",
+        "water_temp": 17.77,
+        "ph": 8.07,
+        "conductivity": 43.88,
+        "sonar1_distance": 4.93,
+        "sonar2_distance": 1.71,
+        "gyro": {
+            "x": -0.0,
+            "y": 0.2,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:50",
+        "water_temp": 16.72,
+        "ph": 8.13,
+        "conductivity": 30.63,
+        "sonar1_distance": 0.66,
+        "sonar2_distance": 4.21,
+        "gyro": {
+            "x": -0.18,
+            "y": 0.18,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:51",
+        "water_temp": 15.36,
+        "ph": 7.99,
+        "conductivity": 44.2,
+        "sonar1_distance": 2.93,
+        "sonar2_distance": 3.07,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.05,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:52",
+        "water_temp": 16.25,
+        "ph": 8.13,
+        "conductivity": 49.09,
+        "sonar1_distance": 2.48,
+        "sonar2_distance": 1.2,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.04,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:53",
+        "water_temp": 14.36,
+        "ph": 8.1,
+        "conductivity": 31.52,
+        "sonar1_distance": 3.31,
+        "sonar2_distance": 2.86,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.15,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:54",
+        "water_temp": 16.35,
+        "ph": 7.81,
+        "conductivity": 48.66,
+        "sonar1_distance": 2.54,
+        "sonar2_distance": 0.56,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.11,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:55",
+        "water_temp": 16.81,
+        "ph": 8.06,
+        "conductivity": 47.99,
+        "sonar1_distance": 4.83,
+        "sonar2_distance": 0.79,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.05,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:56",
+        "water_temp": 16.47,
+        "ph": 7.96,
+        "conductivity": 36.94,
+        "sonar1_distance": 4.94,
+        "sonar2_distance": 4.36,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.01,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:57",
+        "water_temp": 17.88,
+        "ph": 7.95,
+        "conductivity": 30.19,
+        "sonar1_distance": 3.38,
+        "sonar2_distance": 2.44,
+        "gyro": {
+            "x": 0.19,
+            "y": -0.02,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:58",
+        "water_temp": 16.9,
+        "ph": 8.1,
+        "conductivity": 39.71,
+        "sonar1_distance": 2.54,
+        "sonar2_distance": 1.66,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.11,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:20:59",
+        "water_temp": 16.72,
+        "ph": 7.84,
+        "conductivity": 49.84,
+        "sonar1_distance": 2.76,
+        "sonar2_distance": 4.08,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.09,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:00",
+        "water_temp": 16.28,
+        "ph": 8.17,
+        "conductivity": 44.92,
+        "sonar1_distance": 3.75,
+        "sonar2_distance": 1.85,
+        "gyro": {
+            "x": -0.09,
+            "y": 0.08,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:01",
+        "water_temp": 14.87,
+        "ph": 8.04,
+        "conductivity": 35.96,
+        "sonar1_distance": 4.36,
+        "sonar2_distance": 4.38,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.09,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:02",
+        "water_temp": 17.35,
+        "ph": 7.97,
+        "conductivity": 49.32,
+        "sonar1_distance": 3.41,
+        "sonar2_distance": 4.49,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.13,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:03",
+        "water_temp": 15.91,
+        "ph": 8.07,
+        "conductivity": 46.39,
+        "sonar1_distance": 3.72,
+        "sonar2_distance": 1.27,
+        "gyro": {
+            "x": 0.1,
+            "y": -0.05,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:04",
+        "water_temp": 14.44,
+        "ph": 7.92,
+        "conductivity": 42.94,
+        "sonar1_distance": 3.89,
+        "sonar2_distance": 3.75,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.05,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:05",
+        "water_temp": 16.65,
+        "ph": 7.82,
+        "conductivity": 36.38,
+        "sonar1_distance": 4.11,
+        "sonar2_distance": 3.97,
+        "gyro": {
+            "x": 0.16,
+            "y": 0.02,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:06",
+        "water_temp": 17.79,
+        "ph": 8.17,
+        "conductivity": 45.71,
+        "sonar1_distance": 4.38,
+        "sonar2_distance": 2.8,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.1,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:07",
+        "water_temp": 15.06,
+        "ph": 8.08,
+        "conductivity": 36.2,
+        "sonar1_distance": 4.67,
+        "sonar2_distance": 2.68,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.18,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:08",
+        "water_temp": 16.48,
+        "ph": 8.0,
+        "conductivity": 49.4,
+        "sonar1_distance": 1.03,
+        "sonar2_distance": 1.2,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.15,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:09",
+        "water_temp": 14.01,
+        "ph": 7.96,
+        "conductivity": 31.47,
+        "sonar1_distance": 4.94,
+        "sonar2_distance": 0.86,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.05,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:10",
+        "water_temp": 17.96,
+        "ph": 7.91,
+        "conductivity": 43.78,
+        "sonar1_distance": 1.33,
+        "sonar2_distance": 3.23,
+        "gyro": {
+            "x": -0.09,
+            "y": -0.04,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:11",
+        "water_temp": 15.47,
+        "ph": 7.83,
+        "conductivity": 34.56,
+        "sonar1_distance": 1.23,
+        "sonar2_distance": 2.84,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.06,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:12",
+        "water_temp": 17.2,
+        "ph": 8.06,
+        "conductivity": 38.57,
+        "sonar1_distance": 0.99,
+        "sonar2_distance": 3.95,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.13,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:13",
+        "water_temp": 17.66,
+        "ph": 8.17,
+        "conductivity": 37.86,
+        "sonar1_distance": 4.51,
+        "sonar2_distance": 0.57,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.01,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:14",
+        "water_temp": 15.69,
+        "ph": 8.11,
+        "conductivity": 46.59,
+        "sonar1_distance": 1.13,
+        "sonar2_distance": 0.52,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.1,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:15",
+        "water_temp": 16.77,
+        "ph": 7.92,
+        "conductivity": 46.61,
+        "sonar1_distance": 3.39,
+        "sonar2_distance": 1.09,
+        "gyro": {
+            "x": -0.13,
+            "y": -0.03,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:16",
+        "water_temp": 15.07,
+        "ph": 8.0,
+        "conductivity": 47.93,
+        "sonar1_distance": 1.11,
+        "sonar2_distance": 4.89,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.01,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:17",
+        "water_temp": 14.01,
+        "ph": 8.02,
+        "conductivity": 45.22,
+        "sonar1_distance": 4.41,
+        "sonar2_distance": 2.51,
+        "gyro": {
+            "x": 0.09,
+            "y": -0.09,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:18",
+        "water_temp": 15.29,
+        "ph": 8.01,
+        "conductivity": 44.01,
+        "sonar1_distance": 4.26,
+        "sonar2_distance": 4.49,
+        "gyro": {
+            "x": 0.15,
+            "y": 0.06,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:19",
+        "water_temp": 14.84,
+        "ph": 8.07,
+        "conductivity": 38.3,
+        "sonar1_distance": 4.97,
+        "sonar2_distance": 4.57,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.1,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:20",
+        "water_temp": 14.87,
+        "ph": 8.1,
+        "conductivity": 40.59,
+        "sonar1_distance": 2.84,
+        "sonar2_distance": 1.37,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.08,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:21",
+        "water_temp": 17.88,
+        "ph": 7.81,
+        "conductivity": 33.83,
+        "sonar1_distance": 2.87,
+        "sonar2_distance": 2.21,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.01,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:22",
+        "water_temp": 14.46,
+        "ph": 7.84,
+        "conductivity": 38.63,
+        "sonar1_distance": 0.77,
+        "sonar2_distance": 2.24,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.04,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:23",
+        "water_temp": 16.13,
+        "ph": 8.0,
+        "conductivity": 39.66,
+        "sonar1_distance": 4.61,
+        "sonar2_distance": 1.64,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.21,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:24",
+        "water_temp": 16.81,
+        "ph": 8.05,
+        "conductivity": 34.84,
+        "sonar1_distance": 1.64,
+        "sonar2_distance": 3.43,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.1,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:25",
+        "water_temp": 14.77,
+        "ph": 8.07,
+        "conductivity": 44.75,
+        "sonar1_distance": 2.71,
+        "sonar2_distance": 2.03,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.11,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:26",
+        "water_temp": 16.45,
+        "ph": 8.02,
+        "conductivity": 41.41,
+        "sonar1_distance": 1.89,
+        "sonar2_distance": 3.24,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.13,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:27",
+        "water_temp": 16.23,
+        "ph": 8.04,
+        "conductivity": 48.18,
+        "sonar1_distance": 2.65,
+        "sonar2_distance": 4.48,
+        "gyro": {
+            "x": 0.16,
+            "y": -0.09,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:28",
+        "water_temp": 17.29,
+        "ph": 7.92,
+        "conductivity": 38.34,
+        "sonar1_distance": 2.61,
+        "sonar2_distance": 4.03,
+        "gyro": {
+            "x": -0.18,
+            "y": 0.03,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:29",
+        "water_temp": 17.88,
+        "ph": 8.11,
+        "conductivity": 38.76,
+        "sonar1_distance": 1.31,
+        "sonar2_distance": 3.02,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.15,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:30",
+        "water_temp": 17.18,
+        "ph": 7.97,
+        "conductivity": 31.96,
+        "sonar1_distance": 2.96,
+        "sonar2_distance": 3.77,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.03,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:31",
+        "water_temp": 17.81,
+        "ph": 8.18,
+        "conductivity": 35.49,
+        "sonar1_distance": 1.0,
+        "sonar2_distance": 2.73,
+        "gyro": {
+            "x": 0.11,
+            "y": 0.11,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:32",
+        "water_temp": 15.51,
+        "ph": 8.16,
+        "conductivity": 38.12,
+        "sonar1_distance": 2.6,
+        "sonar2_distance": 3.59,
+        "gyro": {
+            "x": -0.19,
+            "y": -0.03,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:33",
+        "water_temp": 14.6,
+        "ph": 7.9,
+        "conductivity": 42.96,
+        "sonar1_distance": 1.52,
+        "sonar2_distance": 4.95,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.2,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:34",
+        "water_temp": 16.91,
+        "ph": 7.9,
+        "conductivity": 38.01,
+        "sonar1_distance": 3.73,
+        "sonar2_distance": 3.46,
+        "gyro": {
+            "x": 0.11,
+            "y": 0.09,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:35",
+        "water_temp": 17.72,
+        "ph": 7.9,
+        "conductivity": 46.17,
+        "sonar1_distance": 3.86,
+        "sonar2_distance": 3.24,
+        "gyro": {
+            "x": -0.24,
+            "y": -0.01,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:36",
+        "water_temp": 16.93,
+        "ph": 7.9,
+        "conductivity": 31.18,
+        "sonar1_distance": 4.87,
+        "sonar2_distance": 3.08,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.13,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:37",
+        "water_temp": 14.12,
+        "ph": 8.04,
+        "conductivity": 44.95,
+        "sonar1_distance": 3.59,
+        "sonar2_distance": 3.3,
+        "gyro": {
+            "x": -0.16,
+            "y": 0.16,
+            "z": -0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:38",
+        "water_temp": 17.1,
+        "ph": 8.17,
+        "conductivity": 41.76,
+        "sonar1_distance": 1.41,
+        "sonar2_distance": 0.68,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.14,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:39",
+        "water_temp": 16.31,
+        "ph": 8.12,
+        "conductivity": 43.53,
+        "sonar1_distance": 3.0,
+        "sonar2_distance": 3.29,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.03,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:40",
+        "water_temp": 16.17,
+        "ph": 7.95,
+        "conductivity": 43.97,
+        "sonar1_distance": 0.89,
+        "sonar2_distance": 4.33,
+        "gyro": {
+            "x": -0.04,
+            "y": 0.09,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:41",
+        "water_temp": 14.63,
+        "ph": 8.01,
+        "conductivity": 36.95,
+        "sonar1_distance": 4.8,
+        "sonar2_distance": 4.04,
+        "gyro": {
+            "x": -0.05,
+            "y": -0.13,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:42",
+        "water_temp": 15.24,
+        "ph": 7.94,
+        "conductivity": 38.09,
+        "sonar1_distance": 1.56,
+        "sonar2_distance": 1.4,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.0,
+            "z": 0.21
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:43",
+        "water_temp": 14.64,
+        "ph": 7.84,
+        "conductivity": 47.19,
+        "sonar1_distance": 3.81,
+        "sonar2_distance": 2.67,
+        "gyro": {
+            "x": -0.2,
+            "y": 0.17,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:44",
+        "water_temp": 16.49,
+        "ph": 7.84,
+        "conductivity": 47.43,
+        "sonar1_distance": 4.45,
+        "sonar2_distance": 2.28,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.1,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:45",
+        "water_temp": 16.32,
+        "ph": 7.93,
+        "conductivity": 45.09,
+        "sonar1_distance": 4.59,
+        "sonar2_distance": 4.5,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.07,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:46",
+        "water_temp": 16.45,
+        "ph": 7.84,
+        "conductivity": 36.05,
+        "sonar1_distance": 3.11,
+        "sonar2_distance": 4.5,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.0,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:47",
+        "water_temp": 17.37,
+        "ph": 8.09,
+        "conductivity": 45.74,
+        "sonar1_distance": 4.37,
+        "sonar2_distance": 2.59,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.02,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:48",
+        "water_temp": 14.83,
+        "ph": 8.03,
+        "conductivity": 33.62,
+        "sonar1_distance": 0.95,
+        "sonar2_distance": 0.72,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.09,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:49",
+        "water_temp": 16.66,
+        "ph": 8.17,
+        "conductivity": 34.24,
+        "sonar1_distance": 2.77,
+        "sonar2_distance": 4.31,
+        "gyro": {
+            "x": -0.13,
+            "y": -0.06,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:50",
+        "water_temp": 15.18,
+        "ph": 8.19,
+        "conductivity": 44.79,
+        "sonar1_distance": 3.88,
+        "sonar2_distance": 2.11,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.07,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:51",
+        "water_temp": 15.28,
+        "ph": 7.82,
+        "conductivity": 35.77,
+        "sonar1_distance": 1.5,
+        "sonar2_distance": 3.23,
+        "gyro": {
+            "x": -0.09,
+            "y": 0.01,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:52",
+        "water_temp": 15.82,
+        "ph": 8.14,
+        "conductivity": 30.0,
+        "sonar1_distance": 3.75,
+        "sonar2_distance": 1.58,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.02,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:53",
+        "water_temp": 17.2,
+        "ph": 7.82,
+        "conductivity": 38.2,
+        "sonar1_distance": 2.93,
+        "sonar2_distance": 2.01,
+        "gyro": {
+            "x": -0.15,
+            "y": -0.01,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:54",
+        "water_temp": 15.49,
+        "ph": 7.94,
+        "conductivity": 40.78,
+        "sonar1_distance": 3.89,
+        "sonar2_distance": 1.09,
+        "gyro": {
+            "x": 0.05,
+            "y": 0.01,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:55",
+        "water_temp": 17.54,
+        "ph": 8.15,
+        "conductivity": 34.89,
+        "sonar1_distance": 2.47,
+        "sonar2_distance": 0.61,
+        "gyro": {
+            "x": -0.11,
+            "y": -0.05,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:56",
+        "water_temp": 15.06,
+        "ph": 7.85,
+        "conductivity": 47.08,
+        "sonar1_distance": 2.71,
+        "sonar2_distance": 2.15,
+        "gyro": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:57",
+        "water_temp": 16.95,
+        "ph": 7.92,
+        "conductivity": 32.97,
+        "sonar1_distance": 1.93,
+        "sonar2_distance": 3.85,
+        "gyro": {
+            "x": -0.04,
+            "y": -0.12,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:58",
+        "water_temp": 15.81,
+        "ph": 8.17,
+        "conductivity": 31.74,
+        "sonar1_distance": 3.15,
+        "sonar2_distance": 3.26,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.02,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:21:59",
+        "water_temp": 15.39,
+        "ph": 7.88,
+        "conductivity": 49.96,
+        "sonar1_distance": 3.12,
+        "sonar2_distance": 3.53,
+        "gyro": {
+            "x": -0.13,
+            "y": -0.0,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:00",
+        "water_temp": 15.2,
+        "ph": 8.06,
+        "conductivity": 40.55,
+        "sonar1_distance": 3.63,
+        "sonar2_distance": 0.76,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.01,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:01",
+        "water_temp": 14.75,
+        "ph": 8.02,
+        "conductivity": 30.29,
+        "sonar1_distance": 2.63,
+        "sonar2_distance": 1.67,
+        "gyro": {
+            "x": -0.14,
+            "y": 0.16,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:02",
+        "water_temp": 14.45,
+        "ph": 8.08,
+        "conductivity": 34.3,
+        "sonar1_distance": 1.23,
+        "sonar2_distance": 4.34,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.04,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:03",
+        "water_temp": 17.36,
+        "ph": 7.96,
+        "conductivity": 43.35,
+        "sonar1_distance": 1.85,
+        "sonar2_distance": 2.2,
+        "gyro": {
+            "x": 0.1,
+            "y": -0.02,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:04",
+        "water_temp": 14.72,
+        "ph": 8.14,
+        "conductivity": 36.34,
+        "sonar1_distance": 1.61,
+        "sonar2_distance": 3.57,
+        "gyro": {
+            "x": 0.2,
+            "y": -0.18,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:05",
+        "water_temp": 16.98,
+        "ph": 7.98,
+        "conductivity": 33.42,
+        "sonar1_distance": 4.91,
+        "sonar2_distance": 4.8,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.07,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:06",
+        "water_temp": 17.51,
+        "ph": 8.14,
+        "conductivity": 35.07,
+        "sonar1_distance": 4.8,
+        "sonar2_distance": 1.59,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.06,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:07",
+        "water_temp": 15.31,
+        "ph": 7.82,
+        "conductivity": 49.73,
+        "sonar1_distance": 2.07,
+        "sonar2_distance": 1.04,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.16,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:08",
+        "water_temp": 14.9,
+        "ph": 7.84,
+        "conductivity": 41.67,
+        "sonar1_distance": 4.7,
+        "sonar2_distance": 0.64,
+        "gyro": {
+            "x": -0.15,
+            "y": -0.11,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:09",
+        "water_temp": 16.12,
+        "ph": 7.89,
+        "conductivity": 33.12,
+        "sonar1_distance": 4.56,
+        "sonar2_distance": 4.72,
+        "gyro": {
+            "x": 0.21,
+            "y": -0.02,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:10",
+        "water_temp": 14.98,
+        "ph": 7.83,
+        "conductivity": 45.11,
+        "sonar1_distance": 0.78,
+        "sonar2_distance": 4.39,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.21,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:11",
+        "water_temp": 16.2,
+        "ph": 8.0,
+        "conductivity": 41.93,
+        "sonar1_distance": 2.06,
+        "sonar2_distance": 3.88,
+        "gyro": {
+            "x": -0.03,
+            "y": 0.03,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:12",
+        "water_temp": 14.05,
+        "ph": 8.0,
+        "conductivity": 36.53,
+        "sonar1_distance": 4.77,
+        "sonar2_distance": 0.74,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.12,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:13",
+        "water_temp": 15.57,
+        "ph": 7.84,
+        "conductivity": 32.28,
+        "sonar1_distance": 0.8,
+        "sonar2_distance": 2.12,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.01,
+            "z": -0.22
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:14",
+        "water_temp": 16.49,
+        "ph": 8.09,
+        "conductivity": 45.91,
+        "sonar1_distance": 1.55,
+        "sonar2_distance": 1.68,
+        "gyro": {
+            "x": 0.09,
+            "y": 0.07,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:15",
+        "water_temp": 15.03,
+        "ph": 8.14,
+        "conductivity": 31.67,
+        "sonar1_distance": 2.91,
+        "sonar2_distance": 4.42,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.03,
+            "z": -0.25
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:16",
+        "water_temp": 16.64,
+        "ph": 8.03,
+        "conductivity": 47.28,
+        "sonar1_distance": 2.19,
+        "sonar2_distance": 1.89,
+        "gyro": {
+            "x": 0.05,
+            "y": 0.08,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:17",
+        "water_temp": 15.3,
+        "ph": 8.14,
+        "conductivity": 36.22,
+        "sonar1_distance": 2.93,
+        "sonar2_distance": 0.95,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.06,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:18",
+        "water_temp": 16.91,
+        "ph": 7.88,
+        "conductivity": 37.72,
+        "sonar1_distance": 1.22,
+        "sonar2_distance": 2.36,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.02,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:19",
+        "water_temp": 14.27,
+        "ph": 8.06,
+        "conductivity": 32.48,
+        "sonar1_distance": 3.77,
+        "sonar2_distance": 3.24,
+        "gyro": {
+            "x": -0.09,
+            "y": 0.1,
+            "z": -0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:20",
+        "water_temp": 16.47,
+        "ph": 7.92,
+        "conductivity": 37.59,
+        "sonar1_distance": 1.26,
+        "sonar2_distance": 1.16,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.08,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:21",
+        "water_temp": 14.02,
+        "ph": 7.89,
+        "conductivity": 44.28,
+        "sonar1_distance": 1.12,
+        "sonar2_distance": 1.72,
+        "gyro": {
+            "x": -0.14,
+            "y": -0.13,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:22",
+        "water_temp": 14.31,
+        "ph": 7.96,
+        "conductivity": 38.12,
+        "sonar1_distance": 2.07,
+        "sonar2_distance": 4.24,
+        "gyro": {
+            "x": 0.2,
+            "y": 0.11,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:23",
+        "water_temp": 15.73,
+        "ph": 7.94,
+        "conductivity": 42.18,
+        "sonar1_distance": 1.53,
+        "sonar2_distance": 4.78,
+        "gyro": {
+            "x": 0.1,
+            "y": 0.11,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:24",
+        "water_temp": 17.87,
+        "ph": 7.98,
+        "conductivity": 32.13,
+        "sonar1_distance": 3.51,
+        "sonar2_distance": 3.32,
+        "gyro": {
+            "x": 0.16,
+            "y": 0.04,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:25",
+        "water_temp": 14.5,
+        "ph": 8.07,
+        "conductivity": 36.17,
+        "sonar1_distance": 2.85,
+        "sonar2_distance": 3.53,
+        "gyro": {
+            "x": -0.3,
+            "y": 0.04,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:26",
+        "water_temp": 17.22,
+        "ph": 7.9,
+        "conductivity": 39.94,
+        "sonar1_distance": 4.2,
+        "sonar2_distance": 1.86,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.22,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:27",
+        "water_temp": 17.6,
+        "ph": 7.95,
+        "conductivity": 44.69,
+        "sonar1_distance": 2.46,
+        "sonar2_distance": 0.68,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.07,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:28",
+        "water_temp": 15.39,
+        "ph": 7.91,
+        "conductivity": 47.63,
+        "sonar1_distance": 4.71,
+        "sonar2_distance": 3.05,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.13,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:29",
+        "water_temp": 15.28,
+        "ph": 7.92,
+        "conductivity": 40.72,
+        "sonar1_distance": 4.11,
+        "sonar2_distance": 2.01,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.03,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:30",
+        "water_temp": 17.0,
+        "ph": 7.89,
+        "conductivity": 33.07,
+        "sonar1_distance": 4.58,
+        "sonar2_distance": 1.96,
+        "gyro": {
+            "x": -0.19,
+            "y": 0.18,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:31",
+        "water_temp": 16.31,
+        "ph": 7.98,
+        "conductivity": 38.78,
+        "sonar1_distance": 4.2,
+        "sonar2_distance": 3.12,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.09,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:32",
+        "water_temp": 17.92,
+        "ph": 8.11,
+        "conductivity": 35.12,
+        "sonar1_distance": 3.33,
+        "sonar2_distance": 4.16,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.12,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:33",
+        "water_temp": 15.61,
+        "ph": 8.11,
+        "conductivity": 48.09,
+        "sonar1_distance": 2.73,
+        "sonar2_distance": 2.81,
+        "gyro": {
+            "x": 0.11,
+            "y": 0.03,
+            "z": 0.21
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:34",
+        "water_temp": 17.62,
+        "ph": 8.09,
+        "conductivity": 40.15,
+        "sonar1_distance": 4.48,
+        "sonar2_distance": 1.13,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.0,
+            "z": -0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:35",
+        "water_temp": 16.01,
+        "ph": 7.81,
+        "conductivity": 31.45,
+        "sonar1_distance": 0.77,
+        "sonar2_distance": 4.13,
+        "gyro": {
+            "x": -0.09,
+            "y": -0.16,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:36",
+        "water_temp": 15.91,
+        "ph": 8.05,
+        "conductivity": 46.93,
+        "sonar1_distance": 4.06,
+        "sonar2_distance": 3.42,
+        "gyro": {
+            "x": -0.11,
+            "y": 0.07,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:37",
+        "water_temp": 15.94,
+        "ph": 7.89,
+        "conductivity": 45.45,
+        "sonar1_distance": 2.71,
+        "sonar2_distance": 2.76,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.01,
+            "z": -0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:38",
+        "water_temp": 15.27,
+        "ph": 7.91,
+        "conductivity": 49.29,
+        "sonar1_distance": 4.89,
+        "sonar2_distance": 4.91,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.02,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:39",
+        "water_temp": 14.7,
+        "ph": 7.87,
+        "conductivity": 34.55,
+        "sonar1_distance": 3.8,
+        "sonar2_distance": 3.22,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.03,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:40",
+        "water_temp": 17.32,
+        "ph": 7.85,
+        "conductivity": 32.44,
+        "sonar1_distance": 0.81,
+        "sonar2_distance": 0.89,
+        "gyro": {
+            "x": 0.13,
+            "y": -0.23,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:41",
+        "water_temp": 16.02,
+        "ph": 7.83,
+        "conductivity": 35.37,
+        "sonar1_distance": 0.74,
+        "sonar2_distance": 0.86,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.15,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:42",
+        "water_temp": 14.44,
+        "ph": 8.02,
+        "conductivity": 45.73,
+        "sonar1_distance": 4.06,
+        "sonar2_distance": 3.09,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.1,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:43",
+        "water_temp": 16.0,
+        "ph": 7.92,
+        "conductivity": 41.65,
+        "sonar1_distance": 3.94,
+        "sonar2_distance": 3.59,
+        "gyro": {
+            "x": -0.12,
+            "y": -0.11,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:44",
+        "water_temp": 16.67,
+        "ph": 8.02,
+        "conductivity": 43.05,
+        "sonar1_distance": 2.22,
+        "sonar2_distance": 1.68,
+        "gyro": {
+            "x": 0.27,
+            "y": -0.24,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:45",
+        "water_temp": 16.75,
+        "ph": 7.88,
+        "conductivity": 37.45,
+        "sonar1_distance": 2.12,
+        "sonar2_distance": 3.98,
+        "gyro": {
+            "x": -0.09,
+            "y": 0.02,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:46",
+        "water_temp": 16.18,
+        "ph": 8.06,
+        "conductivity": 32.36,
+        "sonar1_distance": 2.89,
+        "sonar2_distance": 3.01,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.11,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:47",
+        "water_temp": 17.98,
+        "ph": 8.11,
+        "conductivity": 47.63,
+        "sonar1_distance": 3.34,
+        "sonar2_distance": 4.3,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.12,
+            "z": 0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:48",
+        "water_temp": 17.5,
+        "ph": 8.04,
+        "conductivity": 49.64,
+        "sonar1_distance": 2.82,
+        "sonar2_distance": 2.92,
+        "gyro": {
+            "x": 0.13,
+            "y": 0.07,
+            "z": 0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:49",
+        "water_temp": 15.77,
+        "ph": 7.96,
+        "conductivity": 44.79,
+        "sonar1_distance": 2.21,
+        "sonar2_distance": 3.19,
+        "gyro": {
+            "x": -0.14,
+            "y": -0.1,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:50",
+        "water_temp": 15.03,
+        "ph": 8.19,
+        "conductivity": 31.67,
+        "sonar1_distance": 4.99,
+        "sonar2_distance": 1.53,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.08,
+            "z": -0.21
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:51",
+        "water_temp": 17.25,
+        "ph": 7.98,
+        "conductivity": 32.63,
+        "sonar1_distance": 3.43,
+        "sonar2_distance": 1.3,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.04,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:52",
+        "water_temp": 14.58,
+        "ph": 7.81,
+        "conductivity": 32.75,
+        "sonar1_distance": 3.74,
+        "sonar2_distance": 3.07,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.13,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:53",
+        "water_temp": 14.08,
+        "ph": 8.15,
+        "conductivity": 41.23,
+        "sonar1_distance": 1.01,
+        "sonar2_distance": 2.7,
+        "gyro": {
+            "x": 0.07,
+            "y": 0.05,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:54",
+        "water_temp": 16.11,
+        "ph": 7.99,
+        "conductivity": 34.65,
+        "sonar1_distance": 2.89,
+        "sonar2_distance": 1.64,
+        "gyro": {
+            "x": -0.19,
+            "y": -0.11,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:55",
+        "water_temp": 15.99,
+        "ph": 7.99,
+        "conductivity": 46.83,
+        "sonar1_distance": 2.92,
+        "sonar2_distance": 1.33,
+        "gyro": {
+            "x": -0.26,
+            "y": -0.09,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:56",
+        "water_temp": 14.17,
+        "ph": 7.87,
+        "conductivity": 34.5,
+        "sonar1_distance": 2.63,
+        "sonar2_distance": 2.33,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.0,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:57",
+        "water_temp": 14.61,
+        "ph": 7.94,
+        "conductivity": 44.26,
+        "sonar1_distance": 1.0,
+        "sonar2_distance": 3.53,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.15,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:58",
+        "water_temp": 14.15,
+        "ph": 8.17,
+        "conductivity": 41.89,
+        "sonar1_distance": 1.98,
+        "sonar2_distance": 3.15,
+        "gyro": {
+            "x": -0.16,
+            "y": 0.18,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:22:59",
+        "water_temp": 15.71,
+        "ph": 7.85,
+        "conductivity": 41.47,
+        "sonar1_distance": 1.97,
+        "sonar2_distance": 1.8,
+        "gyro": {
+            "x": 0.09,
+            "y": 0.17,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:00",
+        "water_temp": 17.77,
+        "ph": 7.95,
+        "conductivity": 46.33,
+        "sonar1_distance": 1.23,
+        "sonar2_distance": 1.84,
+        "gyro": {
+            "x": -0.04,
+            "y": 0.16,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:01",
+        "water_temp": 14.46,
+        "ph": 8.02,
+        "conductivity": 32.22,
+        "sonar1_distance": 4.07,
+        "sonar2_distance": 3.28,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.12,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:02",
+        "water_temp": 17.49,
+        "ph": 7.86,
+        "conductivity": 40.67,
+        "sonar1_distance": 4.33,
+        "sonar2_distance": 1.16,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.1,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:03",
+        "water_temp": 14.53,
+        "ph": 8.0,
+        "conductivity": 30.43,
+        "sonar1_distance": 0.53,
+        "sonar2_distance": 0.96,
+        "gyro": {
+            "x": -0.11,
+            "y": -0.13,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:04",
+        "water_temp": 14.61,
+        "ph": 8.04,
+        "conductivity": 46.88,
+        "sonar1_distance": 1.0,
+        "sonar2_distance": 1.72,
+        "gyro": {
+            "x": -0.04,
+            "y": 0.25,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:05",
+        "water_temp": 15.98,
+        "ph": 7.82,
+        "conductivity": 42.67,
+        "sonar1_distance": 3.37,
+        "sonar2_distance": 1.58,
+        "gyro": {
+            "x": 0.13,
+            "y": 0.01,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:06",
+        "water_temp": 17.38,
+        "ph": 8.13,
+        "conductivity": 43.54,
+        "sonar1_distance": 4.82,
+        "sonar2_distance": 1.3,
+        "gyro": {
+            "x": -0.09,
+            "y": -0.18,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:07",
+        "water_temp": 15.88,
+        "ph": 8.12,
+        "conductivity": 49.36,
+        "sonar1_distance": 4.32,
+        "sonar2_distance": 1.11,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.16,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:08",
+        "water_temp": 17.18,
+        "ph": 8.12,
+        "conductivity": 31.75,
+        "sonar1_distance": 1.49,
+        "sonar2_distance": 2.52,
+        "gyro": {
+            "x": 0.09,
+            "y": -0.36,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:09",
+        "water_temp": 14.21,
+        "ph": 8.0,
+        "conductivity": 38.64,
+        "sonar1_distance": 0.73,
+        "sonar2_distance": 4.59,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.04,
+            "z": 0.25
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:10",
+        "water_temp": 15.9,
+        "ph": 7.81,
+        "conductivity": 37.26,
+        "sonar1_distance": 4.64,
+        "sonar2_distance": 1.81,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.01,
+            "z": 0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:11",
+        "water_temp": 16.72,
+        "ph": 7.84,
+        "conductivity": 30.63,
+        "sonar1_distance": 3.3,
+        "sonar2_distance": 3.32,
+        "gyro": {
+            "x": 0.07,
+            "y": 0.09,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:12",
+        "water_temp": 16.63,
+        "ph": 8.16,
+        "conductivity": 41.75,
+        "sonar1_distance": 2.05,
+        "sonar2_distance": 0.99,
+        "gyro": {
+            "x": 0.15,
+            "y": -0.09,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:13",
+        "water_temp": 15.63,
+        "ph": 7.81,
+        "conductivity": 37.51,
+        "sonar1_distance": 4.74,
+        "sonar2_distance": 1.18,
+        "gyro": {
+            "x": -0.03,
+            "y": 0.16,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:14",
+        "water_temp": 17.52,
+        "ph": 8.11,
+        "conductivity": 44.58,
+        "sonar1_distance": 2.86,
+        "sonar2_distance": 4.74,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.11,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:15",
+        "water_temp": 15.35,
+        "ph": 7.82,
+        "conductivity": 47.76,
+        "sonar1_distance": 1.67,
+        "sonar2_distance": 4.56,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.01,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:16",
+        "water_temp": 15.09,
+        "ph": 8.05,
+        "conductivity": 47.53,
+        "sonar1_distance": 4.73,
+        "sonar2_distance": 4.07,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.05,
+            "z": -0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:17",
+        "water_temp": 14.52,
+        "ph": 7.96,
+        "conductivity": 32.85,
+        "sonar1_distance": 3.05,
+        "sonar2_distance": 4.8,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.08,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:18",
+        "water_temp": 14.99,
+        "ph": 7.85,
+        "conductivity": 31.34,
+        "sonar1_distance": 3.47,
+        "sonar2_distance": 1.23,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.11,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:19",
+        "water_temp": 17.14,
+        "ph": 8.11,
+        "conductivity": 43.24,
+        "sonar1_distance": 2.01,
+        "sonar2_distance": 1.0,
+        "gyro": {
+            "x": -0.0,
+            "y": 0.07,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:20",
+        "water_temp": 15.75,
+        "ph": 8.17,
+        "conductivity": 47.48,
+        "sonar1_distance": 2.79,
+        "sonar2_distance": 2.97,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.07,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:21",
+        "water_temp": 16.48,
+        "ph": 8.17,
+        "conductivity": 45.39,
+        "sonar1_distance": 3.65,
+        "sonar2_distance": 3.81,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.18,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:22",
+        "water_temp": 14.54,
+        "ph": 7.88,
+        "conductivity": 31.89,
+        "sonar1_distance": 3.31,
+        "sonar2_distance": 1.33,
+        "gyro": {
+            "x": -0.18,
+            "y": 0.04,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:23",
+        "water_temp": 14.89,
+        "ph": 7.96,
+        "conductivity": 33.99,
+        "sonar1_distance": 2.04,
+        "sonar2_distance": 2.48,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.11,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:24",
+        "water_temp": 15.96,
+        "ph": 7.91,
+        "conductivity": 38.62,
+        "sonar1_distance": 1.36,
+        "sonar2_distance": 2.62,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.08,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:25",
+        "water_temp": 14.46,
+        "ph": 7.99,
+        "conductivity": 43.55,
+        "sonar1_distance": 2.28,
+        "sonar2_distance": 1.92,
+        "gyro": {
+            "x": 0.19,
+            "y": -0.04,
+            "z": -0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:26",
+        "water_temp": 14.55,
+        "ph": 8.05,
+        "conductivity": 31.4,
+        "sonar1_distance": 4.61,
+        "sonar2_distance": 1.82,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.07,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:27",
+        "water_temp": 14.94,
+        "ph": 8.17,
+        "conductivity": 38.44,
+        "sonar1_distance": 3.81,
+        "sonar2_distance": 4.42,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.14,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:28",
+        "water_temp": 15.7,
+        "ph": 8.06,
+        "conductivity": 36.79,
+        "sonar1_distance": 2.31,
+        "sonar2_distance": 2.37,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.06,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:29",
+        "water_temp": 16.61,
+        "ph": 8.0,
+        "conductivity": 43.38,
+        "sonar1_distance": 2.01,
+        "sonar2_distance": 0.71,
+        "gyro": {
+            "x": -0.0,
+            "y": 0.07,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:30",
+        "water_temp": 14.08,
+        "ph": 8.06,
+        "conductivity": 30.51,
+        "sonar1_distance": 4.0,
+        "sonar2_distance": 0.7,
+        "gyro": {
+            "x": 0.15,
+            "y": -0.1,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:31",
+        "water_temp": 15.98,
+        "ph": 7.92,
+        "conductivity": 32.11,
+        "sonar1_distance": 3.03,
+        "sonar2_distance": 2.62,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.01,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:32",
+        "water_temp": 15.41,
+        "ph": 7.91,
+        "conductivity": 39.89,
+        "sonar1_distance": 3.67,
+        "sonar2_distance": 2.85,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.02,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:33",
+        "water_temp": 14.68,
+        "ph": 8.17,
+        "conductivity": 41.53,
+        "sonar1_distance": 1.02,
+        "sonar2_distance": 2.24,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.1,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:34",
+        "water_temp": 17.1,
+        "ph": 7.95,
+        "conductivity": 30.45,
+        "sonar1_distance": 1.92,
+        "sonar2_distance": 1.82,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.02,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:35",
+        "water_temp": 16.42,
+        "ph": 7.94,
+        "conductivity": 34.5,
+        "sonar1_distance": 4.21,
+        "sonar2_distance": 2.1,
+        "gyro": {
+            "x": 0.11,
+            "y": -0.09,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:36",
+        "water_temp": 15.56,
+        "ph": 8.06,
+        "conductivity": 30.12,
+        "sonar1_distance": 4.75,
+        "sonar2_distance": 4.48,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.03,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:37",
+        "water_temp": 14.54,
+        "ph": 7.88,
+        "conductivity": 47.0,
+        "sonar1_distance": 3.03,
+        "sonar2_distance": 1.56,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.18,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:38",
+        "water_temp": 15.76,
+        "ph": 7.99,
+        "conductivity": 36.29,
+        "sonar1_distance": 4.93,
+        "sonar2_distance": 1.28,
+        "gyro": {
+            "x": -0.07,
+            "y": -0.06,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:39",
+        "water_temp": 15.16,
+        "ph": 8.14,
+        "conductivity": 45.9,
+        "sonar1_distance": 3.71,
+        "sonar2_distance": 1.12,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.04,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:40",
+        "water_temp": 15.34,
+        "ph": 8.06,
+        "conductivity": 39.84,
+        "sonar1_distance": 4.14,
+        "sonar2_distance": 4.22,
+        "gyro": {
+            "x": 0.17,
+            "y": 0.02,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:41",
+        "water_temp": 17.66,
+        "ph": 8.1,
+        "conductivity": 33.1,
+        "sonar1_distance": 1.24,
+        "sonar2_distance": 0.58,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.08,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:42",
+        "water_temp": 17.69,
+        "ph": 8.19,
+        "conductivity": 38.38,
+        "sonar1_distance": 1.29,
+        "sonar2_distance": 3.85,
+        "gyro": {
+            "x": 0.19,
+            "y": -0.1,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:43",
+        "water_temp": 15.07,
+        "ph": 7.91,
+        "conductivity": 39.78,
+        "sonar1_distance": 1.98,
+        "sonar2_distance": 3.47,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.08,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:44",
+        "water_temp": 14.78,
+        "ph": 7.86,
+        "conductivity": 37.92,
+        "sonar1_distance": 1.68,
+        "sonar2_distance": 1.5,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.07,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:45",
+        "water_temp": 17.08,
+        "ph": 8.02,
+        "conductivity": 30.58,
+        "sonar1_distance": 3.22,
+        "sonar2_distance": 2.03,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.07,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:46",
+        "water_temp": 14.19,
+        "ph": 8.05,
+        "conductivity": 39.45,
+        "sonar1_distance": 0.82,
+        "sonar2_distance": 0.85,
+        "gyro": {
+            "x": 0.21,
+            "y": 0.04,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:47",
+        "water_temp": 14.21,
+        "ph": 8.08,
+        "conductivity": 34.99,
+        "sonar1_distance": 3.04,
+        "sonar2_distance": 4.99,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.07,
+            "z": -0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:48",
+        "water_temp": 14.78,
+        "ph": 7.86,
+        "conductivity": 45.05,
+        "sonar1_distance": 4.76,
+        "sonar2_distance": 3.15,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.02,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:49",
+        "water_temp": 14.42,
+        "ph": 7.95,
+        "conductivity": 30.58,
+        "sonar1_distance": 3.75,
+        "sonar2_distance": 1.03,
+        "gyro": {
+            "x": -0.09,
+            "y": -0.0,
+            "z": 0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:50",
+        "water_temp": 16.85,
+        "ph": 7.81,
+        "conductivity": 45.77,
+        "sonar1_distance": 2.04,
+        "sonar2_distance": 0.74,
+        "gyro": {
+            "x": 0.26,
+            "y": 0.17,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:51",
+        "water_temp": 14.39,
+        "ph": 8.18,
+        "conductivity": 32.25,
+        "sonar1_distance": 2.11,
+        "sonar2_distance": 2.39,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.07,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:52",
+        "water_temp": 16.52,
+        "ph": 8.02,
+        "conductivity": 48.2,
+        "sonar1_distance": 1.8,
+        "sonar2_distance": 3.68,
+        "gyro": {
+            "x": 0.08,
+            "y": -0.01,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:53",
+        "water_temp": 17.71,
+        "ph": 7.84,
+        "conductivity": 33.21,
+        "sonar1_distance": 1.12,
+        "sonar2_distance": 1.66,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.01,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:54",
+        "water_temp": 14.34,
+        "ph": 7.93,
+        "conductivity": 30.96,
+        "sonar1_distance": 0.88,
+        "sonar2_distance": 3.38,
+        "gyro": {
+            "x": -0.19,
+            "y": 0.08,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:55",
+        "water_temp": 15.71,
+        "ph": 7.88,
+        "conductivity": 40.38,
+        "sonar1_distance": 3.41,
+        "sonar2_distance": 2.07,
+        "gyro": {
+            "x": -0.09,
+            "y": -0.04,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:56",
+        "water_temp": 17.82,
+        "ph": 8.08,
+        "conductivity": 36.77,
+        "sonar1_distance": 1.44,
+        "sonar2_distance": 2.94,
+        "gyro": {
+            "x": -0.19,
+            "y": -0.05,
+            "z": -0.15
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:57",
+        "water_temp": 15.19,
+        "ph": 8.15,
+        "conductivity": 42.91,
+        "sonar1_distance": 4.48,
+        "sonar2_distance": 2.75,
+        "gyro": {
+            "x": -0.13,
+            "y": -0.23,
+            "z": 0.24
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:58",
+        "water_temp": 17.39,
+        "ph": 7.82,
+        "conductivity": 45.34,
+        "sonar1_distance": 1.45,
+        "sonar2_distance": 3.51,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.01,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:23:59",
+        "water_temp": 16.46,
+        "ph": 8.03,
+        "conductivity": 41.99,
+        "sonar1_distance": 1.69,
+        "sonar2_distance": 3.07,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.05,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:00",
+        "water_temp": 14.47,
+        "ph": 8.02,
+        "conductivity": 35.05,
+        "sonar1_distance": 0.9,
+        "sonar2_distance": 1.09,
+        "gyro": {
+            "x": 0.2,
+            "y": -0.01,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:01",
+        "water_temp": 17.58,
+        "ph": 7.84,
+        "conductivity": 32.48,
+        "sonar1_distance": 2.24,
+        "sonar2_distance": 4.9,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.07,
+            "z": 0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:02",
+        "water_temp": 15.42,
+        "ph": 7.99,
+        "conductivity": 47.2,
+        "sonar1_distance": 4.49,
+        "sonar2_distance": 2.48,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.07,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:03",
+        "water_temp": 16.4,
+        "ph": 8.11,
+        "conductivity": 36.86,
+        "sonar1_distance": 3.79,
+        "sonar2_distance": 1.92,
+        "gyro": {
+            "x": -0.02,
+            "y": 0.21,
+            "z": 0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:04",
+        "water_temp": 17.81,
+        "ph": 8.12,
+        "conductivity": 32.77,
+        "sonar1_distance": 1.5,
+        "sonar2_distance": 2.14,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.08,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:05",
+        "water_temp": 14.05,
+        "ph": 7.85,
+        "conductivity": 36.12,
+        "sonar1_distance": 2.49,
+        "sonar2_distance": 3.35,
+        "gyro": {
+            "x": -0.13,
+            "y": -0.06,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:06",
+        "water_temp": 15.36,
+        "ph": 8.03,
+        "conductivity": 34.63,
+        "sonar1_distance": 1.09,
+        "sonar2_distance": 2.29,
+        "gyro": {
+            "x": 0.04,
+            "y": 0.01,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:07",
+        "water_temp": 15.47,
+        "ph": 8.17,
+        "conductivity": 38.73,
+        "sonar1_distance": 3.45,
+        "sonar2_distance": 1.86,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.01,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:08",
+        "water_temp": 17.72,
+        "ph": 7.88,
+        "conductivity": 36.49,
+        "sonar1_distance": 3.47,
+        "sonar2_distance": 0.6,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.01,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:09",
+        "water_temp": 17.07,
+        "ph": 7.85,
+        "conductivity": 30.38,
+        "sonar1_distance": 3.79,
+        "sonar2_distance": 4.91,
+        "gyro": {
+            "x": 0.24,
+            "y": -0.16,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:10",
+        "water_temp": 17.59,
+        "ph": 8.09,
+        "conductivity": 46.0,
+        "sonar1_distance": 2.59,
+        "sonar2_distance": 2.64,
+        "gyro": {
+            "x": 0.07,
+            "y": 0.01,
+            "z": 0.23
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:11",
+        "water_temp": 15.61,
+        "ph": 8.01,
+        "conductivity": 31.12,
+        "sonar1_distance": 4.18,
+        "sonar2_distance": 3.46,
+        "gyro": {
+            "x": -0.11,
+            "y": -0.03,
+            "z": -0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:12",
+        "water_temp": 17.25,
+        "ph": 7.88,
+        "conductivity": 38.75,
+        "sonar1_distance": 2.36,
+        "sonar2_distance": 1.0,
+        "gyro": {
+            "x": -0.04,
+            "y": -0.02,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:13",
+        "water_temp": 14.73,
+        "ph": 7.88,
+        "conductivity": 44.43,
+        "sonar1_distance": 4.02,
+        "sonar2_distance": 2.11,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.1,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:14",
+        "water_temp": 17.84,
+        "ph": 7.94,
+        "conductivity": 47.93,
+        "sonar1_distance": 4.08,
+        "sonar2_distance": 1.33,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.22,
+            "z": 0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:15",
+        "water_temp": 15.09,
+        "ph": 8.08,
+        "conductivity": 44.2,
+        "sonar1_distance": 4.09,
+        "sonar2_distance": 3.56,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.01,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:16",
+        "water_temp": 17.75,
+        "ph": 7.96,
+        "conductivity": 44.13,
+        "sonar1_distance": 0.67,
+        "sonar2_distance": 3.68,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.05,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:17",
+        "water_temp": 17.91,
+        "ph": 8.13,
+        "conductivity": 34.88,
+        "sonar1_distance": 2.38,
+        "sonar2_distance": 2.25,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.15,
+            "z": 0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:18",
+        "water_temp": 16.2,
+        "ph": 8.1,
+        "conductivity": 42.52,
+        "sonar1_distance": 2.81,
+        "sonar2_distance": 0.88,
+        "gyro": {
+            "x": 0.17,
+            "y": 0.17,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:19",
+        "water_temp": 17.23,
+        "ph": 8.13,
+        "conductivity": 41.2,
+        "sonar1_distance": 1.49,
+        "sonar2_distance": 4.16,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.09,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:20",
+        "water_temp": 16.51,
+        "ph": 8.1,
+        "conductivity": 41.82,
+        "sonar1_distance": 0.53,
+        "sonar2_distance": 3.92,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.07,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:21",
+        "water_temp": 17.77,
+        "ph": 7.81,
+        "conductivity": 43.45,
+        "sonar1_distance": 1.71,
+        "sonar2_distance": 0.58,
+        "gyro": {
+            "x": -0.12,
+            "y": -0.07,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:22",
+        "water_temp": 15.37,
+        "ph": 8.05,
+        "conductivity": 38.0,
+        "sonar1_distance": 4.32,
+        "sonar2_distance": 2.04,
+        "gyro": {
+            "x": -0.09,
+            "y": -0.02,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:23",
+        "water_temp": 14.03,
+        "ph": 7.98,
+        "conductivity": 32.97,
+        "sonar1_distance": 1.0,
+        "sonar2_distance": 2.29,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.19,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:24",
+        "water_temp": 17.63,
+        "ph": 7.8,
+        "conductivity": 44.8,
+        "sonar1_distance": 0.91,
+        "sonar2_distance": 3.73,
+        "gyro": {
+            "x": -0.03,
+            "y": -0.02,
+            "z": 0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:25",
+        "water_temp": 15.72,
+        "ph": 7.83,
+        "conductivity": 48.27,
+        "sonar1_distance": 3.39,
+        "sonar2_distance": 2.19,
+        "gyro": {
+            "x": 0.19,
+            "y": -0.03,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:26",
+        "water_temp": 14.06,
+        "ph": 8.11,
+        "conductivity": 46.11,
+        "sonar1_distance": 3.93,
+        "sonar2_distance": 3.65,
+        "gyro": {
+            "x": -0.12,
+            "y": -0.13,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:27",
+        "water_temp": 15.9,
+        "ph": 7.81,
+        "conductivity": 48.32,
+        "sonar1_distance": 4.55,
+        "sonar2_distance": 4.88,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.0,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:28",
+        "water_temp": 16.5,
+        "ph": 7.85,
+        "conductivity": 41.0,
+        "sonar1_distance": 2.51,
+        "sonar2_distance": 0.98,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.1,
+            "z": -0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:29",
+        "water_temp": 15.92,
+        "ph": 8.05,
+        "conductivity": 43.62,
+        "sonar1_distance": 3.84,
+        "sonar2_distance": 2.25,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.02,
+            "z": 0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:30",
+        "water_temp": 14.98,
+        "ph": 8.0,
+        "conductivity": 32.51,
+        "sonar1_distance": 1.58,
+        "sonar2_distance": 0.7,
+        "gyro": {
+            "x": -0.28,
+            "y": 0.19,
+            "z": -0.2
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:31",
+        "water_temp": 16.94,
+        "ph": 8.12,
+        "conductivity": 44.74,
+        "sonar1_distance": 1.99,
+        "sonar2_distance": 0.78,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.03,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:32",
+        "water_temp": 15.69,
+        "ph": 8.02,
+        "conductivity": 47.62,
+        "sonar1_distance": 1.98,
+        "sonar2_distance": 3.77,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.08,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:33",
+        "water_temp": 14.74,
+        "ph": 8.11,
+        "conductivity": 39.28,
+        "sonar1_distance": 3.6,
+        "sonar2_distance": 2.5,
+        "gyro": {
+            "x": -0.12,
+            "y": 0.05,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:34",
+        "water_temp": 16.81,
+        "ph": 8.0,
+        "conductivity": 42.72,
+        "sonar1_distance": 2.75,
+        "sonar2_distance": 3.67,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.1,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:35",
+        "water_temp": 14.91,
+        "ph": 7.93,
+        "conductivity": 41.44,
+        "sonar1_distance": 3.34,
+        "sonar2_distance": 1.15,
+        "gyro": {
+            "x": -0.16,
+            "y": 0.26,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:36",
+        "water_temp": 16.43,
+        "ph": 7.9,
+        "conductivity": 48.09,
+        "sonar1_distance": 3.93,
+        "sonar2_distance": 1.5,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.04,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:37",
+        "water_temp": 14.84,
+        "ph": 8.02,
+        "conductivity": 40.28,
+        "sonar1_distance": 1.17,
+        "sonar2_distance": 2.58,
+        "gyro": {
+            "x": 0.09,
+            "y": -0.1,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:38",
+        "water_temp": 14.34,
+        "ph": 7.91,
+        "conductivity": 35.25,
+        "sonar1_distance": 2.97,
+        "sonar2_distance": 4.0,
+        "gyro": {
+            "x": -0.13,
+            "y": 0.09,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:39",
+        "water_temp": 16.61,
+        "ph": 8.18,
+        "conductivity": 36.63,
+        "sonar1_distance": 2.99,
+        "sonar2_distance": 2.48,
+        "gyro": {
+            "x": -0.1,
+            "y": 0.06,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:40",
+        "water_temp": 16.23,
+        "ph": 8.1,
+        "conductivity": 41.27,
+        "sonar1_distance": 4.2,
+        "sonar2_distance": 0.7,
+        "gyro": {
+            "x": 0.04,
+            "y": -0.1,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:41",
+        "water_temp": 14.03,
+        "ph": 7.93,
+        "conductivity": 33.27,
+        "sonar1_distance": 3.78,
+        "sonar2_distance": 2.41,
+        "gyro": {
+            "x": 0.03,
+            "y": -0.02,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:42",
+        "water_temp": 16.96,
+        "ph": 7.86,
+        "conductivity": 30.98,
+        "sonar1_distance": 0.86,
+        "sonar2_distance": 2.85,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.02,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:43",
+        "water_temp": 14.86,
+        "ph": 8.14,
+        "conductivity": 38.67,
+        "sonar1_distance": 3.98,
+        "sonar2_distance": 3.39,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.12,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:44",
+        "water_temp": 17.86,
+        "ph": 7.99,
+        "conductivity": 40.45,
+        "sonar1_distance": 1.05,
+        "sonar2_distance": 4.32,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.12,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:45",
+        "water_temp": 14.41,
+        "ph": 7.89,
+        "conductivity": 42.91,
+        "sonar1_distance": 1.14,
+        "sonar2_distance": 1.01,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.19,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:46",
+        "water_temp": 17.26,
+        "ph": 8.1,
+        "conductivity": 44.51,
+        "sonar1_distance": 2.2,
+        "sonar2_distance": 4.21,
+        "gyro": {
+            "x": 0.05,
+            "y": 0.04,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:47",
+        "water_temp": 14.32,
+        "ph": 8.19,
+        "conductivity": 30.63,
+        "sonar1_distance": 4.75,
+        "sonar2_distance": 1.17,
+        "gyro": {
+            "x": -0.12,
+            "y": -0.14,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:48",
+        "water_temp": 17.27,
+        "ph": 8.13,
+        "conductivity": 39.23,
+        "sonar1_distance": 0.66,
+        "sonar2_distance": 2.81,
+        "gyro": {
+            "x": -0.11,
+            "y": -0.05,
+            "z": -0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:49",
+        "water_temp": 17.62,
+        "ph": 7.83,
+        "conductivity": 44.65,
+        "sonar1_distance": 3.54,
+        "sonar2_distance": 4.67,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.1,
+            "z": 0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:50",
+        "water_temp": 17.57,
+        "ph": 8.19,
+        "conductivity": 44.44,
+        "sonar1_distance": 2.23,
+        "sonar2_distance": 3.04,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.04,
+            "z": 0.21
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:51",
+        "water_temp": 16.0,
+        "ph": 8.05,
+        "conductivity": 41.44,
+        "sonar1_distance": 1.38,
+        "sonar2_distance": 4.52,
+        "gyro": {
+            "x": 0.05,
+            "y": 0.16,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:52",
+        "water_temp": 14.89,
+        "ph": 8.03,
+        "conductivity": 34.08,
+        "sonar1_distance": 2.15,
+        "sonar2_distance": 3.56,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.15,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:53",
+        "water_temp": 14.28,
+        "ph": 7.93,
+        "conductivity": 33.51,
+        "sonar1_distance": 1.65,
+        "sonar2_distance": 0.76,
+        "gyro": {
+            "x": -0.17,
+            "y": 0.15,
+            "z": -0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:54",
+        "water_temp": 17.8,
+        "ph": 7.82,
+        "conductivity": 37.77,
+        "sonar1_distance": 1.21,
+        "sonar2_distance": 2.24,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.04,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:55",
+        "water_temp": 17.69,
+        "ph": 8.1,
+        "conductivity": 41.07,
+        "sonar1_distance": 1.13,
+        "sonar2_distance": 4.12,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.02,
+            "z": 0.21
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:56",
+        "water_temp": 16.32,
+        "ph": 7.89,
+        "conductivity": 30.12,
+        "sonar1_distance": 4.37,
+        "sonar2_distance": 0.53,
+        "gyro": {
+            "x": 0.02,
+            "y": -0.03,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:57",
+        "water_temp": 16.35,
+        "ph": 7.93,
+        "conductivity": 43.97,
+        "sonar1_distance": 2.84,
+        "sonar2_distance": 0.71,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.05,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:58",
+        "water_temp": 14.41,
+        "ph": 7.86,
+        "conductivity": 36.95,
+        "sonar1_distance": 4.87,
+        "sonar2_distance": 4.66,
+        "gyro": {
+            "x": -0.0,
+            "y": -0.07,
+            "z": 0.06
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:24:59",
+        "water_temp": 14.53,
+        "ph": 7.89,
+        "conductivity": 49.66,
+        "sonar1_distance": 4.41,
+        "sonar2_distance": 4.75,
+        "gyro": {
+            "x": -0.19,
+            "y": 0.05,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:00",
+        "water_temp": 16.59,
+        "ph": 8.06,
+        "conductivity": 37.97,
+        "sonar1_distance": 2.54,
+        "sonar2_distance": 4.84,
+        "gyro": {
+            "x": 0.08,
+            "y": 0.05,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:01",
+        "water_temp": 17.98,
+        "ph": 7.96,
+        "conductivity": 31.26,
+        "sonar1_distance": 1.12,
+        "sonar2_distance": 0.85,
+        "gyro": {
+            "x": -0.05,
+            "y": 0.11,
+            "z": -0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:02",
+        "water_temp": 17.53,
+        "ph": 7.85,
+        "conductivity": 31.18,
+        "sonar1_distance": 2.5,
+        "sonar2_distance": 4.29,
+        "gyro": {
+            "x": -0.15,
+            "y": -0.01,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:03",
+        "water_temp": 15.75,
+        "ph": 7.99,
+        "conductivity": 46.74,
+        "sonar1_distance": 3.01,
+        "sonar2_distance": 0.59,
+        "gyro": {
+            "x": 0.02,
+            "y": 0.2,
+            "z": 0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:04",
+        "water_temp": 16.53,
+        "ph": 7.99,
+        "conductivity": 45.93,
+        "sonar1_distance": 0.51,
+        "sonar2_distance": 4.58,
+        "gyro": {
+            "x": -0.06,
+            "y": -0.05,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:05",
+        "water_temp": 15.22,
+        "ph": 8.16,
+        "conductivity": 34.51,
+        "sonar1_distance": 2.52,
+        "sonar2_distance": 0.97,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.1,
+            "z": 0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:06",
+        "water_temp": 17.08,
+        "ph": 8.08,
+        "conductivity": 39.51,
+        "sonar1_distance": 4.61,
+        "sonar2_distance": 0.5,
+        "gyro": {
+            "x": 0.14,
+            "y": -0.06,
+            "z": -0.16
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:07",
+        "water_temp": 16.27,
+        "ph": 8.13,
+        "conductivity": 49.85,
+        "sonar1_distance": 1.66,
+        "sonar2_distance": 4.34,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.06,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:08",
+        "water_temp": 14.37,
+        "ph": 8.14,
+        "conductivity": 42.9,
+        "sonar1_distance": 2.64,
+        "sonar2_distance": 2.16,
+        "gyro": {
+            "x": 0.11,
+            "y": 0.07,
+            "z": -0.11
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:09",
+        "water_temp": 14.93,
+        "ph": 7.92,
+        "conductivity": 32.48,
+        "sonar1_distance": 1.72,
+        "sonar2_distance": 2.22,
+        "gyro": {
+            "x": 0.03,
+            "y": 0.13,
+            "z": -0.05
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:10",
+        "water_temp": 15.96,
+        "ph": 8.06,
+        "conductivity": 45.23,
+        "sonar1_distance": 4.5,
+        "sonar2_distance": 1.38,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.12,
+            "z": 0.19
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:11",
+        "water_temp": 14.19,
+        "ph": 7.95,
+        "conductivity": 48.45,
+        "sonar1_distance": 1.24,
+        "sonar2_distance": 1.53,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.12,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:12",
+        "water_temp": 14.39,
+        "ph": 7.88,
+        "conductivity": 48.71,
+        "sonar1_distance": 2.56,
+        "sonar2_distance": 4.07,
+        "gyro": {
+            "x": 0.01,
+            "y": -0.01,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:13",
+        "water_temp": 14.57,
+        "ph": 8.07,
+        "conductivity": 38.47,
+        "sonar1_distance": 2.42,
+        "sonar2_distance": 4.13,
+        "gyro": {
+            "x": -0.06,
+            "y": 0.04,
+            "z": -0.09
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:14",
+        "water_temp": 16.66,
+        "ph": 7.99,
+        "conductivity": 32.84,
+        "sonar1_distance": 1.72,
+        "sonar2_distance": 1.96,
+        "gyro": {
+            "x": 0.13,
+            "y": -0.21,
+            "z": 0.23
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:15",
+        "water_temp": 14.15,
+        "ph": 7.92,
+        "conductivity": 47.51,
+        "sonar1_distance": 4.13,
+        "sonar2_distance": 1.96,
+        "gyro": {
+            "x": 0.07,
+            "y": -0.07,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:16",
+        "water_temp": 17.28,
+        "ph": 8.15,
+        "conductivity": 48.53,
+        "sonar1_distance": 0.65,
+        "sonar2_distance": 4.84,
+        "gyro": {
+            "x": 0.27,
+            "y": 0.22,
+            "z": 0.08
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:17",
+        "water_temp": 15.73,
+        "ph": 7.82,
+        "conductivity": 45.21,
+        "sonar1_distance": 3.09,
+        "sonar2_distance": 0.96,
+        "gyro": {
+            "x": -0.01,
+            "y": 0.16,
+            "z": -0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:18",
+        "water_temp": 14.04,
+        "ph": 8.18,
+        "conductivity": 45.04,
+        "sonar1_distance": 4.39,
+        "sonar2_distance": 3.69,
+        "gyro": {
+            "x": -0.03,
+            "y": 0.14,
+            "z": 0.01
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:19",
+        "water_temp": 15.11,
+        "ph": 8.19,
+        "conductivity": 36.53,
+        "sonar1_distance": 0.76,
+        "sonar2_distance": 1.72,
+        "gyro": {
+            "x": -0.19,
+            "y": -0.16,
+            "z": 0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:20",
+        "water_temp": 15.68,
+        "ph": 8.2,
+        "conductivity": 33.27,
+        "sonar1_distance": 1.27,
+        "sonar2_distance": 4.01,
+        "gyro": {
+            "x": 0.12,
+            "y": -0.09,
+            "z": -0.0
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:21",
+        "water_temp": 15.19,
+        "ph": 8.11,
+        "conductivity": 49.07,
+        "sonar1_distance": 0.68,
+        "sonar2_distance": 4.08,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.08,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:22",
+        "water_temp": 17.3,
+        "ph": 8.02,
+        "conductivity": 32.15,
+        "sonar1_distance": 4.39,
+        "sonar2_distance": 2.88,
+        "gyro": {
+            "x": -0.02,
+            "y": -0.22,
+            "z": -0.03
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:23",
+        "water_temp": 14.91,
+        "ph": 7.84,
+        "conductivity": 34.12,
+        "sonar1_distance": 4.78,
+        "sonar2_distance": 1.03,
+        "gyro": {
+            "x": 0.05,
+            "y": -0.1,
+            "z": -0.14
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:24",
+        "water_temp": 15.84,
+        "ph": 8.03,
+        "conductivity": 39.53,
+        "sonar1_distance": 1.86,
+        "sonar2_distance": 1.57,
+        "gyro": {
+            "x": -0.15,
+            "y": -0.06,
+            "z": -0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:25",
+        "water_temp": 14.37,
+        "ph": 8.15,
+        "conductivity": 41.23,
+        "sonar1_distance": 0.9,
+        "sonar2_distance": 3.76,
+        "gyro": {
+            "x": 0.06,
+            "y": 0.07,
+            "z": 0.18
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:26",
+        "water_temp": 16.88,
+        "ph": 8.12,
+        "conductivity": 45.87,
+        "sonar1_distance": 0.91,
+        "sonar2_distance": 1.82,
+        "gyro": {
+            "x": 0.06,
+            "y": -0.12,
+            "z": -0.13
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:27",
+        "water_temp": 14.63,
+        "ph": 8.01,
+        "conductivity": 41.04,
+        "sonar1_distance": 1.62,
+        "sonar2_distance": 2.49,
+        "gyro": {
+            "x": 0.13,
+            "y": 0.06,
+            "z": -0.12
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:28",
+        "water_temp": 17.51,
+        "ph": 7.84,
+        "conductivity": 42.8,
+        "sonar1_distance": 3.39,
+        "sonar2_distance": 4.6,
+        "gyro": {
+            "x": -0.11,
+            "y": 0.13,
+            "z": 0.17
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:29",
+        "water_temp": 15.33,
+        "ph": 7.84,
+        "conductivity": 40.66,
+        "sonar1_distance": 1.18,
+        "sonar2_distance": 4.15,
+        "gyro": {
+            "x": -0.07,
+            "y": 0.15,
+            "z": 0.04
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:30",
+        "water_temp": 16.21,
+        "ph": 7.94,
+        "conductivity": 33.1,
+        "sonar1_distance": 2.6,
+        "sonar2_distance": 2.71,
+        "gyro": {
+            "x": -0.01,
+            "y": -0.06,
+            "z": 0.02
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:31",
+        "water_temp": 15.94,
+        "ph": 7.86,
+        "conductivity": 39.84,
+        "sonar1_distance": 2.33,
+        "sonar2_distance": 1.92,
+        "gyro": {
+            "x": 0.14,
+            "y": -0.05,
+            "z": 0.1
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:32",
+        "water_temp": 14.95,
+        "ph": 8.18,
+        "conductivity": 35.43,
+        "sonar1_distance": 4.86,
+        "sonar2_distance": 0.97,
+        "gyro": {
+            "x": -0.1,
+            "y": -0.01,
+            "z": -0.07
+        }
+    },
+    {
+        "timestamp": "2024-05-21T18:25:33",
+        "water_temp": 15.13,
+        "ph": 8.17,
+        "conductivity": 43.96,
+        "sonar1_distance": 2.68,
+        "sonar2_distance": 4.73,
+        "gyro": {
+            "x": 0.01,
+            "y": 0.23,
+            "z": -0.13
+        }
+    }
+]
