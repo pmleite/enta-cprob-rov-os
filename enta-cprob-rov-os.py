@@ -7,7 +7,7 @@ import time
 I2C_ADDRESS = 0x04
 
 # Get I2C bus
-bus = smbus.SMBus(1)
+# bus = smbus.SMBus(1)
 
 # Create Flask app
 app = Flask(__name__)
